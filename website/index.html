@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Linkerkant menu -->
+    <div class="menu-list">
+        <h2>Menu</h2>
+        <div class="menu-item" onclick="showItemDetails('burger')">Burgers</div>
+        <div class="menu-item" onclick="showItemDetails('drinks')">Drinken</div>
+        <div class="menu-item" onclick="showItemDetails('fries')">Frietjes</div>
+    </div>
+
+    <!-- Rechterkant detailweergave -->
+    <div id="menu-detail" class="menu-detail">
+        <h2 id="item-title">Selecteer een item</h2>
+        <img id="item-image" src="" alt="">
+        <p id="item-description"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 McDonald's</p>
+    </footer>
+
+    <script>
+        // Functie om de details van een geselecteerd item weer te geven
+        function showItemDetails(item) {
+            var title = "";
+            var image = "";
+            var description = "";
+
+            // Afhankelijk van het geselecteerde item, pas de details aan
+            if (item === 'Broodjes') {
+                title = "Broodje gezond";
+                image = "https://bakkerboudewijn.weebly.com/uploads/4/9/4/1/49414173/s264753192480643130_p1_i1_w1772.jpeg";
+                description = "De iconische burger met twee rundvleesburgers, sla, kaas, pickles, ui, en speciale saus.";
+            } else if (item === 'drinks') {
+                title = "Coca-Cola";
+                image = "https://via.placeholder.com/400x300?text=Coca-Cola";
+                description = "Verfrissende Coca-Cola om je maaltijd compleet te maken.";
+            } else if (item === 'fries') {
+                title = "Frietjes";
+                image = "https://via.placeholder.com/400x300?text=Frietjes";
+                description = "Knapperige, gouden frietjes geserveerd met zout.";
+            }
+
+            // Toon de details aan de rechterkant
+            document.getElementById("item-title").innerText = title;
+            document.getElementById("item-image").src = image;
+            document.getElementById("item-description").innerText = description;
+
+            // Zorg ervoor dat de detailsectie zichtbaar wordt
+            document.getElementById("menu-detail").style.display = "block";
+        }
+    </script>
+</body>
+</html>
