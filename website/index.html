@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vista Menu</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -38,21 +39,18 @@
             // Afhankelijk van het geselecteerde item, pas de details aan
             if (item === 'Broodjes') {
                 title = "Broodje gezond";
-                image = "https://bakkerboudewijn.weebly.com/uploads/4/9/4/1/49414173/s264753192480643130_p1_i1_w1772.jpeg";
-                description = "De iconische burger met twee rundvleesburgers, sla, kaas, pickles, ui, en speciale saus.";
+                image = "https://bakkerboudewijn.weebly.com/uploads/4/9/4/1/49414173/s264753192480643130_p1_i1_w640.jpeg";
+                description = "Broodje met ei en sla enz.";
             } else if (item === 'drinks') {
-                title = "Coca-Cola";
-                image = "https://via.placeholder.com/400x300?text=Coca-Cola";
-                description = "Verfrissende Coca-Cola om je maaltijd compleet te maken.";
-            } else if (item === 'fries') {
-                title = "Frietjes";
-                image = "https://via.placeholder.com/400x300?text=Frietjes";
-                description = "Knapperige, gouden frietjes geserveerd met zout.";
-            }   else if (item === 'fries') {
-                title = "ijsjes";
-                image = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fsearch%3Fq%3Dsoft%2BIce%2BCream&psig=AOvVaw3Ar0a35gQNCYj-lEjE-5Bd&ust=1739363852985000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJio_LjRu4sDFQAAAAAdAAAAABAE";
-                description = "Een lekker ijsje voor de warmte!";
-            }    
+                title = "Spa water";
+                image = "https://m.media-amazon.com/images/I/71VrczELeaL._AC_SY741_.jpg";
+                description = "Koude verfrissende watuuur.";
+            } else if (item === 'Snacks') {
+                title = "Frikandel";
+                image = "https://boshuis.huisjebezorgd.nl/wp-content/uploads/2020/03/29512948_652505005141152_1601506864166600704_o.jpg";
+                description = "Paarden lul.";
+            }
+
             // Toon de details aan de rechterkant
             document.getElementById("item-title").innerText = title;
             document.getElementById("item-image").src = image;
