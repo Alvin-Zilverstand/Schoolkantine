@@ -8,7 +8,11 @@
             if (item === 'Broodjes') {
                 title = "Broodje gezond";
                 image = "https://thumbs.dreamstime.com/b/submarine-sandwich-ham-cheese-clipping-path-egg-tomato-cucumber-lettuce-white-48580716.jpg";
+<<<<<<< HEAD
                 description = "Broodje met ei en sla etc.";
+=======
+                description = "Op dit broodje zit kaas, veldsla, komkommer, tomaat, ei, ham en/of kip en bufkes saus.";
+>>>>>>> bda82ef0d4d11b78aa9db5dc697e762108776f4a
             } else if (item === 'drinks') {
                 title = "Spa water";
                 image = "https://m.media-amazon.com/images/I/71VrczELeaL._AC_SY741_.jpg";
