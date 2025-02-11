@@ -14,6 +14,7 @@
         <div class="menu-item" onclick="showItemDetails('burger')">Burgers</div>
         <div class="menu-item" onclick="showItemDetails('drinks')">Drinken</div>
         <div class="menu-item" onclick="showItemDetails('fries')">Frietjes</div>
+        <div class="menu-item" onclick="showItemDetails('deserts')">ijsjes</div>
     </div>
 
     <!-- Rechterkant detailweergave -->
@@ -47,8 +48,11 @@
                 title = "Frietjes";
                 image = "https://via.placeholder.com/400x300?text=Frietjes";
                 description = "Knapperige, gouden frietjes geserveerd met zout.";
-            }
-
+            }   else if (item === 'fries') {
+                title = "ijsjes";
+                image = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngegg.com%2Fen%2Fsearch%3Fq%3Dsoft%2BIce%2BCream&psig=AOvVaw3Ar0a35gQNCYj-lEjE-5Bd&ust=1739363852985000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJio_LjRu4sDFQAAAAAdAAAAABAE";
+                description = "Een lekker ijsje voor de warmte!";
+            }    
             // Toon de details aan de rechterkant
             document.getElementById("item-title").innerText = title;
             document.getElementById("item-image").src = image;
