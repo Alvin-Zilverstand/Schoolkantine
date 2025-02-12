@@ -8,11 +8,7 @@
             if (item === 'Broodjes') {
                 title = "Broodje gezond";
                 image = "https://thumbs.dreamstime.com/b/submarine-sandwich-ham-cheese-clipping-path-egg-tomato-cucumber-lettuce-white-48580716.jpg";
-<<<<<<< HEAD
-                description = "Broodje met ei en sla etc.";
-=======
                 description = "Op dit broodje zit kaas, veldsla, komkommer, tomaat, ei, ham en/of kip en bufkes saus.";
->>>>>>> bda82ef0d4d11b78aa9db5dc697e762108776f4a
             } else if (item === 'drinks') {
                 title = "Spa water";
                 image = "https://m.media-amazon.com/images/I/71VrczELeaL._AC_SY741_.jpg";
@@ -21,8 +17,8 @@
                 title = "Frikandel";
                 image = "https://boshuis.huisjebezorgd.nl/wp-content/uploads/2020/03/29512948_652505005141152_1601506864166600704_o.jpg"; 
                 description = "vlees etc.";
-            }  else if (item === 'ijsjes') {
-                title = "deserts";
+            }  else if (item === 'deserts') {
+                title = "Ijsjes";
                 image = "https://png.pngtree.com/png-clipart/20230411/original/pngtree-ice-cream-dessert-realistic-white-background-transparent-png-image_9047252.png"; 
                 description = "ijsje etc.";
             }
