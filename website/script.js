@@ -2,6 +2,7 @@
 function showItemDetails(item) {
     var items = [];
 
+
     // Afhankelijk van het geselecteerde item, voeg de producten toe
     if (item === 'Broodjes') {
         items = [
@@ -37,33 +38,54 @@ function showItemDetails(item) {
         ];
     }
 
-    // Leeg de productweergave
-    const productDisplay = document.getElementById('product-display');
-    productDisplay.innerHTML = '';
+    else if (item === 'Deals') {
+        items = [
+            {
+                title: "deals",
+                image: "",
+                description: "Onze beste deals met de beste prijzen!."
+            }
+        ];
+    }
 
-    // Voeg de items toe aan de weergave
-    items.forEach(item => {
-        const productBox = document.createElement('div');
-        productBox.classList.add('product-box');
-        productBox.innerHTML = `
-            <img src="${item.image}" alt="${item.title}" onclick="openModal('${item.title}', '${item.image}', '${item.description}')">
-            <h3>${item.title}</h3>
-        `;
-        productDisplay.appendChild(productBox);
-    });
+    else if (item === 'soepen') {
+        items = [
+            {
+                title: "soepen",
+                image: "",
+                description: "Soep van de dag! (Allergieën? Meld het bij ons!)."
+            }
+        ];
+    }
+
+
+ // Leeg de productweergave
+ const productDisplay = document.getElementById('product-display');
+ productDisplay.innerHTML = '';
+
+ // Voeg de items toe aan de weergave
+ items.forEach(item => {
+     const productBox = document.createElement('div');
+     productBox.classList.add('product-box');
+     productBox.innerHTML = `
+         <img src="${item.image}" alt="${item.title}" onclick="openModal('${item.title}', '${item.image}', '${item.description}')">
+         <h3>${item.title}</h3>
+     `;
+     productDisplay.appendChild(productBox);
+ });
 }
 
 // Functie om het modaal venster te openen
 function openModal(title, image, description) {
-    document.getElementById("modal-title").innerText = title;
-    document.getElementById("modal-image").src = image;
-    document.getElementById("modal-description").innerText = description;
+ document.getElementById("modal-title").innerText = title;
+ document.getElementById("modal-image").src = image;
+ document.getElementById("modal-description").innerText = description;
 
-    // Zet het modaal venster zichtbaar
-    document.getElementById("modal").style.display = "block";
+ // Zet het modaal venster zichtbaar
+ document.getElementById("modal").style.display = "block";
 }
 
 // Functie om het modaal venster te sluiten
 function closeModal() {
-    document.getElementById("modal").style.display = "none";
+ document.getElementById("modal").style.display = "none";
 }
