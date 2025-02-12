@@ -23,11 +23,11 @@
                 description = "Een lekker ijsje met vele smaken, zoals aardbei, vannille, chocolade, mint, bosbes en nog veel meer (alleen in de zomer!)";
             } else if (item === 'Placeholder1') {
                 title = "Placeholder 1";
-                image = "";
+                imageSrc = "";
                 description = "Beschrijving voor Placeholder 1.";
             } else if (item === 'Placeholder2') {
                 title = "Placeholder 2";
-                image = "";
+                imageSrc = "";
                 description = "Beschrijving voor Placeholder 2.";
             }
         
