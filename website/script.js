@@ -19,7 +19,7 @@ function showCategory(category) {
     } else if (category === 'Snacks') {
         items = [
             { title: "Frikandel", imageSrc: "media/frikandel.jpg", price: 2.00 },
-            { title: "Bitterballen", imageSrc: "media/bitterballen.jpg", price: 2.50 },
+            { title: "Bitterballen", imageSrc: "https://www.taalvoutjes.nl/app/uploads/2014/09/bitterbal.jpg", price: 2.50 },
         ];
     } else if (category === 'deserts') {
         items = [

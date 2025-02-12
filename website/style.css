@@ -34,7 +34,6 @@ body {
 /* Productweergave in een grid */
 .product-display {
     width: 70%;
-    display: flex;
     flex-wrap: wrap;
     padding: 20px;
     justify-content: space-around;
