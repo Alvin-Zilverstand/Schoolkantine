@@ -16,28 +16,39 @@
         <div class="menu-item" onclick="showItemDetails('drinks')">Drinken</div>
         <div class="menu-item" onclick="showItemDetails('Snacks')">Snacks</div>
         <div class="menu-item" onclick="showItemDetails('deserts')">Ijsjes</div>
-        <!--Deals-->
         <div class="menu-item" onclick="showItemDetails('Deals')">Deals</div>
-        <!-- Soepen -->
         <div class="menu-item" onclick="showItemDetails('Soepen')">Soepen</div>
+        <div class="menu-item" onclick="showItemDetails('Salades')">Salades</div>
         <!-- placeholder-->
         <div class="menu-item" onclick="showItemDetails('Placeholder2')">Placeholder 2</div>
     </div>
 
     <!-- Modaal venster voor grotere afbeelding en beschrijving -->
-    <div id="modal" class="modal" onclick="closeModal()">
+    <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2 id="modal-title"></h2>
             <img id="modal-image" src="" alt="">
             <p id="modal-description"></p>
+            <p id="modal-price"></p>
+            <button id="add-to-cart">Toevoegen aan winkelmandje</button>
         </div>
     </div>
 
+    <!-- Winkelmandje sectie -->
+    <div id="cart" class="cart">
+        <h2>Winkelmandje</h2>
+        <ul id="cart-items">
+            <!-- Winkelmandje items worden hier dynamisch toegevoegd -->
+        </ul>
+        <p>Totaal: €<span id="total-price">0.00</span></p>
+        <button id="order-button">Bestellen</button>
+    </div>
+    
     <footer>
         <p>&copy; 2025 vista </p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>
