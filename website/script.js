@@ -51,19 +51,62 @@ function showCategory(category) {
 
 // Functie om de details van een item weer te geven in het modaal
 function showItemDetails(item) {
-    const modalTitle = document.getElementById('modal-title');
-    const modalImage = document.getElementById('modal-image');
-    const modalDescription = document.getElementById('modal-description');
-    const modalPrice = document.getElementById('modal-price');
-    const addToCartButton = document.getElementById('add-to-cart');
+    var title = "";
+    var imageSrc = "";
+    var description = "";
+    var price = 0;
 
-    modalTitle.innerText = item.title;
-    modalImage.src = item.imageSrc;
-    modalDescription.innerText = `Beschrijving van ${item.title}`;
-    modalPrice.innerText = `Prijs: €${item.price.toFixed(2)}`;
+    // Afhankelijk van het geselecteerde item, pas de details aan
+    if (item === 'Broodjes') {
+        title = "Broodje Gezond";
+        imageSrc = "media/broodje-gezond.jpg";
+        description = "Op dit broodje zit kaas, veldsla, komkommer, tomaat, ei, ham en/of kip en bufkes saus.";
+        price = 3.50;
+    } else if (item === 'Koude-Dranken') {
+        title = "Spa Water";
+        imageSrc = "media/spa.webp";
+        description = "Koude verfrissende water.";
+        price = 1.00;
+    } else if (item === 'Warme-Dranken') {
+        title = "Warme dranken";
+        imageSrc = "media/chocomel.jpg";
+        description = "een warme drank naar keuze";
+        price = 2,59;
+    } else if (item === 'Snacks') {
+        title = "Frikandel";
+        imageSrc = "media/frikandel.jpg";
+        description = "Een frikandel, dat wil je wel!";
+        price = 2.00;
+    } else if (item === 'deserts') {
+        title = "Ijsjes";
+        imageSrc = "media/ijs.png";
+        description = "Een lekker ijsje met vele smaken, zoals aardbei, vanille, chocolade, mint, bosbes en nog veel meer (alleen in de zomer!).";
+        price = 1.50;
+    } else if (item === 'Deals') {
+        title = "Deals";
+        imageSrc = "media/deals.jpg"; 
+        description = "Onze beste deals met de beste prijzen!";
+        price = 10.00;
+    } else if (item === 'Soepen') {
+        title = "Soepen";
+        imageSrc = "media/soep.jpg";
+        description = "Soep van de dag! (Allergieën? Meld het bij ons!)";
+        price = 2.50;
+    } else if (item === 'Salades') {
+        title = "Salades";
+        imageSrc = "media/salade.jpg";
+        description = "Een heerlijke salade met verse groenten en een dressing naar keuze.";
+        price = 3.00;
 
-    addToCartButton.onclick = function() {
-        addToCart({ title: item.title, price: item.price });
+    }
+
+    // Update de inhoud van het modaal venster
+    document.getElementById("modal-title").innerText = title;
+    document.getElementById("modal-image").src = imageSrc;
+    document.getElementById("modal-description").innerText = description;
+    document.getElementById("modal-price").innerText = `Prijs: €${price.toFixed(2)}`;
+    document.getElementById("add-to-cart").onclick = function() {
+        addToCart({ title, price });
     };
 
     document.getElementById('modal').style.display = 'block';
