@@ -13,15 +13,19 @@
     <!-- Linkerkant menu -->
     <div class="menu-list">
         <h2>Menu</h2>
-        <div class="menu-item" onclick="showItemDetails('Broodjes')">Broodjes</div>
-        <div class="menu-item" onclick="showItemDetails('drinks')">Drinken</div>
-        <div class="menu-item" onclick="showItemDetails('Snacks')">Snacks</div>
-        <div class="menu-item" onclick="showItemDetails('deserts')">Ijsjes</div>
-        <div class="menu-item" onclick="showItemDetails('Deals')">Deals</div>
-        <div class="menu-item" onclick="showItemDetails('Soepen')">Soepen</div>
-        <div class="menu-item" onclick="showItemDetails('Salades')">Salades</div>
-        <!-- placeholder-->
-        <div class="menu-item" onclick="showItemDetails('Placeholder2')">Placeholder 2</div>
+        <div class="menu-item" onclick="showCategory('Broodjes')">Broodjes</div>
+        <div class="menu-item" onclick="showCategory('drinks')">Drinken</div>
+        <div class="menu-item" onclick="showCategory('Snacks')">Snacks</div>
+        <div class="menu-item" onclick="showCategory('deserts')">Ijsjes</div>
+        <div class="menu-item" onclick="showCategory('Deals')">Deals</div>
+        <div class="menu-item" onclick="showCategory('Soepen')">Soepen</div>
+        <div class="menu-item" onclick="showCategory('Salades')">Salades</div>
+        <div class="menu-item" onclick="showCategory('Placeholder2')">Placeholder 2</div>
+    </div>
+
+    <!-- Productweergave -->
+    <div id="product-display" class="product-display">
+        <!-- Product items worden hier toegevoegd via JavaScript -->
     </div>
 
     <!-- Modaal venster voor grotere afbeelding en beschrijving -->
@@ -45,9 +49,9 @@
         <p>Totaal: €<span id="total-price">0.00</span></p>
         <button id="order-button">Bestellen</button>
     </div>
-    
+
     <footer>
-        <p>&copy; 2025 vista </p>
+        <p>&copy; 2025 Vista </p>
     </footer>
 
 </body>
