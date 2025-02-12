@@ -13,7 +13,7 @@
                 title = "Spa water";
                 image = "https://m.media-amazon.com/images/I/71VrczELeaL._AC_SY741_.jpg";
                 description = "Koude verfrissende watuuur etc.";
-            } else if (item === 'ijsjes') {
+            } else if (item === 'Snacks') {
                 title = "Frikandel";
                 image = "https://boshuis.huisjebezorgd.nl/wp-content/uploads/2020/03/29512948_652505005141152_1601506864166600704_o.jpg"; 
                 description = "vlees etc.";
