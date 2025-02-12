@@ -19,7 +19,7 @@
                 description = "vlees etc.";
             }  else if (item === 'deserts') {
                 title = "Ijsjes";
-                image = "https://png.pngtree.com/png-clipart/20230411/original/pngtree-ice-cream-dessert-realistic-white-background-transparent-png-image_9047252.png"; 
+                image = "https://th.bing.com/th/id/R.5e81f369a0da6a92106391e7b0a5119b?rik=KD0kNGiRjGM22g&riu=http%3a%2f%2fwww.brookersicecream.com%2fwp-content%2fuploads%2f2018%2f09%2fIce-Cream-Fan.png&ehk=%2bfZOURa%2fKgmE4uuuESx9We3OBrwXpPaaMZpJaBJt4bo%3d&risl=&pid=ImgRaw&r=0"; 
                 description = "ijsje etc.";
             }
 
