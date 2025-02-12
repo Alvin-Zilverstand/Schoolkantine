@@ -24,7 +24,7 @@
             }   else if (item === 'Deals') {
                 title = "Deals";
                 imageSrc = "https://www.google.com/url?sa=i&url=https%3A%2F%2Farchies.com%2Fmeal-deals%2F&psig=AOvVaw1_NfFf4gcmKiCqOgfey2ct&ust=1739435784222000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPj9m7_dvYsDFQAAAAAdAAAAABAE"; 
-                description = "Onze beste deals met de beste prijzenn!";
+                description = "Onze beste deals met de beste prijzen!";
             }   else if (item === 'Placeholder1') {
                 title = "Placeholder 1";
                 imageSrc = "";
