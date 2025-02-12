@@ -1,4 +1,45 @@
-// Functie om de details van een geselecteerd item weer te geven
+// Functie om de productcategorie te tonen
+function showCategory(category) {
+    const productDisplay = document.getElementById('product-display');
+    productDisplay.innerHTML = ''; // Maak het display leeg voordat we nieuwe items toevoegen
+
+    let items = [];
+
+    // Afhankelijk van de gekozen categorie, voeg je de juiste producten toe
+    if (category === 'Broodjes') {
+        items = [
+            { title: "Broodje Gezond", imageSrc: "media/broodje-gezond.jpg", price: 3.50 },
+            { title: "Broodje Kaas", imageSrc: "media/broodje-kaas.jpg", price: 3.00 },
+        ];
+    } else if (category === 'drinks') {
+        items = [
+            { title: "Spa Water", imageSrc: "media/spa.webp", price: 1.00 },
+            { title: "Cola", imageSrc: "media/cola.jpg", price: 1.50 },
+        ];
+    } else if (category === 'Snacks') {
+        items = [
+            { title: "Frikandel", imageSrc: "media/frikandel.jpg", price: 2.00 },
+            { title: "Bitterballen", imageSrc: "media/bitterballen.jpg", price: 2.50 },
+        ];
+    }
+
+    // Voeg de items toe aan de weergave
+    items.forEach(item => {
+        const productBox = document.createElement('div');
+        productBox.classList.add('product-box');
+        productBox.onclick = () => showItemDetails(item);
+
+        productBox.innerHTML = `
+            <img src="${item.imageSrc}" alt="${item.title}">
+            <h3>${item.title}</h3>
+            <p>€${item.price.toFixed(2)}</p>
+        `;
+
+        productDisplay.appendChild(productBox);
+    });
+}
+
+// Functie om de details van een item weer te geven in het modaal
 function showItemDetails(item) {
     var title = "";
     var imageSrc = "";
@@ -58,18 +99,10 @@ function showItemDetails(item) {
         addToCart({ title, price });
     };
 
-    // Zet het modaal venster zichtbaar
-    document.getElementById("modal").style.display = "block";
+    document.getElementById('modal').style.display = 'block';
 }
 
 // Functie om het modaal venster te sluiten
 function closeModal() {
-    document.getElementById("modal").style.display = "none";
-}
-
-// Zorg ervoor dat het modaal venster sluit wanneer er buiten het venster wordt geklikt
-window.onclick = function(event) {
-    if (event.target == document.getElementById("modal")) {
-        closeModal();
-    }
+    document.getElementById('modal').style.display = 'none';
 }
