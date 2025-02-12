@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
+    justify-content: space-between; /* Ensure the body content is spaced between */
+    background-color: #f2c14e; /* Set the background color to yellow */
 }
 
 /* Linkerkant menu */
@@ -12,6 +14,7 @@ body {
     padding: 20px;
     height: 100vh;
     overflow-y: auto;
+    order: 1; /* Ensure the menu is on the left */
 }
 
 .menu-list h2 {
@@ -22,11 +25,11 @@ body {
 
 .menu-item {
     background-color: #fff;
-    padding: 15px;
+    padding: 20px; /* Increase padding for larger buttons */
     margin: 10px 0;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1.5em; /* Increase font size for larger buttons */
     transition: all 0.3s ease;
 }
 
@@ -53,20 +56,74 @@ body {
     cursor: pointer;
 }
 
-.product-box img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
+.menu-detail img {
+    width: 70%;
+    max-width: 300px;
+    max-height: 400px;
+    margin-bottom: 20px;
 }
 
-.product-box:hover img {
-    transform: scale(1.1);
-}
-
-.product-box h3 {
-    font-size: 1.1em;
+.menu-detail h2 {
     color: #d32f2f;
     margin: 10px 0;
+}
+
+.menu-item:hover {
+    background-color: #f59e42;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Winkelmandje sectie */
+.cart {
+    width: 30%;
+    background-color: #fff; /* Change background color to white */
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    order: 3; /* Ensure the cart is on the right */
+    position: fixed; /* Fix the cart to the right side */
+    right: 0; /* Align the cart to the right */
+    top: 0; /* Align the cart to the top */
+    display: flex;
+    flex-direction: column; /* Ensure the content is arranged in a column */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-item button:hover {
+    background-color: #b71c1c;
+}
+
+#order-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Hide the button by default */
+    align-self: flex-end; /* Ensure the button is at the bottom */
+}
+
+#order-button:hover {
+    background-color: #45a049;
 }
 
 /* Modaal venster (pop-up) */
@@ -79,20 +136,25 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto; /* Allow scrolling within the modal */
 }
 
 .modal-content {
     background-color: white;
-    margin: 15% auto;
+    margin: 5% auto; /* Reduce margin to fit more content */
     padding: 20px;
     border-radius: 8px;
-    width: 60%;
+    width: 80%; /* Increase width to fit more content */
+    max-width: 600px; /* Set a maximum width */
     text-align: center;
+    max-height: 90vh; /* Ensure the modal content fits within the viewport height */
+    overflow-y: auto; /* Allow vertical scrolling within the modal */
 }
 
 .modal img {
     width: 100%;
-    max-width: 200px;
+    max-width: 300px; /* Ensure the image fits within the modal */
+    height: auto; /* Maintain aspect ratio */
     margin: 20px 0;
 }
 
@@ -103,6 +165,20 @@ body {
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+}
+
+#add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#add-to-cart:hover {
+    background-color: #45a049;
 }
 
 /* Footer */
