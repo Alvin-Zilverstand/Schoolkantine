@@ -65,6 +65,11 @@ body {
     margin: 10px 0;
 }
 
+.menu-item:hover {
+    background-color: #f59e42;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Modaal venster (pop-up) */
 .modal {
     display: none;
