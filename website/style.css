@@ -53,21 +53,20 @@ body {
     cursor: pointer;
 }
 
-.menu-detail img {
-    width: 70%;
-    max-width: 300px;
-    max-height: 400px;
-    margin-bottom: 20px;
+.product-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-.menu-detail h2 {
+.product-box:hover img {
+    transform: scale(1.1);
+}
+
+.product-box h3 {
+    font-size: 1.1em;
     color: #d32f2f;
     margin: 10px 0;
-}
-
-.menu-item:hover {
-    background-color: #f59e42;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Modaal venster (pop-up) */
