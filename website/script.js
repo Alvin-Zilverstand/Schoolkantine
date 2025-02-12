@@ -11,16 +11,16 @@ function showItemDetails(item) {
         imageSrc = "media/broodje-gezond.jpg";
         description = "Op dit broodje zit kaas, veldsla, komkommer, tomaat, ei, ham en/of kip en bufkes saus.";
         price = 3.50;
-    } else if (item === 'drinks') {
+    } else if (item === 'Koude-Dranken') {
         title = "Spa Water";
         imageSrc = "media/spa.webp";
         description = "Koude verfrissende water.";
         price = 1.00;
-    } else if (item === 'Warme dranken') {
+    } else if (item === 'Warme-Dranken') {
         title = "Warme dranken";
-        imageSrc = "";
+        imageSrc = "media/chocomel.jpg";
         description = "een warme drank naar keuze";
-        price = 2,59;    
+        price = 2,59;
     } else if (item === 'Snacks') {
         title = "Frikandel";
         imageSrc = "media/frikandel.jpg";
