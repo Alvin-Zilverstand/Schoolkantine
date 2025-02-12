@@ -1,0 +1,52 @@
+/* Winkelmandje sectie */
+.cart {
+    width: 30%;
+    background-color: #fff; /* Change background color to white */
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    order: 3; /* Ensure the cart is on the right */
+    position: fixed; /* Fix the cart to the right side */
+    right: 0; /* Align the cart to the right */
+    top: 0; /* Align the cart to the top */
+    display: flex;
+    flex-direction: column; /* Ensure the content is arranged in a column */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-item button:hover {
+    background-color: #b71c1c;
+}
+
+#order-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Hide the button by default */
+    align-self: flex-end; /* Ensure the button is at the bottom */
+}
+
+#order-button:hover {
+    background-color: #45a049;
+}
