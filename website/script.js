@@ -1,8 +1,6 @@
 // Functie om de details van een geselecteerd item weer te geven
-        function showItemDetails(item) {
-            var title = '';
-            var description = '';
-            var imageSrc = '';
+function showItemDetails(item) {
+    var items = [];
 
             // Afhankelijk van het geselecteerde item, pas de details aan
             if (item === 'Broodjes') {
@@ -22,12 +20,12 @@
                 imageSrc = "media/ijs.png"; 
                 description = "Een lekker ijsje met vele smaken, zoals aardbei, vannille, chocolade, mint, bosbes en nog veel meer (alleen in de zomer!)";
             }   else if (item === 'Deals') {
-                title = "soepen";
-                imageSrc = "https://archies.com/wp-content/uploads/2024/07/MEAL-DEALS_HERO_MOBILE-1.jpg"; 
+                title = "Deals";
+                imageSrc = "media/deals.jpg"; 
                 description = "Onze beste deals met de beste prijzen!";
             }   else if (item === 'soep') {
                 title = "soepen";
-                imageSrc = "https://www.lekkeretenmetlinda.nl/wp-content/uploads/2025/01/Minestrone-soep-1a-768x576.jpg";
+                imageSrc = "media/soep.jpg";
                 description = "soep van de dag! (Allergieen? Meld het bij ons!";
             }   else if (item === 'Placeholder 2') {
                 title = "Placeholder 2";
@@ -41,6 +39,11 @@
             document.getElementById("item-image").src = imageSrc;
             document.getElementById("item-description").innerText = description;
 
-            // Zorg ervoor dat de detailsectie zichtbaar wordt
-            document.getElementById("menu-detail").style.display = "block";
-        }
+    // Zet het modaal venster zichtbaar
+    document.getElementById("modal").style.display = "block";
+}
+
+// Functie om het modaal venster te sluiten
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
