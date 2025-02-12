@@ -11,12 +11,18 @@ function showCategory(category) {
             { title: "Broodje Gezond", imageSrc: "media/broodje-gezond.jpg", price: 3.50 },
             { title: "Broodje Kaas", imageSrc: "media/broodje-kaas.jpg", price: 3.00 },
         ];
-    } else if (category === 'drinks') {
+    } else if (category === 'Koude-Dranken') {
         items = [
             { title: "Spa Water", imageSrc: "media/spa.webp", price: 1.00 },
             { title: "Cola", imageSrc: "media/cola.jpg", price: 1.50 },
+        ]; 
+    } else if (category === 'Warme-Dranken') {
+        items = [
+            { title: "Chocomel", imageSrc: "media/chocomel.jpg", price: 1.00 },
+            { title: "Koffie", imageSrc: "media/koffie.jpg", price: 1.50 },
         ];
-    } else if (category === 'Snacks') {
+    }
+    else if (category === 'Snacks') {
         items = [
             { title: "Frikandel", imageSrc: "media/frikandel.jpg", price: 2.00 },
             { title: "Bitterballen", imageSrc: "media/bitterballen.jpg", price: 2.50 },
