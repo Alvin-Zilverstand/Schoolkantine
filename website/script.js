@@ -22,7 +22,7 @@
                 imageSrc = "media/ijs.png"; 
                 description = "Een lekker ijsje met vele smaken, zoals aardbei, vannille, chocolade, mint, bosbes en nog veel meer (alleen in de zomer!)";
             }   else if (item === 'Deals') {
-                title = "Deals";
+                title = "soepen";
                 imageSrc = "https://archies.com/wp-content/uploads/2024/07/MEAL-DEALS_HERO_MOBILE-1.jpg"; 
                 description = "Onze beste deals met de beste prijzen!";
             }   else if (item === 'soep') {
