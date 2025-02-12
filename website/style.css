@@ -53,18 +53,14 @@ body {
     cursor: pointer;
 }
 
-.product-box img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
+.menu-detail img {
+    width: 70%;
+    max-width: 300px;
+    max-height: 400px;
+    margin-bottom: 20px;
 }
 
-.product-box:hover img {
-    transform: scale(1.1);
-}
-
-.product-box h3 {
-    font-size: 1.1em;
+.menu-detail h2 {
     color: #d32f2f;
     margin: 10px 0;
 }
