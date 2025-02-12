@@ -1,8 +1,8 @@
         // Functie om de details van een geselecteerd item weer te geven
         function showItemDetails(item) {
-            var title = "";
-            var image = "";
-            var description = "";
+            let title = '';
+            let description = '';
+            let imageSrc = '';
 
             // Afhankelijk van het geselecteerde item, pas de details aan
             if (item === 'Broodjes') {

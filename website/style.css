@@ -58,6 +58,11 @@ body {
     margin: 20px 0;
 }
 
+#item-image {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
 /* Footer */
 footer {
     text-align: center;
