@@ -21,7 +21,16 @@
                 title = "Ijsjes";
                 imageSrc = "media/ijs.png"; 
                 description = "Een lekker ijsje met vele smaken, zoals aardbei, vannille, chocolade, mint, bosbes en nog veel meer (alleen in de zomer!)";
+            } else if (item === 'Placeholder1') {
+                title = "Placeholder 1";
+                image = "";
+                description = "Beschrijving voor Placeholder 1.";
+            } else if (item === 'Placeholder2') {
+                title = "Placeholder 2";
+                image = "";
+                description = "Beschrijving voor Placeholder 2.";
             }
+        
 
             // Toon de details aan de rechterkant
             document.getElementById("item-title").innerText = title;
