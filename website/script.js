@@ -25,7 +25,16 @@
                 title = "Deals";
                 imageSrc = "https://www.google.com/url?sa=i&url=https%3A%2F%2Farchies.com%2Fmeal-deals%2F&psig=AOvVaw1_NfFf4gcmKiCqOgfey2ct&ust=1739435784222000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPj9m7_dvYsDFQAAAAAdAAAAABAE"; 
                 description = "Onze beste deals met de beste prijzenn!";
+            }   else if (item === 'Placeholder1') {
+                title = "Placeholder 1";
+                imageSrc = "";
+                description = "Beschrijving voor Placeholder 1.";
+            }   else if (item === 'Placeholder2') {
+                title = "Placeholder 2";
+                imageSrc = "";
+                description = "Beschrijving voor Placeholder 2.";
             }
+    
 
             // Toon de details aan de rechterkant
             document.getElementById("item-title").innerText = title;
