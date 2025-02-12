@@ -21,6 +21,10 @@
                 title = "Ijsjes";
                 imageSrc = "https://th.bing.com/th/id/R.5e81f369a0da6a92106391e7b0a5119b?rik=KD0kNGiRjGM22g&riu=http%3a%2f%2fwww.brookersicecream.com%2fwp-content%2fuploads%2f2018%2f09%2fIce-Cream-Fan.png&ehk=%2bfZOURa%2fKgmE4uuuESx9We3OBrwXpPaaMZpJaBJt4bo%3d&risl=&pid=ImgRaw&r=0"; 
                 description = "Een lekker ijsje met vele smaken, zoals aardbei, vannille, chocolade, mint, bosbes en nog veel meer (alleen in de zomer!)";
+            }   else if (item === 'Deals') {
+                title = "Deals";
+                imageSrc = "https://www.google.com/url?sa=i&url=https%3A%2F%2Farchies.com%2Fmeal-deals%2F&psig=AOvVaw1_NfFf4gcmKiCqOgfey2ct&ust=1739435784222000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPj9m7_dvYsDFQAAAAAdAAAAABAE"; 
+                description = "Onze beste deals met de beste prijzenn!";
             }
 
             // Toon de details aan de rechterkant
