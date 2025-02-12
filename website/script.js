@@ -16,6 +16,11 @@ function showItemDetails(item) {
         imageSrc = "media/spa.webp";
         description = "Koude verfrissende water.";
         price = 1.00;
+    } else if (item === 'Warme dranken') {
+        title = "Warme dranken";
+        imageSrc = "";
+        description = "een warme drank naar keuze";
+        price = 2,59;    
     } else if (item === 'Snacks') {
         title = "Frikandel";
         imageSrc = "media/frikandel.jpg";
@@ -41,11 +46,7 @@ function showItemDetails(item) {
         imageSrc = "media/salade.jpg";
         description = "Een heerlijke salade met verse groenten en een dressing naar keuze.";
         price = 3.00;
-    } else if (item === 'Placeholder2') {
-        title = "Placeholder 2";
-        imageSrc = "";
-        description = "Beschrijving voor Placeholder 2.";
-        price = 0;
+
     }
 
     // Update de inhoud van het modaal venster
