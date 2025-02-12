@@ -13,14 +13,19 @@
     <!-- Linkerkant menu -->
     <div class="menu-list">
         <h2>Menu</h2>
-        <div class="menu-item" onclick="showItemDetails('Broodjes')">Broodjes</div>
-        <div class="menu-item" onclick="showItemDetails('Koude-Dranken')">Koude Dranken</div>
-        <div class="menu-item" onclick="showItemDetails('Warme-Dranken')">Warme Dranken</div>
-        <div class="menu-item" onclick="showItemDetails('Snacks')">Snacks</div>
-        <div class="menu-item" onclick="showItemDetails('deserts')">Ijsjes</div>
-        <div class="menu-item" onclick="showItemDetails('Deals')">Deals</div>
-        <div class="menu-item" onclick="showItemDetails('Soepen')">Soepen</div>
-        <div class="menu-item" onclick="showItemDetails('Salades')">Salades</div>
+        <div class="menu-item" onclick="showCategory('Broodjes')">Broodjes</div>
+        <div class="menu-item" onclick="showCategory('drinks')">Koude Dranken</div>
+        <div class="menu-item" onclick="showCategory('Warme-Dranken')">Warme Dranken</div>
+        <div class="menu-item" onclick="showCategory('Snacks')">Snacks</div>
+        <div class="menu-item" onclick="showCategory('deserts')">Ijsjes</div>
+        <div class="menu-item" onclick="showCategory('Deals')">Deals</div>
+        <div class="menu-item" onclick="showCategory('Soepen')">Soepen</div>
+        <div class="menu-item" onclick="showCategory('Salades')">Salades</div>
+    </div>
+
+    <!-- Productweergave -->
+    <div id="product-display" class="product-display">
+        <!-- Producten worden hier dynamisch toegevoegd -->
     </div>
 
     <!-- Modaal venster voor grotere afbeelding en beschrijving -->
@@ -49,7 +54,7 @@
         <p>&copy; 2025 Vista </p>
     </footer>
 
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
 </body>
-<script src="script.js"></script>
-<script src="cart.js"></script>
 </html>
