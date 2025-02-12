@@ -21,6 +21,16 @@ function showCategory(category) {
             { title: "Frikandel", imageSrc: "media/frikandel.jpg", price: 2.00 },
             { title: "Bitterballen", imageSrc: "media/bitterballen.jpg", price: 2.50 },
         ];
+    }else if (category === 'Snacks') {
+        items = [
+            { title: "Ijsjes", imageSrc: "media/Ijs.png", price: 2.00 },
+            { title: "Bitterballen", imageSrc: "media/bitterballen.jpg", price: 2.50 },
+        ];
+    }else if (category === 'Snacks') {
+        items = [
+            { title: "Deals", imageSrc: "media/deals.jpg", price: 2.00 },
+            { title: "Bitterballen", imageSrc: "media/bitterballen.jpg", price: 2.50 },
+        ];
     }
 
     // Voeg de items toe aan de weergave
