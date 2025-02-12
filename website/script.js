@@ -21,13 +21,13 @@ function showItemDetails(item) {
                 description = "Een lekker ijsje met vele smaken, zoals aardbei, vannille, chocolade, mint, bosbes en nog veel meer (alleen in de zomer!)";
             }   else if (item === 'Deals') {
                 title = "Deals";
-                imageSrc = "https://www.google.com/url?sa=i&url=https%3A%2F%2Farchies.com%2Fmeal-deals%2F&psig=AOvVaw1_NfFf4gcmKiCqOgfey2ct&ust=1739435784222000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPj9m7_dvYsDFQAAAAAdAAAAABAE"; 
-                description = "Onze beste deals met de beste prijzenn!";
-            }   else if (item === 'Placeholder1') {
-                title = "Placeholder 1";
-                imageSrc = "";
-                description = "Beschrijving voor Placeholder 1.";
-            }   else if (item === 'Placeholder2') {
+                imageSrc = "https://archies.com/wp-content/uploads/2024/07/MEAL-DEALS_HERO_MOBILE-1.jpg"; 
+                description = "Onze beste deals met de beste prijzen!";
+            }   else if (item === 'soep') {
+                title = "soepen";
+                imageSrc = "https://www.lekkeretenmetlinda.nl/wp-content/uploads/2025/01/Minestrone-soep-1a-768x576.jpg";
+                description = "soep van de dag! (Allergieen? Meld het bij ons!";
+            }   else if (item === 'Placeholder 2') {
                 title = "Placeholder 2";
                 imageSrc = "";
                 description = "Beschrijving voor Placeholder 2.";
