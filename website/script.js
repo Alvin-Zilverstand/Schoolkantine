@@ -21,7 +21,16 @@
                 title = "Ijsjes";
                 image = "https://th.bing.com/th/id/R.5e81f369a0da6a92106391e7b0a5119b?rik=KD0kNGiRjGM22g&riu=http%3a%2f%2fwww.brookersicecream.com%2fwp-content%2fuploads%2f2018%2f09%2fIce-Cream-Fan.png&ehk=%2bfZOURa%2fKgmE4uuuESx9We3OBrwXpPaaMZpJaBJt4bo%3d&risl=&pid=ImgRaw&r=0"; 
                 description = "Een lekker ijsje met vele smaken, zoals aardbei, vannille, chocolade, mint, bosbes en nog veel meer (alleen in de zomer!)";
+            } else if (item === 'Placeholder1') {
+                title = "Placeholder 1";
+                image = "";
+                description = "Beschrijving voor Placeholder 1.";
+            } else if (item === 'Placeholder2') {
+                title = "Placeholder 2";
+                image = "";
+                description = "Beschrijving voor Placeholder 2.";
             }
+        
 
             // Toon de details aan de rechterkant
             document.getElementById("item-title").innerText = title;
