@@ -26,7 +26,7 @@ function showCategory(category) {
             { title: "Cola cherry", imageSrc: "https://media.spar.nl/productdetail/coca-cola-cherry-blik-250-ml-250-Milliliter-9192923-151796.jpg", price: 1.80 },
             { title: "Cola", imageSrc: "https://media.spar.nl/productdetail/coca-cola-original-250-Milliliter-9192888-151953.jpg", price: 1.80 },
             { title: "Sprite", imageSrc: "https://th.bing.com/th/id/OIP.K5tBIkwpcNJUUCUBfaoGdgHaHa?w=218&h=218&c=7&r=0&o=5&dpr=1.3&pid=1.7", price: 1.80 },
-            { title: "Dr pepper", imageSrc: "https://www.bing.com/th?id=OPEC.8DTS8HocWRMbnw474C474&o=5&pid=21.1&w=160&h=272&qlt=100&dpr=1,3&pcl=f5f5f5", price: 1.80 },
+            { title: "Dr pepper", imageSrc: "https://www.kantinewinkel.nl/media/cache/gallery_main/product/7091/dr-pepper-blik-24-x-33-cl.jpg", price: 1.80 },
             { title: "Fanta orange original", imageSrc: "https://media.spar.nl/product/fanta-orange-original-330-Milliliter-9192913-155864.jpg", price: 1.80 },
             { title: "Fanta orange zero", imageSrc: "https://media.spar.nl/product/fanta-orange-zero-250-Milliliter-9197230-157232.jpg", price: 1.80 },
             { title: "Fanta exotic zero", imageSrc: "https://media.spar.nl/product/fanta-exotic-zero-250-Milliliter-9192899-152006.jpg", price: 1.80 },
@@ -35,6 +35,7 @@ function showCategory(category) {
     } else if (category === 'Warme-Dranken') {
         items = [
             { title: "Chocomel", imageSrc: "media/chocomel.jpg", price: 1.00 },
+            { title: "Chocomel met slagroom", imageSrc: "media/chocomel.jpg", price: 1.25 },
             { title: "Koffie", imageSrc: "media/koffie.jpg", price: 1.50 },
             { title: "Thee", imageSrc: "media/thee.jpg", price: 1.50 },
         ];
