@@ -1,10 +1,4 @@
 // Functie om de productcategorie te tonen
-
-function goToMainPage() {
-    document.getElementById('welcome-page').style.display = 'none';
-    document.getElementById('main-page').style.display = 'block';
-}
-
 function showCategory(category) {
     const productDisplay = document.getElementById('product-display');
     productDisplay.innerHTML = ''; // Maak het display leeg voordat we nieuwe items toevoegen

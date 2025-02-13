@@ -1,0 +1,37 @@
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #ffffff;
+    color: #431111;
+    text-align: center;
+  }
+
+  .welcome h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .welcome p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .welcome button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #431111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: #ff0000;
+    transition: transform 0.3s ease;
+  }
+
+  .welcome button:hover {
+    transform: scale(1.2); /* Grows 20% larger */
+    background-color: #a35c5c;
+  }
