@@ -62,8 +62,10 @@ function showCategory(category) {
         ];
     } else if (category === 'Salades') {
         items = [
-            { title: "Caesar Salade", imageSrc: "media/salade.jpg", price: 4.00 },
-            { title: "Griekse Salade", imageSrc: "media/salade.jpg", price: 4.50 },
+            { title: "Caesar Salade", imageSrc: "media/salade.jpg", price: 2.50 },
+            { title: "Griekse Salade", imageSrc: "https://ketokriebels.be/wp-content/uploads/2020/05/greek-salad-freepik-scaled.jpg", price: 3.50 },
+            { title: "Krokante Kip Salade", imageSrc: "https://www.dekokendezussen.nl/wp-content/uploads/2021/07/IMG_3851.jpg", price: 3.00 },
+            { title: "Aardappel Salade", imageSrc: "https://www.leukerecepten.nl/app/uploads/2022/07/aardappelsalade_2.jpg", price: 2.50 },
         ];
     }
 
