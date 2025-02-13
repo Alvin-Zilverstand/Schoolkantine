@@ -28,7 +28,7 @@ function showCategory(category) {
             { title: "Fanta cassis", imageSrc: "media/fanta-cassis.jpg", price: 1.80 }, ]
     } else if (category === 'Warme-Dranken') {
         items = [
-            { title: "Chocomel", imageSrc: "media/chocomel.jpg", price: 1.00 },
+            { title: "Chocomel", imageSrc: "media/choco-gs.jpg", price: 1.00 },
             { title: "Chocomel met slagroom", imageSrc: "media/chocomel.jpg", price: 1.25 },
             { title: "Koffie", imageSrc: "media/koffie.jpg", price: 1.50 },
             { title: "Thee", imageSrc: "media/thee.jpg", price: 1.50 },
@@ -65,9 +65,9 @@ function showCategory(category) {
     } else if (category === 'Salades') {
         items = [
             { title: "Caesar Salade", imageSrc: "media/salade.jpg", price: 2.50 },
-            { title: "Griekse Salade", imageSrc: "https://ketokriebels.be/wp-content/uploads/2020/05/greek-salad-freepik-scaled.jpg", price: 3.50 },
-            { title: "Krokante Kip Salade", imageSrc: "https://www.dekokendezussen.nl/wp-content/uploads/2021/07/IMG_3851.jpg", price: 3.00 },
-            { title: "Aardappel Salade", imageSrc: "https://www.leukerecepten.nl/app/uploads/2022/07/aardappelsalade_2.jpg", price: 2.50 },
+            { title: "Griekse Salade", imageSrc: "media/griekse.jpg", price: 3.50 },
+            { title: "Krokante Kip Salade", imageSrc: "media/krokante-kip.jpg", price: 3.00 },
+            { title: "Aardappel Salade", imageSrc: "media/aardappel.jpg", price: 2.50 },
         ];
     }
 
