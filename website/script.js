@@ -29,6 +29,7 @@ function showCategory(category) {
     } else if (category === 'Warme-Dranken') {
         items = [
             { title: "Chocomel", imageSrc: "media/chocomel.jpg", price: 1.00 },
+            { title: "Chocomel met slagroom", imageSrc: "media/chocomel.jpg", price: 1.25 },
             { title: "Koffie", imageSrc: "media/koffie.jpg", price: 1.50 },
             { title: "Thee", imageSrc: "media/thee.jpg", price: 1.50 },
         ];
