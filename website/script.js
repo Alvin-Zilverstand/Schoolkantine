@@ -1,4 +1,10 @@
 // Functie om de productcategorie te tonen
+
+function goToMainPage() {
+    document.getElementById('welcome-page').style.display = 'none';
+    document.getElementById('main-page').style.display = 'block';
+}
+
 function showCategory(category) {
     const productDisplay = document.getElementById('product-display');
     productDisplay.innerHTML = ''; // Maak het display leeg voordat we nieuwe items toevoegen
@@ -9,30 +15,40 @@ function showCategory(category) {
     if (category === 'Broodjes') {
         items = [
             { title: "Broodje Gezond", imageSrc: "media/broodje-gezond.jpg", price: 3.50 },
-            { title: "Broodje Kaas", imageSrc: "media/broodje-kaas.jpg", price: 3.00 },
+            { title: "Bagel", imageSrc: "media/bagel.jpeg", price: 3.00 },
         ];
     } else if (category === 'Koude-Dranken') {
         items = [
-            { title: "Spa Water", imageSrc: "media/spa.webp", price: 1.00 },
-            { title: "Cola", imageSrc: "media/cola.jpg", price: 1.50 },
-        ]; 
+            { title: "Spa Water", imageSrc: "https://img.discountoffice.cloud/pb7Rq9rrkwr7iOXhP7iKGxdUKWyU6Eq9Tc7M919ezW4/bg:ffffff/rs:fit:640:480:1:1/g:ce/bG9jYWw6Ly8vZGlzY291bnQtd2Vic2l0ZS9wcm9kdWN0SW1hZ2VzLzgvb3JnL1ExNDAxNTk0LTIuanBn.webp", price: 2.00 },
+            { title: "Spa Rood", imageSrc: "https://media.spar.nl/productdetail/spa-intens-bruisend-500-Milliliter-9157116-142821.jpg", price: 2.00 },
+            { title: "Cola zero", imageSrc: "https://lazzerisas.it/wp-content/uploads/2017/10/coca-cola-zero-sleek-can-cl33-768x768.jpg", price: 1.80 },
+            { title: "Cola vanille", imageSrc: "https://media.spar.nl/productdetail/coca-cola-vanilla-zero-250-Milliliter-9192914-151956.jpg", price: 1.80 },
+            { title: "Cola cherry", imageSrc: "https://media.spar.nl/productdetail/coca-cola-cherry-blik-250-ml-250-Milliliter-9192923-151796.jpg", price: 1.80 },
+            { title: "Cola", imageSrc: "https://media.spar.nl/productdetail/coca-cola-original-250-Milliliter-9192888-151953.jpg", price: 1.80 },
+            { title: "Sprite", imageSrc: "https://th.bing.com/th/id/OIP.K5tBIkwpcNJUUCUBfaoGdgHaHa?w=218&h=218&c=7&r=0&o=5&dpr=1.3&pid=1.7", price: 1.80 },
+            { title: "Dr pepper", imageSrc: "https://www.kantinewinkel.nl/media/cache/gallery_main/product/7091/dr-pepper-blik-24-x-33-cl.jpg", price: 1.80 },
+            { title: "Fanta orange original", imageSrc: "https://media.spar.nl/product/fanta-orange-original-330-Milliliter-9192913-155864.jpg", price: 1.80 },
+            { title: "Fanta orange zero", imageSrc: "https://media.spar.nl/product/fanta-orange-zero-250-Milliliter-9197230-157232.jpg", price: 1.80 },
+            { title: "Fanta exotic zero", imageSrc: "https://media.spar.nl/product/fanta-exotic-zero-250-Milliliter-9192899-152006.jpg", price: 1.80 },
+            { title: "Fanta lemon zero", imageSrc: "https://media.spar.nl/product/fanta-lemon-zero-blik-250-ml-250-Milliliter-9192882-153455.jpg", price: 1.80 },
+            { title: "Fanta cassis", imageSrc: "https://media.spar.nl/product/fanta-fanta-cassis-blik-250-Milliliter-9192826-152000.jpg", price: 1.80 }, ]
     } else if (category === 'Warme-Dranken') {
         items = [
             { title: "Chocomel", imageSrc: "media/chocomel.jpg", price: 1.00 },
+            { title: "Chocomel met slagroom", imageSrc: "media/chocomel.jpg", price: 1.25 },
             { title: "Koffie", imageSrc: "media/koffie.jpg", price: 1.50 },
+            { title: "Thee", imageSrc: "media/thee.jpg", price: 1.50 },
         ];
     }
     else if (category === 'Snacks') {
         items = [
             { title: "Frikandel", imageSrc: "media/frikandel.jpg", price: 2.00 },
-            { title: "Mexicano", imageSrc: "media/Mexicano.png", price: 2.00 },
             { title: "Bitterballen", imageSrc: "https://www.taalvoutjes.nl/app/uploads/2014/09/bitterbal.jpg", price: 2.50 },
-            { title: "Kipcorn", imageSrc: "media/Kipcorn.png", price: 2.50 },
         ];
     } else if (category === 'deserts') {
         items = [
             { title: "Ijsjes", imageSrc: "media/Ijs.png", price: 2.00 },
-            { title: "Sorbet", imageSrc: "media/sorbet.jpg", price: 2.50 },
+            { title: "Sorbet", imageSrc: "media/sorbet.webp", price: 2.50 },
         ];
     } else if (category === 'Deals') {
         items = [
