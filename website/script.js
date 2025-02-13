@@ -30,7 +30,7 @@ function showCategory(category) {
     } else if (category === 'deserts') {
         items = [
             { title: "Ijsjes", imageSrc: "media/Ijs.png", price: 2.00 },
-            { title: "Sorbet", imageSrc: "media/sorbet.jpg", price: 2.50 },
+            { title: "Sorbet", imageSrc: "media/sorbet.webp", price: 2.50 },
         ];
     } else if (category === 'Deals') {
         items = [
