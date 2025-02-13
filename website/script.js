@@ -26,6 +26,7 @@ function showCategory(category) {
         items = [
             { title: "Frikandel", imageSrc: "media/frikandel.jpg", price: 2.00 },
             { title: "Bitterballen", imageSrc: "media/bitterbal.jpg", price: 2.50 },
+            { title: "Kroketten", imageSrc: "media/kroket.webp", price: 2.50 },
         ];
     } else if (category === 'deserts') {
         items = [
