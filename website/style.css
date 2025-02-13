@@ -49,6 +49,8 @@ body {
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
+    
+    
 }
 
 .product-box:hover {
@@ -131,4 +133,3 @@ body {
 #add-to-cart:hover {
     background-color: #45a049;
 }
-
