@@ -45,7 +45,9 @@ function showCategory(category) {
             { title: "Frikandel", imageSrc: "media/frikandel.jpg", price: 2.00 },
             { title: "Bitterballen", imageSrc: "https://www.taalvoutjes.nl/app/uploads/2014/09/bitterbal.jpg", price: 2.50 },
             { title: "Mexicano", imageSrc: "media/mexicano.png", price: 2.00 },
-            { title: "Kipcorn", imageSrc: "media/kipcorn.png", price: 2.50 },
+            { title: "Kipcorn", imageSrc: "media/kipcorn.png", price: 2.20 },
+            { title: "Friet", imageSrc: "media/friet.png", price: 3.20 },
+            { title: "Kipnuggets", imageSrc: "media/kipnuggets.png", price: 2.70 },
         ];
     } else if (category === 'deserts') {
         items = [

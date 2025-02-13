@@ -37,7 +37,8 @@ body {
     flex-wrap: wrap;
     padding: 20px;
     justify-content: space-around;
-grid: 
+    
+ 
 }
 
 .product-box {
@@ -49,6 +50,7 @@ grid:
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
+    
     
 }
 
