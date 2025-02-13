@@ -25,7 +25,9 @@ function showCategory(category) {
             { title: "Fanta orange zero", imageSrc: "media/fanta-zero.jpg", price: 1.80 },
             { title: "Fanta exotic zero", imageSrc: "media/fanta-exotic-zero.jpg", price: 1.80 },
             { title: "Fanta lemon zero", imageSrc: "media/fanta-lemon-zero.jpg", price: 1.80 },
-            { title: "Fanta cassis", imageSrc: "media/fanta-cassis.jpg", price: 1.80 }, ]
+            { title: "Ice tea", imageSrc: "https://www.manutan.nl/img/S/GRP/ST/AIG12165970.jpg", price: 1.80},
+            { title: "Fanta cassis", imageSrc: "media/fanta-cassis.jpg", price: 1.80 },
+            { title: "Milkshake", imageSrc: "https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/sunset-sprinkle-shakes.jpg", price: 2.50 }, ]
     } else if (category === 'Warme-Dranken') {
         items = [
             { title: "Chocomel", imageSrc: "media/choco-gs.jpg", price: 1.00 },
