@@ -9,7 +9,7 @@ body {
 
 /* Linkerkant menu */
 .menu-list {
-    width: 30%;
+    width: 25%;
     background-color: #f2c14e;
     padding: 20px;
     height: 100vh;
@@ -33,10 +33,11 @@ body {
 
 /* Productweergave in een grid */
 .product-display {
-    width: 70%;
+    width: 55%;
     flex-wrap: wrap;
-    padding: 20px;
-    justify-content: space-around;
+    padding: 50px;
+    justify-content: space-between 40px;
+    display: inline-flex;
 }
 
 .product-box {
