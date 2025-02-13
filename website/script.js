@@ -30,17 +30,19 @@ function showCategory(category) {
         items = [
             { title: "Chocomel", imageSrc: "media/chocomel.jpg", price: 1.00 },
             { title: "Koffie", imageSrc: "media/koffie.jpg", price: 1.50 },
+            { title: "Thee", imageSrc: "media/thee.jpg", price: 1.50 },
         ];
     }
     else if (category === 'Snacks') {
         items = [
             { title: "Frikandel", imageSrc: "media/frikandel.jpg", price: 2.00 },
-            { title: "Bitterballen", imageSrc: "https://www.taalvoutjes.nl/app/uploads/2014/09/bitterbal.jpg", price: 2.50 },
+            { title: "Bitterballen", imageSrc: "media/bitterbal.jpg", price: 2.50 },
+            { title: "Kroketten", imageSrc: "media/kroket.webp", price: 2.50 },
         ];
     } else if (category === 'deserts') {
         items = [
             { title: "Ijsjes", imageSrc: "media/Ijs.png", price: 2.00 },
-            { title: "Sorbet", imageSrc: "media/sorbet.jpg", price: 2.50 },
+            { title: "Sorbet", imageSrc: "media/sorbet.webp", price: 2.50 },
         ];
     } else if (category === 'Deals') {
         items = [
