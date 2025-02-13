@@ -4,7 +4,7 @@ function showCategory(category) {
     productDisplay.innerHTML = ''; // Maak het display leeg voordat we nieuwe items toevoegen
 
     let items = [];
-}
+
 
     // Afhankelijk van de gekozen categorie, voeg je de juiste producten toe
     if (category === 'Broodjes') {
@@ -76,9 +76,8 @@ function showCategory(category) {
     items = [
         { title: "Ketchup", imageSrc: "https://www.ahealthylife.nl/wp-content/uploads/2021/06/Ketchup_voedingswaarde.jpg", price: 0.25 },
         { title: "Mayonaise", imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4FVmHO_hK3mw43z0fuHv1OFUr-hhsfGe1A&s", price: 0.25 }
-
-
-    ]
+    	];
+    }
     // Voeg de items toe aan de weergave
     items.forEach(item => {
         const productBox = document.createElement('div');
@@ -137,4 +136,3 @@ function getDescription(title) {
     }
     return "";
 }
-
