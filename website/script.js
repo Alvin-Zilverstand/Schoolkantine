@@ -1,4 +1,10 @@
 // Functie om de productcategorie te tonen
+
+function goToMainPage() {
+    document.getElementById('welcome-page').style.display = 'none';
+    document.getElementById('main-page').style.display = 'block';
+}
+
 function showCategory(category) {
     const productDisplay = document.getElementById('product-display');
     productDisplay.innerHTML = ''; // Maak het display leeg voordat we nieuwe items toevoegen
@@ -9,12 +15,12 @@ function showCategory(category) {
     if (category === 'Broodjes') {
         items = [
             { title: "Broodje Gezond", imageSrc: "media/broodje-gezond.jpg", price: 3.50 },
-            { title: "Bagel", imageSrc: "https://loving-newyork.com/wp-content/uploads/2015/09/The-best-bagel-in-nyc-161118102835004.jpeg", price: 3.00 },
+            { title: "Bagel", imageSrc: "media/bagel.jpeg", price: 3.00 },
         ];
     } else if (category === 'Koude-Dranken') {
         items = [
             { title: "Spa Water", imageSrc: "https://img.discountoffice.cloud/pb7Rq9rrkwr7iOXhP7iKGxdUKWyU6Eq9Tc7M919ezW4/bg:ffffff/rs:fit:640:480:1:1/g:ce/bG9jYWw6Ly8vZGlzY291bnQtd2Vic2l0ZS9wcm9kdWN0SW1hZ2VzLzgvb3JnL1ExNDAxNTk0LTIuanBn.webp", price: 2.00 },
-            { title: "Spa water bruisend", imageSrc: "https://media.spar.nl/productdetail/spa-intens-bruisend-500-Milliliter-9157116-142821.jpg", price: 2.00 },
+            { title: "Spa Rood", imageSrc: "https://media.spar.nl/productdetail/spa-intens-bruisend-500-Milliliter-9157116-142821.jpg", price: 2.00 },
             { title: "Cola zero", imageSrc: "https://lazzerisas.it/wp-content/uploads/2017/10/coca-cola-zero-sleek-can-cl33-768x768.jpg", price: 1.80 },
             { title: "Cola vanille", imageSrc: "https://media.spar.nl/productdetail/coca-cola-vanilla-zero-250-Milliliter-9192914-151956.jpg", price: 1.80 },
             { title: "Cola cherry", imageSrc: "https://media.spar.nl/productdetail/coca-cola-cherry-blik-250-ml-250-Milliliter-9192923-151796.jpg", price: 1.80 },
