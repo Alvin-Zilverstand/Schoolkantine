@@ -9,7 +9,7 @@ function showCategory(category) {
     if (category === 'Broodjes') {
         items = [
             { title: "Broodje Gezond", imageSrc: "media/broodje-gezond.jpg", price: 3.50 },
-            { title: "Broodje Kaas", imageSrc: "https://loving-newyork.com/wp-content/uploads/2015/09/The-best-bagel-in-nyc-161118102835004.jpeg", price: 3.00 },
+            { title: "Bagel", imageSrc: "https://loving-newyork.com/wp-content/uploads/2015/09/The-best-bagel-in-nyc-161118102835004.jpeg", price: 3.00 },
         ];
     } else if (category === 'Koude-Dranken') {
         items = [
