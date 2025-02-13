@@ -60,7 +60,8 @@ function showCategory(category) {
     } else if (category === 'Soepen') {
         items = [
             { title: "Tomatensoep", imageSrc: "media/soep.jpg", price: 2.50 },
-            { title: "Kippensoep", imageSrc: "media/soep.jpg", price: 2.80 },
+            { title: "Kippensoep", imageSrc: "https://static.ah.nl/static/recepten/img_RAM_PRD121479_1224x900_JPG.jpg", price: 2.80 },
+            { title: "Erwtensoep", imageSrc: "https://www.24kitchen.nl/files/styles/media_text_wide/public/2022-09/erwtensoep%20%282%29.webp?itok=5FwzHgSE", price: 2.50 },
             { title: "Groentesoep (met gehaktballetjes)", imageSrc: "https://www.maggi.nl/sites/default/files/styles/home_stage_1500_700/public/srh_recipes/a55f0226c938b6bc40878dad5306271b.jpg?h=02cb7f90&itok=AmnkjPc3", price: 2.80 },
         ];
     } else if (category === 'Salades') {
