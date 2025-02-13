@@ -20,6 +20,7 @@ function showCategory(category) {
         items = [
             { title: "Chocomel", imageSrc: "media/chocomel.jpg", price: 1.00 },
             { title: "Koffie", imageSrc: "media/koffie.jpg", price: 1.50 },
+            { title: "Thee", imageSrc: "media/thee.jpg", price: 1.50 },
         ];
     }
     else if (category === 'Snacks') {
