@@ -1,5 +1,9 @@
+
+
 // Array to hold items added to the shopping cart
 const cart = [];
+
+
 
 // Functie om een item aan het winkelwagentje toe te voegen
 function addToCart(item) {
@@ -7,6 +11,8 @@ function addToCart(item) {
     updateCart();
     closeModal();
 }
+
+
 
 // Functie om het winkelwagentje bij te werken
 function updateCart() {
@@ -35,6 +41,7 @@ function updateCart() {
     }
 }
 
+
 // Functie om een item uit het winkelwagentje te verwijderen
 function removeFromCart(index) {
     cart.splice(index, 1);
@@ -43,3 +50,9 @@ function removeFromCart(index) {
 
 // Initial call to updateCart to ensure the button is hidden on page load
 updateCart();
+
+// Functie om het modaal venster te sluiten
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+}
+

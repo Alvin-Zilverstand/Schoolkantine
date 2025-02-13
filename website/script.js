@@ -25,7 +25,9 @@ function showCategory(category) {
             { title: "Fanta orange zero", imageSrc: "media/fanta-zero.jpg", price: 1.80 },
             { title: "Fanta exotic zero", imageSrc: "media/fanta-exotic-zero.jpg", price: 1.80 },
             { title: "Fanta lemon zero", imageSrc: "media/fanta-lemon-zero.jpg", price: 1.80 },
-            { title: "Fanta cassis", imageSrc: "media/fanta-cassis.jpg", price: 1.80 }, ]
+            { title: "Ice tea", imageSrc: "https://www.manutan.nl/img/S/GRP/ST/AIG12165970.jpg", price: 1.80},
+            { title: "Fanta cassis", imageSrc: "media/fanta-cassis.jpg", price: 1.80 },
+            { title: "Milkshake", imageSrc: "https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/sunset-sprinkle-shakes.jpg", price: 2.50 }, ]
     } else if (category === 'Warme-Dranken') {
         items = [
             { title: "Chocomel", imageSrc: "media/choco-gs.jpg", price: 1.00 },
@@ -47,8 +49,8 @@ function showCategory(category) {
         items = [
             { title: "Ijsjes", imageSrc: "media/Ijs.png", price: 1.50 },
             { title: "Sorbet", imageSrc: "media/sorbet.webp", price: 2.50 },
-            { title: "Softijs", imageSrc: "https://www.yourlittleblackbook.me/wp-content/uploads/2023/07/lekkerste-softijs-amsterdam.jpg", price: 2.50 },
-            { title: "Sundea ijs", imageSrc: "https://easyfoodheesch.nl/wp-content/uploads/2021/02/IMG_7402.jpg", price: 2.50 },
+            { title: "Softijs", imageSrc: "media/softijs.jpg", price: 2.50 },
+            { title: "Sundea ijs", imageSrc: "media/sundea.jpg", price: 2.50 },
         ];
     } else if (category === 'Deals') {
         items = [
@@ -128,7 +130,3 @@ function getDescription(title) {
     return "";
 }
 
-// Functie om het modaal venster te sluiten
-function closeModal() {
-    document.getElementById('modal').style.display = 'none';
-}
