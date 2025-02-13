@@ -132,6 +132,8 @@ function getDescription(title) {
         return "Soep van de dag! (Allergieën? Meld het bij ons!)";
     } else if (title === "Salades") {
         return "Een heerlijke salade met verse groenten en een dressing naar keuze.";
+    }   else if (title === "Sausjes") {
+        return "Kies de saus naar je keuze!";
     }
     return "";
 }
