@@ -37,8 +37,9 @@ function showCategory(category) {
     else if (category === 'Snacks') {
         items = [
             { title: "Frikandel", imageSrc: "media/frikandel.jpg", price: 2.00 },
-            { title: "Bitterballen", imageSrc: "media/bitterbal.jpg", price: 2.50 },
-            { title: "Kroketten", imageSrc: "media/kroket.webp", price: 2.50 },
+            { title: "Bitterballen", imageSrc: "https://www.taalvoutjes.nl/app/uploads/2014/09/bitterbal.jpg", price: 2.50 },
+            { title: "Mexicano", imageSrc: "media/mexicano.png", price: 2.00 },
+            { title: "Kipcorn", imageSrc: "media/kipcorn.png", price: 2.50 },
         ];
     } else if (category === 'deserts') {
         items = [
@@ -54,6 +55,7 @@ function showCategory(category) {
         items = [
             { title: "Tomatensoep", imageSrc: "media/soep.jpg", price: 2.50 },
             { title: "Kippensoep", imageSrc: "media/soep.jpg", price: 2.80 },
+            { title: "Groentesoep (met gehaktballetjes)", imageSrc: "https://www.maggi.nl/sites/default/files/styles/home_stage_1500_700/public/srh_recipes/a55f0226c938b6bc40878dad5306271b.jpg?h=02cb7f90&itok=AmnkjPc3", price: 2.80 },
         ];
     } else if (category === 'Salades') {
         items = [
