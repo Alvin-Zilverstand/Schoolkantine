@@ -47,8 +47,8 @@ function showCategory(category) {
         items = [
             { title: "Ijsjes", imageSrc: "media/Ijs.png", price: 1.50 },
             { title: "Sorbet", imageSrc: "media/sorbet.webp", price: 2.50 },
-            { title: "Softijs", imageSrc: "https://www.yourlittleblackbook.me/wp-content/uploads/2023/07/lekkerste-softijs-amsterdam.jpg", price: 2.50 },
-            { title: "Sundea ijs", imageSrc: "https://easyfoodheesch.nl/wp-content/uploads/2021/02/IMG_7402.jpg", price: 2.50 },
+            { title: "Softijs", imageSrc: "media/softijs.jpg", price: 2.50 },
+            { title: "Sundea ijs", imageSrc: "media/sundea.jpg", price: 2.50 },
         ];
     } else if (category === 'Deals') {
         items = [
