@@ -56,3 +56,9 @@ function closeModal() {
     document.getElementById('modal').style.display = 'none';
 }
 
+let cartCount = 0;
+
+function addToCart() {
+    cartCount++;
+    document.querySelector('.cart-count').textContent = cartCount;
+}
