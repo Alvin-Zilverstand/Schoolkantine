@@ -3,33 +3,26 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Change to column to accommodate the top bar */
-    background-color: #f2c14e;
+    justify-content: space-between;
+    background-color: #ffffff;
 }
 
-/* Top bar menu */
-.menu-bar {
-    width: 100%;
-    background-color: #f2c14e;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Fix the top bar to the top */
-    top: 0;
-    z-index: 1000; /* Ensure it is above other elements */
-    transition: background-color 0.3s ease; /* Add transition for background color */
-}
-
-.menu-bar.dark {
-    background-color: #d1a73e; /* Darker background color when modal is open */
+/* Linkerkant menu */
+.menu-list {
+    width: 25%;
+    background-color: #d7d7d7;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .menu-item {
     background-color: #fff;
     padding: 10px 20px;
     margin: 5px;
+    background-color: #ff9d3b;
+    padding: 20px;
+    margin: 10px 0;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1.2em;
@@ -37,7 +30,7 @@ body {
 }
 
 .menu-item:hover {
-    background-color: #f59e42;
+    background-color: #ff9d3b;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -56,9 +49,13 @@ body {
     margin: 10px;
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
+    background-color: #e3e3e3 ;
+    
+    
 }
 
 .product-box:hover {
@@ -81,7 +78,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    overflow-y: auto; /* Allow scrolling for larger content */
 }
 
 .modal-content {
