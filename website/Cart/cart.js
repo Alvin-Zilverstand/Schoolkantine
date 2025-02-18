@@ -65,7 +65,6 @@ function closeModal() {
     document.getElementById('modal').style.display = 'none';
 <<<<<<< HEAD:website/cart.js
 }
-
 let cartCount = 0;
 
 function addToCart() {
@@ -73,5 +72,5 @@ function addToCart() {
     document.querySelector('.cart-count').textContent = cartCount;
 }
 =======
-}
+
 >>>>>>> 1f418f9c8547c52f6394b681eb5ce02ee196b69a:website/Cart/cart.js
