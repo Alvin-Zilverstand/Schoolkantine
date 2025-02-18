@@ -136,6 +136,16 @@ function getDescription(title) {
         return "Een heerlijke salade met verse groenten en een dressing naar keuze.";
     }   else if (title === "Sausjes") {
         return "Kies de saus naar je keuze!";
+    } else if (title === "Friet") {
+        return "Een klein bakje met friet.";
+    } else if (title === "Kipcorn") {
+        return "Een lekkere krokante Kipcorn.";
+    } else if (title === "Kipnuggets") {
+        return "Een bakje met 6 kipnuggets.";
+    } else if (title === "Mexicano") {
+        return "Een pittige mexicano.";
+    } else if (title === "Bitterballen") {
+        return "Een bakje met 6 Bitterballen    .";
     }
     return "";
 }
