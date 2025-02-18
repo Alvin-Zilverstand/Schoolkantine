@@ -5,6 +5,7 @@ function showCategory(category) {
 
     let items = [];
 
+
     // Afhankelijk van de gekozen categorie, voeg je de juiste producten toe
     if (category === 'Broodjes') {
         items = [
@@ -71,8 +72,12 @@ function showCategory(category) {
             { title: "Krokante Kip Salade", imageSrc: "media/krokante-kip.jpg", price: 3.00 },
             { title: "Aardappel Salade", imageSrc: "media/aardappel.jpg", price: 2.50 },
         ];
+    } else if (category === 'Sausjes') {
+    items = [
+        { title: "Ketchup", imageSrc: "https://www.ahealthylife.nl/wp-content/uploads/2021/06/Ketchup_voedingswaarde.jpg", price: 0.25 },
+        { title: "Mayonaise", imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4FVmHO_hK3mw43z0fuHv1OFUr-hhsfGe1A&s", price: 0.25 }
+    	];
     }
-
     // Voeg de items toe aan de weergave
     items.forEach(item => {
         const productBox = document.createElement('div');
@@ -126,7 +131,8 @@ function getDescription(title) {
         return "Soep van de dag! (Allergieën? Meld het bij ons!)";
     } else if (title === "Salades") {
         return "Een heerlijke salade met verse groenten en een dressing naar keuze.";
+    }   else if (title === "Sausjes") {
+        return "Kies de saus naar je keuze!";
     }
     return "";
 }
-

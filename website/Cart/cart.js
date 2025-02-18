@@ -1,20 +1,17 @@
-
-
 // Array to hold items added to the shopping cart
 const cart = [];
+let cartCount = 0; // Initialize cart count
 
-
-
-// Functie om een item aan het winkelwagentje toe te voegen
+// Function to add an item to the shopping cart
 function addToCart(item) {
     cart.unshift(item); // Add item to the beginning of the cart array
     updateCart();
+    cartCount++; // Increment cart count
+    updateCartCountDisplay(); // Update the cart count display
     closeModal();
 }
 
-
-
-// Functie om het winkelwagentje bij te werken
+// Function to update the shopping cart display
 function updateCart() {
     const cartItemsContainer = document.getElementById("cart-items");
     cartItemsContainer.innerHTML = '';
@@ -41,19 +38,32 @@ function updateCart() {
     }
 }
 
-
-// Functie om een item uit het winkelwagentje te verwijderen
+// Function to remove an item from the shopping cart
 function removeFromCart(index) {
     cart.splice(index, 1);
     updateCart();
+    cartCount--; // Decrement cart count
+    updateCartCountDisplay(); // Update the cart count display
 }
 
-// Initial call to updateCart to ensure the button is hidden on page load
-updateCart();
+// Function to update the cart count display
+function updateCartCountDisplay() {
+    const cartCountElement = document.getElementById("cart-count"); // Get the element to display the count
+    if (cartCountElement) { // Check if the element exists
+        cartCountElement.textContent = cartCount; // Update the text content with the cart count
+    }
+}
 
-// Functie om het modaal venster te sluiten
+
+// Initial calls
+updateCart();
+updateCartCountDisplay(); // Initialize the cart count on page load
+
+
+// Function to close the modal window
 function closeModal() {
     document.getElementById('modal').style.display = 'none';
+<<<<<<< HEAD:website/cart.js
 }
 
 let cartCount = 0;
@@ -62,3 +72,6 @@ function addToCart() {
     cartCount++;
     document.querySelector('.cart-count').textContent = cartCount;
 }
+=======
+}
+>>>>>>> 1f418f9c8547c52f6394b681eb5ce02ee196b69a:website/Cart/cart.js
