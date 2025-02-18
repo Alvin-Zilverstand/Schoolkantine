@@ -5,7 +5,6 @@ function showCategory(category) {
 
     let items = [];
 
-
     // Afhankelijk van de gekozen categorie, voeg je de juiste producten toe
     if (category === 'Broodjes') {
         items = [
@@ -107,10 +106,12 @@ function showItemDetails(item) {
     document.getElementById("modal-description").innerText = description;
     document.getElementById("modal-price").innerText = `Prijs: €${price.toFixed(2)}`;
     document.getElementById("add-to-cart").onclick = function() {
-        addToCart({ title, price });
+        const quantity = parseInt(document.getElementById("item-quantity").value);
+        addToCart({ title, price, quantity });
     };
 
     document.getElementById('modal').style.display = 'block';
+    document.querySelector('.menu-bar').classList.add('dark'); // Add dark class to menu-bar
 }
 
 // Functie om de beschrijving op te halen afhankelijk van de titel
@@ -136,3 +137,68 @@ function getDescription(title) {
     }
     return "";
 }
+
+// Functie om een item aan het winkelwagentje toe te voegen
+function addToCart(item) {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    for (let i = 0; i < item.quantity; i++) {
+        cart.push(item);
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCart();
+}
+
+// Functie om het winkelwagentje bij te werken
+function updateCart() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartItemsContainer = document.getElementById("cart-items");
+    cartItemsContainer.innerHTML = '';
+    let totalPrice = 0;
+    cart.forEach((item, index) => {
+        const cartItemElement = document.createElement('li');
+        cartItemElement.className = 'cart-item';
+        cartItemElement.innerHTML = `
+            <span>${item.title}</span>
+            <span>€${item.price.toFixed(2)}</span>
+            <button onclick="removeFromCart(${index})">Verwijderen</button>
+        `;
+        cartItemsContainer.appendChild(cartItemElement);
+        totalPrice += item.price;
+    });
+    document.getElementById('total-price').innerText = totalPrice.toFixed(2);
+
+    // Show or hide the "Bestellen" button based on the cart's content
+    const orderButton = document.getElementById('order-button');
+    if (cart.length > 0) {
+        orderButton.style.display = 'block';
+    } else {
+        orderButton.style.display = 'none';
+    }
+
+    // Update the cart count in the cart icon
+    document.getElementById('cart-count').innerText = cart.length;
+}
+
+// Functie om een item uit het winkelwagentje te verwijderen
+function removeFromCart(index) {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCart();
+}
+
+// Functie om het modaal venster te sluiten
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+    document.querySelector('.menu-bar').classList.remove('dark'); // Remove dark class from menu-bar
+}
+
+// Zorg ervoor dat het modaal venster sluit wanneer er buiten het venster wordt geklikt
+window.onclick = function(event) {
+    if (event.target == document.getElementById('modal')) {
+        closeModal();
+    }
+}
+
+// Initial call to updateCart to ensure the button is hidden on page load
+updateCart();

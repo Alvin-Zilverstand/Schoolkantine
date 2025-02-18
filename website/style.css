@@ -17,12 +17,15 @@ body {
 }
 
 .menu-item {
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
     background-color: #ff9d3b;
     padding: 20px;
     margin: 10px 0;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 1.2em;
     transition: all 0.3s ease;
 }
 
@@ -33,15 +36,16 @@ body {
 
 /* Productweergave in een grid */
 .product-display {
-    width: 55%;
+    width: calc(100% - 20%); /* Adjust width to leave space for the cart */
+    display: flex;
     flex-wrap: wrap;
-    padding: 50px;
-    justify-content: space-between 40px;
-    display: inline-flex;
+    padding: 20px;
+    justify-content: space-around;
+    margin-top: 60px; /* Add margin to ensure it starts below the top bar */
 }
 
 .product-box {
-    width: 200px;
+    width: 200px; /* Keep the width fixed */
     margin: 10px;
     border-radius: 8px;
     overflow: hidden;
@@ -96,30 +100,12 @@ body {
 }
 
 .close {
-    color: red;
     position: absolute;
-    top: 80px;
-    right: 450px;
-    font-size: 40px;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
-}
-
-/* Winkelmandje */
-.cart {
-    width: 25%;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.cart ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.cart li {
-    margin-bottom: 10px;
 }
 
 #add-to-cart {
@@ -129,16 +115,17 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 #add-to-cart:hover {
     background-color: #45a049;
 }
 
- /* Winkelwagen-icoon */
- .cart-icon {
+/* Winkelwagen-icoon */
+.cart-icon {
     position: fixed;
-    top: 20px;
+    top: 80px; /* Move the cart icon down */
     right: 20px;
     background-color: #ff6600;
     color: white;
@@ -189,4 +176,23 @@ body {
 
 .product button:hover {
     background-color: #e65c00;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu-bar {
+        flex-wrap: wrap; /* Allow wrapping of menu items */
+    }
+
+    .product-display {
+        width: 100%; /* Use full width for product display */
+        margin-top: 120px; /* Increase margin to accommodate wrapped menu bar */
+    }
+
+    .cart {
+        width: 100%; /* Use full width for cart */
+        top: auto; /* Remove fixed position */
+        bottom: 0; /* Position at the bottom */
+        height: auto; /* Adjust height */
+    }
 }

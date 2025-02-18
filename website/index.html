@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,8 @@
 
 <body>
 
-    <!-- Linkerkant menu -->
-    <div class="menu-list">
-        <h2>Menu</h2>
+    <!-- Top bar menu -->
+    <div class="menu-bar">
         <div class="menu-item" onclick="showCategory('Broodjes')">Broodjes</div>
         <div class="menu-item" onclick="showCategory('Koude-Dranken')">Koude Dranken</div>
         <div class="menu-item" onclick="showCategory('Warme-Dranken')">Warme Dranken</div>
@@ -40,6 +40,7 @@
             <img id="modal-image" src="" alt="">
             <p id="modal-description"></p>
             <p id="modal-price"></p>
+            <input type="number" id="item-quantity" value="1" min="1" style="width: 50px; text-align: center;">
             <button id="add-to-cart">Toevoegen aan winkelmandje</button>
         </div>
     </div>
@@ -61,12 +62,13 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Vista </p>
+        <center>
+            <p>&copy; 2025 Vista </p>
+        </center>
     </footer>
 
-</div>
     <script src="script.js"></script>
     <script src="Cart/cart.js"></script>
 </body>
-</html>
 
+</html>
