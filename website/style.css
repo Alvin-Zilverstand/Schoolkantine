@@ -4,20 +4,20 @@ body {
     margin: 0;
     display: flex;
     justify-content: space-between;
-    background-color: #f2c14e;
+    background-color: #ffffff;
 }
 
 /* Linkerkant menu */
 .menu-list {
     width: 25%;
-    background-color: #f2c14e;
+    background-color: #d7d7d7;
     padding: 20px;
     height: 100vh;
     overflow-y: auto;
 }
 
 .menu-item {
-    background-color: #fff;
+    background-color: #ff9d3b;
     padding: 20px;
     margin: 10px 0;
     border-radius: 8px;
@@ -27,7 +27,7 @@ body {
 }
 
 .menu-item:hover {
-    background-color: #f59e42;
+    background-color: #ff9d3b;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -49,6 +49,7 @@ body {
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
+    background-color: #e3e3e3 ;
     
     
 }
