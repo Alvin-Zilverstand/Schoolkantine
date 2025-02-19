@@ -20,7 +20,7 @@ function showCategory(category) {
             { title: "Cola cherry", imageSrc: "media/cola-cherry.jpg", price: 1.80 },
             { title: "Cola", imageSrc: "media/cola.jpg", price: 1.80 },
             { title: "Sprite", imageSrc: "media/sprite.jpg", price: 1.80 },
-            { title: "Dr pepper", imageSrc: "media/drpeper.jpg", price: 1.80 },
+            { title: "Dr pepper", imageSrc: "media/drpepper.png", price: 1.80 },
             { title: "Fanta orange original", imageSrc: "media/fanta.jpg", price: 1.80 },
             { title: "Fanta orange zero", imageSrc: "media/fanta-zero.jpg", price: 1.80 },
             { title: "Fanta exotic zero", imageSrc: "media/fanta-exotic-zero.jpg", price: 1.80 },
