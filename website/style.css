@@ -62,8 +62,6 @@ body {
     border: 2px solid darkgoldenrod; /* 2px dikke zwarte rand */
     padding: 20px; /* Ruimte binnen de container */
     }
-    
-}
 
 .product-box:hover {
     transform: scale(1.05);
