@@ -10,6 +10,10 @@ function showCategory(category) {
         items = [
             { title: "Broodje Gezond", imageSrc: "media/broodje-gezond.jpg", price: 3.50 },
             { title: "Bagel", imageSrc: "media/bagel.jpeg", price: 3.00 },
+            { title: "Broodje Gehakt met Joppiesaus", imageSrc: "media/GehaktJoppie.png", price: 3.50 },
+            { title: "Frikandelbroodje", imageSrc: "media/Frikandelbroodje.png", price: 2.50 },
+            { title: "Saucijzenbroodje", imageSrc: "media/Saucijz.png", price: 2.50 },
+            
         ];
     } else if (category === 'Koude-Dranken') {
         items = [
@@ -146,8 +150,11 @@ function getDescription(title) {
         return "Een pittige mexicano.";
     } else if (title === "Bitterballen") {
         return "Een bakje met 6 Bitterballen    .";
+    } else if (title === "Broodje Gehakt met Joppiesaus") {
+        return "Een wit of bruin broodje met Gehakt, Ei, Sla en Joppiesaus   .";
+        
     }
-    return "";
+        return "";
 }
 
 // Functie om een item aan het winkelwagentje toe te voegen
