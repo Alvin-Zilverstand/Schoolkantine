@@ -147,6 +147,9 @@ function getDescription(title) {
         
     } else if (title === "Spa Water") {
         return "Koude verfrissende water.";
+    }    else if (title === "Milkshake") {
+        return "Verschillende diverse milkshake (keuze bij de counter maken)";
+
 
 
     } else if (title === "Chocomel") {
