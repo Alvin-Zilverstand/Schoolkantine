@@ -10,13 +10,12 @@ body {
 /* Top bar menu */
 .menu-bar {
     width: 100%;
-    background-color: #ffe1b0;
+    background-color: #ffffff;
     padding: 10px 0;
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of menu items */
     justify-content: center; /* Center the menu items */
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: absolute; /* Initially position in the middle */
     top: 50%;
     left: 50%;
@@ -35,11 +34,11 @@ body {
 }
 
 .menu-bar.dark {
-    background-color: #ffb700; /* Darker background color when modal is open */
+    background-color: #ff8c00; /* Darker background color when modal is open */
 }
 
 .menu-item {
-    background-color: #ffb700;
+    background-color: #ff8c00;
     padding: 10px 20px;
     margin: 5px;
     border-radius: 8px;
@@ -72,7 +71,7 @@ body {
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid darkgoldenrod; /* 2px dikke zwarte rand */
+    border: 2px solid #ff8c00; /* 2px dikke zwarte rand */
     padding: 20px; /* Ruimte binnen de container */
     }
     
