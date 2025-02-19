@@ -9,7 +9,7 @@ body {
 
 /* Top bar menu */
 .menu-bar {
-    width: 75%;
+    width: 75%; /* Use 75% of the screen width on the first page */
     background-color: #ffffff;
     padding: 10px 0;
     display: flex;
@@ -25,6 +25,7 @@ body {
 }
 
 .menu-bar.top {
+    width: 100%; /* Use 100% of the screen width when at the top */
     position: fixed; /* Fix the top bar to the top */
     top: 0;
     left: 0;
