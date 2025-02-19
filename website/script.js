@@ -97,6 +97,16 @@ function showCategory(category) {
 
         productDisplay.appendChild(productBox);
     });
+
+    // Transition the menu bar to the top
+    document.querySelector('.menu-bar').classList.add('top');
+
+    // Show the shopping cart and cart icon
+    document.getElementById('cart').classList.add('visible');
+    document.querySelector('.cart-icon').classList.add('visible');
+
+    // Hide the logo
+    document.querySelector('.logo').classList.add('hidden');
 }
 
 // Functie om de details van een item weer te geven in het modaal
@@ -112,8 +122,7 @@ function showItemDetails(item) {
     document.getElementById("modal-description").innerText = description;
     document.getElementById("modal-price").innerText = `Prijs: €${price.toFixed(2)}`;
     document.getElementById("add-to-cart").onclick = function() {
-        const quantity = parseInt(document.getElementById("item-quantity").value);
-        addToCart({ title, price, quantity });
+        addToCart({ title, price });
     };
 
     document.getElementById('modal').style.display = 'block';
@@ -160,9 +169,7 @@ function getDescription(title) {
 // Functie om een item aan het winkelwagentje toe te voegen
 function addToCart(item) {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    for (let i = 0; i < item.quantity; i++) {
-        cart.push(item);
-    }
+    cart.push(item); // Add item to the cart array
     localStorage.setItem('cart', JSON.stringify(cart));
     updateCart();
 }

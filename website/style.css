@@ -13,13 +13,25 @@ body {
     background-color: #f2c14e;
     padding: 10px 0;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping of menu items */
+    justify-content: center; /* Center the menu items */
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Initially position in the middle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure it is above other elements */
+    transition: all 0.3s ease; /* Add transition for position and background color */
+}
+
+.menu-bar.top {
     position: fixed; /* Fix the top bar to the top */
     top: 0;
-    z-index: 1000; /* Ensure it is above other elements */
-    transition: background-color 0.3s ease; /* Add transition for background color */
+    left: 0;
+    transform: translate(0, 0);
+    justify-content: space-around; /* Spread the menu items */
+    flex-wrap: nowrap; /* Ensure all items are in a single row */
 }
 
 .menu-bar.dark {
@@ -34,11 +46,12 @@ body {
     cursor: pointer;
     font-size: 1.2em;
     transition: all 0.3s ease;
+    flex: 1 1 calc(33.333% - 10px); /* Allow 3 items per row with margin */
+    text-align: center; /* Center text inside the menu item */
 }
 
-.menu-item:hover {
-    background-color: #f59e42;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.menu-bar.top .menu-item {
+    flex: none; /* Remove flex-grow to fit all items in a single row */
 }
 
 /* Productweergave in een grid */
@@ -130,6 +143,7 @@ body {
 
 /* Winkelwagen-icoon */
 .cart-icon {
+    display: none; /* Initially hide the cart icon */
     position: fixed;
     top: 80px; /* Move the cart icon down */
     right: 20px;
@@ -140,6 +154,10 @@ body {
     font-size: 20px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-icon.visible {
+    display: block; /* Show the cart icon when the 'visible' class is added */
 }
 
 .cart-icon:hover {
@@ -201,4 +219,92 @@ body {
         bottom: 0; /* Position at the bottom */
         height: auto; /* Adjust height */
     }
+}
+
+/* Winkelmandje sectie */
+.cart {
+    display: none; /* Initially hide the cart */
+    width: 15%; /* Make the cart a bit smaller */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; /* Increase margin to ensure it starts below the categories bar */
+    position: fixed; /* Fix the cart to the right side */
+    right: 0; /* Align the cart to the right */
+    top: 60px; /* Ensure it starts below the categories bar */
+    flex-direction: column; /* Ensure the content is arranged in a column */
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li {
+    margin-bottom: 10px;
+}
+
+.cart-item button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ff9d3b;
+}
+
+.cart-item button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-item button:hover {
+    background-color: #b71c1c;
+}
+
+#order-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Hide the button by default */
+    align-self: flex-end; /* Ensure the button is at the bottom */
+}
+
+#order-button:hover {
+    background-color: #45a049;
+}
+
+.cart.visible {
+    display: flex; /* Show the cart when the 'visible' class is added */
+}
+
+.logo {
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    display: block;
+    transition: opacity 0.3s ease; /* Add transition for smooth hiding */
+}
+
+.logo.hidden {
+    opacity: 0; /* Hide the logo */
+    visibility: hidden; /* Ensure the logo is not clickable */
 }

@@ -1,10 +1,11 @@
 // Array to hold items added to the shopping cart
-const cart = [];
-let cartCount = 0; // Initialize cart count
+const cart = JSON.parse(localStorage.getItem('cart')) || [];
+let cartCount = cart.length; // Initialize cart count
 
 // Function to add an item to the shopping cart
 function addToCart(item) {
-    cart.unshift(item); // Add item to the beginning of the cart array
+    cart.push(item); // Add item to the cart array
+    localStorage.setItem('cart', JSON.stringify(cart));
     updateCart();
     cartCount++; // Increment cart count
     updateCartCountDisplay(); // Update the cart count display
@@ -41,6 +42,7 @@ function updateCart() {
 // Function to remove an item from the shopping cart
 function removeFromCart(index) {
     cart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
     updateCart();
     cartCount--; // Decrement cart count
     updateCartCountDisplay(); // Update the cart count display
@@ -54,23 +56,11 @@ function updateCartCountDisplay() {
     }
 }
 
-
 // Initial calls
 updateCart();
 updateCartCountDisplay(); // Initialize the cart count on page load
 
-
 // Function to close the modal window
 function closeModal() {
     document.getElementById('modal').style.display = 'none';
-<<<<<<< HEAD:website/cart.js
 }
-let cartCount = 0;
-
-function addToCart() {
-    cartCount++;
-    document.querySelector('.cart-count').textContent = cartCount;
-}
-=======
-
->>>>>>> 1f418f9c8547c52f6394b681eb5ce02ee196b69a:website/Cart/cart.js
