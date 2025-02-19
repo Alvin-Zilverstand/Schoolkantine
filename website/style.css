@@ -21,7 +21,6 @@ body {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1000; /* Ensure it is above other elements */
     transition: all 0.3s ease; /* Add transition for position and background color */
 }
 
