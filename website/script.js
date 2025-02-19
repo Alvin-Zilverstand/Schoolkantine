@@ -139,7 +139,11 @@ function getDescription(title) {
         return "Doughnut brood met spek, ei en kaas";
     } else if (title === "Broodje Gehakt met Joppiesaus") {
         return "Een wit of bruin broodje met Gehakt, Ei, Sla en Joppiesaus   .";  
-        
+    }    else if (title === "Saucijzenbroodje") {
+            return "Een knapperig korstje met een warme, kruidige vleesvulling";
+        }    else if (title === "Frikandelbroodje") {
+            return "Een knapperige korstje met een warme frikandel en curry saus erin";
+
         
     } else if (title === "Spa Water") {
         return "Koude verfrissende water.";
@@ -178,7 +182,7 @@ function getDescription(title) {
     }   else if (title === "Sausjes") {
         return "Kies de saus naar je keuze!";
 
-        
+
     } else if (title === "Friet") {
         return "Een klein bakje met friet.";
     } else if (title === "Kipcorn") {
