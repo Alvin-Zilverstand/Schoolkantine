@@ -137,8 +137,14 @@ function getDescription(title) {
         return "Op dit broodje zit kaas, veldsla, komkommer, tomaat, ei, ham en/of kip en bufkes saus.";
     } else if (title === "Spa Water") {
         return "Koude verfrissende water.";
-    } else if (title === "Warme dranken") {
-        return "Een warme drank naar keuze.";
+    } else if (title === "Chocomel") {
+        return "Een lekker warme chocolade melk";
+    }   else if (title === "Chocomel met slagroom") {
+        return "Een lekkere warme chocolade melk met slagroom";
+    }   else if (title === "Koffie") {
+        return "Een lekker warme koffie";
+    }   else if (title === "Thee") {
+        return "heerlijke warme thee (keuze bij de kassa)";
     } else if (title === "Frikandel") {
         return "Een frikandel, dat wil je wel!";
     } else if (title === "Ijsjes") {
