@@ -58,12 +58,11 @@ body {
     overflow: hidden;
     text-align: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
     border: 2px solid darkgoldenrod; /* 2px dikke zwarte rand */
     padding: 20px; /* Ruimte binnen de container */
     }
     
-}
 
 .product-box:hover {
     transform: scale(1.05);
