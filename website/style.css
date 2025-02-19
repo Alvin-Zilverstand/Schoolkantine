@@ -4,13 +4,13 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column; /* Change to column to accommodate the top bar */
-    background-color: #f2c14e;
+    background-color: #ffffff;
 }
 
 /* Top bar menu */
 .menu-bar {
     width: 100%;
-    background-color: #f2c14e;
+    background-color: #ffe1b0;
     padding: 10px 0;
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of menu items */
@@ -35,11 +35,11 @@ body {
 }
 
 .menu-bar.dark {
-    background-color: #d1a73e; /* Darker background color when modal is open */
+    background-color: #ffb700; /* Darker background color when modal is open */
 }
 
 .menu-item {
-    background-color: #fff;
+    background-color: #ffb700;
     padding: 10px 20px;
     margin: 5px;
     border-radius: 8px;
