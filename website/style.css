@@ -54,6 +54,10 @@ body {
     flex: none; /* Remove flex-grow to fit all items in a single row */
 }
 
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
 /* Productweergave in een grid */
 .product-display {
     width: calc(100% - 20%); /* Adjust width to leave space for the cart */
