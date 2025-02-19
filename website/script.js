@@ -105,8 +105,11 @@ function showCategory(category) {
     document.getElementById('cart').classList.add('visible');
     document.querySelector('.cart-icon').classList.add('visible');
 
-    // Hide the logo
-    document.querySelector('.logo').classList.add('hidden');
+    // Remove the logo from the DOM
+    const logo = document.querySelector('.logo');
+    if (logo) {
+        logo.remove();
+    }
 }
 
 // Functie om de details van een item weer te geven in het modaal
@@ -126,7 +129,6 @@ function showItemDetails(item) {
     };
 
     document.getElementById('modal').style.display = 'block';
-    document.querySelector('.menu-bar').classList.add('dark'); // Add dark class to menu-bar
 }
 
 // Functie om de beschrijving op te halen afhankelijk van de titel
