@@ -12,6 +12,7 @@ body {
     width: 75%; /* Use 75% of the screen width on the first page */
     background-color: #ffffff;
     padding: 10px 0;
+
     display: flex;
     flex-wrap: wrap; /* Allow wrapping of menu items */
     justify-content: center; /* Center the menu items */
@@ -38,7 +39,7 @@ body {
     background-color: #ff8c00;
     padding: 10px 20px;
     margin: 5px;
-    border-radius: 8px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 1.2em;
     transition: all 0.3s ease;
