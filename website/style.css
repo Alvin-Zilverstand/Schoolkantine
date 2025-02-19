@@ -35,6 +35,10 @@ body {
     flex-wrap: nowrap; /* Ensure all items are in a single row */
 }
 
+.menu-bar.dark {
+    background-color: #ff8c00; /* Darker background color when modal is open */
+}
+
 .menu-item {
     background-color: #ff8c00;
     padding: 10px 20px;
@@ -59,10 +63,6 @@ body {
     padding: 20px;
     justify-content: space-around;
     margin-top: 60px; /* Add margin to ensure it starts below the top bar */
-}
-
-.menu-bar.top + .product-display {
-    margin-top: 120px; /* Adjust margin when the menu bar is at the top */
 }
 
 .product-box {
@@ -102,7 +102,7 @@ body {
 
 .modal-content {
     background-color: white;
-    margin: 5% auto;
+    margin: 7% auto;
     padding: 20px;
     border-radius: 8px;
     width: 80%;
