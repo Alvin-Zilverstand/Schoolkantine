@@ -133,18 +133,27 @@ function showItemDetails(item) {
 
 // Functie om de beschrijving op te halen afhankelijk van de titel
 function getDescription(title) {
+
+    // Broodjes beschrijvingen
     if (title === "Broodje Gezond") {
         return "Op dit broodje zit kaas, veldsla, komkommer, tomaat, ei, ham en/of kip en bufkes saus.";
     }   else if (title === "Bagel") {
         return "Doughnut brood met spek, ei en kaas";
     } else if (title === "Broodje Gehakt met Joppiesaus") {
         return "Een wit of bruin broodje met Gehakt, Ei, Sla en Joppiesaus   .";  
-        
-        
+    }    else if (title === "Saucijzenbroodje") {
+            return "Een knapperig korstje met een warme, kruidige vleesvulling";
+        }    else if (title === "Frikandelbroodje") {
+            return "Een knapperige korstje met een warme frikandel en curry saus erin";
+
+    // Koude dranken beschrijving
     } else if (title === "Spa Water") {
         return "Koude verfrissende water.";
+    }    else if (title === "Milkshake") {
+        return "Verschillende diverse milkshake (keuze bij de counter maken)";
 
 
+    // Warme dranken beschrijving
     } else if (title === "Chocomel") {
         return "Een lekker warme chocolade melk";
     }   else if (title === "Chocomel met slagroom") {
@@ -154,41 +163,45 @@ function getDescription(title) {
     }   else if (title === "Thee") {
         return "heerlijke warme thee (keuze bij de kassa)";
 
-
+    // Snacks beschrijving
     } else if (title === "Frikandel") {
         return "Een frikandel, dat wil je wel!";
-
-
-    } else if (title === "Ijsjes") {
-        return "Een lekker ijsje met vele smaken, zoals aardbei, vanille, chocolade, mint, bosbes en nog veel meer (alleen in de zomer!).";
-
-
-    } else if (title === "Deals") {
-        return "Onze beste deals met de beste prijzen!";
-
-
-    } else if (title === "Soepen") {
-        return "Soep van de dag! (Allergieën? Meld het bij ons!)";
-
-
-    } else if (title === "Salades") {
-        return "Een heerlijke salade met verse groenten en een dressing naar keuze.";
-
-
-    }   else if (title === "Sausjes") {
-        return "Kies de saus naar je keuze!";
-
-        
     } else if (title === "Friet") {
         return "Een klein bakje met friet.";
     } else if (title === "Kipcorn") {
         return "Een lekkere krokante Kipcorn.";
     } else if (title === "Kipnuggets") {
-        return "Een bakje met 6 kipnuggets.";
+        return "Een bakje met 9 kipnuggets.";
     } else if (title === "Mexicano") {
         return "Een pittige mexicano.";
     } else if (title === "Bitterballen") {
-        return "Een bakje met 6 Bitterballen    .";
+        return "Een bakje met 9 Bitterballen    .";
+
+
+    // Ijsjes beschrijving  
+    } else if (title === "Ijsjes") {
+        return "Een lekker ijsje met vele smaken, zoals aardbei, vanille, chocolade, mint, bosbes en nog veel meer (alleen in de zomer!).";
+    }    else if (title === "Sorbet") {
+        return "Lekkeresorbet met saus naar keuze";
+
+    // Deals beschrijing
+    } else if (title === "Deals") {
+        return "Onze beste deals met de beste prijzen!";
+
+    // Soepen beschrijving
+    } else if (title === "Soepen") {
+        return "Soep van de dag! (Allergieën? Meld het bij ons!)";
+
+    // Salades beschrijving
+    } else if (title === "Salades") {
+        return "Een heerlijke salade met verse groenten en een dressing naar keuze.";
+
+    // Sauzen beschrijving
+    }   else if (title === "Sausjes") {
+        return "Kies de saus naar je keuze!";
+
+
+
 
         
     }
