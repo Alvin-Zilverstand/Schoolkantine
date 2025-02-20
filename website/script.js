@@ -285,6 +285,7 @@ const translations = {
         "Winkelmandje": "Shopping Cart",
         "Bestellen": "Order",
         "Prijs": "Price",
+        "Totaal": "Total",
         "Toevoegen aan winkelmandje": "Add to Cart",
         "Soep van de dag! (Allergieën? Meld het bij ons!)": "Soup of the day! (Allergies? Let us know!)",
         // Add more translations as needed
@@ -302,6 +303,7 @@ const translations = {
         "Shopping Cart": "Winkelmandje",
         "Order": "Bestellen",
         "Price": "Prijs",
+        "Total": "Totaal",
         "Add to Cart": "Toevoegen aan winkelmandje",
         "Soup of the day! (Allergies? Let us know!)": "Soep van de dag! (Allergieën? Meld het bij ons!)",
         // Add more translations as needed
