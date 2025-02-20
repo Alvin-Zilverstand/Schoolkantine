@@ -271,57 +271,63 @@ window.onclick = function(event) {
 // Initial call to updateCart to ensure the button is hidden on page load
 updateCart();
 
+// Vertalingen voor beide talen (nl en en)
 const translations = {
     en: {
         "Broodjes": "Sandwiches",
         "Koude Dranken": "Cold Drinks",
         "Warme Dranken": "Hot Drinks",
         "Snacks": "Snacks",
-        "deserts": "Desserts",
+        "deserts": "Ice Creams",
         "Deals": "Deals",
         "Soepen": "Soups",
         "Salades": "Salads",
         "Sausjes": "Sauces",
         "Winkelmandje": "Shopping Cart",
-        "Bestellen": "Order",
         "Prijs": "Price",
-        "Totaal": "Total",
-        "Toevoegen aan winkelmandje": "Add to Cart",
-        "Soep van de dag! (Allergieën? Meld het bij ons!)": "Soup of the day! (Allergies? Let us know!)",
-        // Add more translations as needed
+        "Toevoegen aan winkelmandje": "Add to cart",
+        "Bestellen": "Order",
+        "Totaal": "Total"
     },
     nl: {
         "Sandwiches": "Broodjes",
         "Cold Drinks": "Koude Dranken",
         "Hot Drinks": "Warme Dranken",
         "Snacks": "Snacks",
-        "Desserts": "deserts",
+        "Ice Creams": "Ijsjes",
         "Deals": "Deals",
         "Soups": "Soepen",
         "Salads": "Salades",
         "Sauces": "Sausjes",
         "Shopping Cart": "Winkelmandje",
-        "Order": "Bestellen",
         "Price": "Prijs",
-        "Total": "Totaal",
-        "Add to Cart": "Toevoegen aan winkelmandje",
-        "Soup of the day! (Allergies? Let us know!)": "Soep van de dag! (Allergieën? Meld het bij ons!)",
-        // Add more translations as needed
+        "Add to cart": "Toevoegen aan winkelmandje",
+        "Order": "Bestellen",
+        "Total": "Totaal"
     }
 };
 
+// Functie om de taal te wisselen
 function switchLanguage(lang) {
+    // Zoek alle elementen met een data-translate attribuut
     document.querySelectorAll("[data-translate]").forEach(element => {
-        const key = element.getAttribute("data-translate");
-        element.textContent = translations[lang][key] || key;
+        const key = element.getAttribute("data-translate"); // Verkrijg de sleutel uit het data-translate attribuut
+        element.textContent = translations[lang][key] || key;  // Vertaal de tekst of behoud de sleutel als er geen vertaling is
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("language-switcher").addEventListener("click", () => {
-        const currentLang = document.documentElement.lang;
-        const newLang = currentLang === "nl" ? "en" : "nl";
-        document.documentElement.lang = newLang;
-        switchLanguage(newLang);
-    });
+// Functie om de taal te wisselen wanneer de knop wordt aangeklikt
+document.getElementById("language-switcher").addEventListener("click", () => {
+    const currentLang = document.documentElement.lang; // Huidige taal ophalen
+    const newLang = currentLang === "nl" ? "en" : "nl"; // Nieuwe taal bepalen
+    document.documentElement.lang = newLang; // Wijzig de taal van de pagina
+    switchLanguage(newLang); // Pas de vertalingen toe voor de nieuwe taal
+    
+    // Verander de tekst op de taalwisselknop
+    const switcher = document.getElementById("language-switcher");
+    switcher.textContent = newLang === "nl" ? "EN" : "NL"; // Zet de knop tekst naar de andere taal
 });
+
+// Stel de standaardtaal in
+document.documentElement.lang = "nl"; // Begin met Nederlands
+switchLanguage("nl"); // Pas de vertalingen toe voor Nederlands bij het laden van de pagina
