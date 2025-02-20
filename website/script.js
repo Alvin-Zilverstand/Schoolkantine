@@ -83,9 +83,9 @@ function showCategory(category) {
         { title: "Sweet Chili", imageSrc: "https://www.dechinesemuuregmond.nl/wp-content/uploads/2022/04/19.-Zoetzure-saus.jpg", price: 0.75 },
         {title: "Curry saus", imageSrc: "https://bestellen.hotelhetanker.nl/wp-content/uploads/2021/03/currysaus-1.png", price: 0.75}
     	];
-    } else if (category === 'yoghert') {
+    } else if (category === 'Yoghert') {
         items = [
-            { title: "", imageSrc: "", price: 5.10 },
+            { title: "aardbij yoghurt", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
         ];
     } else if (category === 'Snoep') {
         items = [
