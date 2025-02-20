@@ -250,7 +250,7 @@ body {
 
 .cart li {
     padding: 10px 0; /* Space out the items */
-    border-bottom: 1px solid #eee; /* Add a bottom border to each item */
+    border-bottom: 1px solid #ff8c00; /* Change this to the orange color */
 }
 
 
