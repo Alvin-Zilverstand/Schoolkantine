@@ -8,11 +8,11 @@ function showCategory(category) {
     // Afhankelijk van de gekozen categorie, voeg je de juiste producten toe
     if (category === 'Broodjes') {
         items = [
-            { title: "Broodje Gezond", imageSrc: "media/broodje-gezond.jpg", price: 3.50 },
-            { title: "Bagel", imageSrc: "media/bagel.jpeg", price: 3.00 },
-            { title: "Broodje Gehakt met Joppiesaus", imageSrc: "media/GehaktJoppie.png", price: 3.50 },
-            { title: "Frikandelbroodje", imageSrc: "media/Frikandelbroodje.png", price: 2.50 },
-            { title: "Saucijzenbroodje", imageSrc: "media/Saucijz.png", price: 2.50 },
+            { title: "Broodje Gezond", imageSrc: "media/broodje-gezond.jpg", price: 3.80 },
+            { title: "Bagel", imageSrc: "media/bagel.jpeg", price: 4.20 },
+            { title: "Broodje Gehakt met Joppiesaus", imageSrc: "media/GehaktJoppie.png", price: 3.80 },
+            { title: "Frikandelbroodje", imageSrc: "media/Frikandelbroodje.png", price: 1.20 },
+            { title: "Saucijzenbroodje", imageSrc: "media/Saucijz.png", price: 1.20 },
             
         ];
     } else if (category === 'Koude-Dranken') {
@@ -58,7 +58,7 @@ function showCategory(category) {
         ];
     } else if (category === 'Deals') {
         items = [
-            { title: "Lunch Deal", imageSrc: "media/deals.jpg", price: 5.00 },
+            { title: "Lunch Deal", imageSrc: "media/deals.jpg", price: 7.00 },
             { title: "Diner Deal", imageSrc: "media/deals.jpg", price: 10.00 },
         ];
     } else if (category === 'Soepen') {
@@ -185,8 +185,8 @@ function getDescription(title) {
         return "Lekkeresorbet met saus naar keuze";
 
     // Deals beschrijing
-    } else if (title === "Deals") {
-        return "Onze beste deals met de beste prijzen!";
+    } else if (title === "Lunch Deal") {
+        return "Bij deze deal krijg je 1 snack naar keuze, wat frietjes en drinken naar keuze erbij!";
 
     // Soepen beschrijving
     } else if (title === "Soepen") {
