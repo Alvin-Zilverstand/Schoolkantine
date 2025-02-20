@@ -213,10 +213,10 @@ function getDescription(title) {
         return "Kies de saus naar je keuze!";
 
     }   else if (title === "Yoghert") {
-        return "";
+        return "bluh";
 
     }   else if (title === "Snoep") {
-        return "";
+        return "bluh";
 
         
     }
