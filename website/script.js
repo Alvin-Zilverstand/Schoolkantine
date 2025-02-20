@@ -63,24 +63,24 @@ function showCategory(category) {
         ];
     } else if (category === 'Soepen') {
         items = [
-            { title: "Tomatensoep", imageSrc: "media/soep.jpg", price: 2.50 },
-            { title: "Kippensoep", imageSrc: "media/kippensoep.jpg", price: 2.80 },
-            { title: "Erwtensoep", imageSrc: "media/erwtensoep.webp", price: 2.50 },
-            { title: "Groentesoep (met gehaktballetjes)", imageSrc: "media/groentesoep.jpg", price: 2.80 },
+            { title: "Tomatensoep", imageSrc: "media/soep.jpg", price: 3.80 },
+            { title: "Kippensoep", imageSrc: "media/kippensoep.jpg", price: 3.80 },
+            { title: "Erwtensoep", imageSrc: "media/erwtensoep.webp", price: 3.80 },
+            { title: "Groentesoep (met gehaktballetjes)", imageSrc: "media/groentesoep.jpg", price: 4.80 },
         ];
     } else if (category === 'Salades') {
         items = [
-            { title: "Caesar Salade", imageSrc: "media/salade.jpg", price: 2.50 },
-            { title: "Griekse Salade", imageSrc: "media/griekse.jpg", price: 3.50 },
-            { title: "Krokante Kip Salade", imageSrc: "media/krokante-kip.jpg", price: 3.00 },
-            { title: "Aardappel Salade", imageSrc: "media/aardappel.jpg", price: 2.50 },
+            { title: "Caesar Salade", imageSrc: "media/salade.jpg", price: 5.10 },
+            { title: "Griekse Salade", imageSrc: "media/griekse.jpg", price: 5.10 },
+            { title: "Krokante Kip Salade", imageSrc: "media/krokante-kip.jpg", price: 6.00 },
+            { title: "Aardappel Salade", imageSrc: "media/aardappel.jpg", price: 5.10 },
         ];
     } else if (category === 'Sausjes') {
     items = [
-        { title: "Ketchup", imageSrc: "https://www.ahealthylife.nl/wp-content/uploads/2021/06/Ketchup_voedingswaarde.jpg", price: 0.25 },
-        { title: "Mayonaise", imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4FVmHO_hK3mw43z0fuHv1OFUr-hhsfGe1A&s", price: 0.25 },
-        { title: "Mosterd", imageSrc: "https://cdn.voedingswaardetabel.nl/img/prod/big/mosterd.jpg", price: 0.25 },
-        { title: "Sweet Chili", imageSrc: "https://www.dechinesemuuregmond.nl/wp-content/uploads/2022/04/19.-Zoetzure-saus.jpg", price: 0.25 }
+        { title: "Ketchup", imageSrc: "https://www.ahealthylife.nl/wp-content/uploads/2021/06/Ketchup_voedingswaarde.jpg", price: 0.75 },
+        { title: "Mayonaise", imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4FVmHO_hK3mw43z0fuHv1OFUr-hhsfGe1A&s", price: 0.75 },
+        { title: "Mosterd", imageSrc: "https://cdn.voedingswaardetabel.nl/img/prod/big/mosterd.jpg", price: 0.75 },
+        { title: "Sweet Chili", imageSrc: "https://www.dechinesemuuregmond.nl/wp-content/uploads/2022/04/19.-Zoetzure-saus.jpg", price: 0.75 }
     	];
     }
     // Voeg de items toe aan de weergave
