@@ -181,6 +181,8 @@ function getDescription(title) {
     // Ijsjes beschrijving  
     } else if (title === "Ijsjes") {
         return "Een lekker ijsje met vele smaken, zoals aardbei, vanille, chocolade, mint, bosbes en nog veel meer (alleen in de zomer!).";
+    }    else if (title === "Sorbet") {
+        return "Lekkeresorbet met saus naar keuze";
 
     // Deals beschrijing
     } else if (title === "Deals") {
