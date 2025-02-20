@@ -18,15 +18,15 @@
 
     <!-- Top bar menu -->
     <div class="menu-bar">
-        <div class="menu-item" onclick="showCategory('Broodjes')" data-translate="Broodjes">Broodjes</div>
-        <div class="menu-item" onclick="showCategory('Koude-Dranken')" data-translate="Koude Dranken">Koude Dranken</div>
-        <div class="menu-item" onclick="showCategory('Warme-Dranken')" data-translate="Warme Dranken">Warme Dranken</div>
-        <div class="menu-item" onclick="showCategory('Snacks')" data-translate="Snacks">Snacks</div>
-        <div class="menu-item" onclick="showCategory('deserts')" data-translate="deserts">Ijsjes</div>
-        <div class="menu-item" onclick="showCategory('Deals')" data-translate="Deals">Deals</div>
-        <div class="menu-item" onclick="showCategory('Soepen')" data-translate="Soepen">Soepen</div>
-        <div class="menu-item" onclick="showCategory('Salades')" data-translate="Salades">Salades</div>
-        <div class="menu-item" onclick="showCategory('Sausjes')" data-translate="Sausjes">Sausjes</div>
+        <div class="menu-item" onclick="showCategory('Broodjes')">Broodjes</div>
+        <div class="menu-item" onclick="showCategory('Koude-Dranken')">Koude Dranken</div>
+        <div class="menu-item" onclick="showCategory('Warme-Dranken')">Warme Dranken</div>
+        <div class="menu-item" onclick="showCategory('Snacks')">Snacks</div>
+        <div class="menu-item" onclick="showCategory('deserts')">Ijsjes</div>
+        <div class="menu-item" onclick="showCategory('Deals')">Deals</div>
+        <div class="menu-item" onclick="showCategory('Soepen')">Soepen</div>
+        <div class="menu-item" onclick="showCategory('Salades')">Salades</div>
+        <div class="menu-item" onclick="showCategory('Sausjes')">Sausjes</div>
     </div>
 
     <!-- Productweergave -->
@@ -38,24 +38,24 @@
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2 id="modal-title" data-translate="Prijs"></h2>
+            <h2 id="modal-title" ></h2>
             <img id="modal-image" src="" alt="">
             <p id="modal-description"></p>
-            <p id="modal-price" data-translate="Prijs"></p>
-            <button id="add-to-cart" data-translate="Toevoegen aan winkelmandje">Toevoegen aan winkelmandje</button>
+            <p id="modal-price" ></p>
+            <button id="add-to-cart" >Toevoegen aan winkelmandje</button>
         </div>
     </div>
 
     <!-- Winkelmandje sectie -->
     <div id="cart" class="cart">
-        <h2 data-translate="Winkelmandje">Winkelmandje</h2>
+        <h2 >Winkelmandje</h2>
         <ul id="cart-items">
             <!-- Winkelmandje items worden hier dynamisch toegevoegd -->
         </ul>
         <p><span data-translate="Totaal">Totaal</span>: €<span id="total-price">0.00</span></p>
 
         <a href="betalen.html">
-            <button id="order-button" data-translate="Bestellen">Bestellen</button>
+            <button id="order-button" >Bestellen</button>
         </a>
     </div>
 
