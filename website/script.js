@@ -257,3 +257,56 @@ window.onclick = function(event) {
 
 // Initial call to updateCart to ensure the button is hidden on page load
 updateCart();
+
+const translations = {
+    en: {
+        "Broodjes": "Sandwiches",
+        "Koude Dranken": "Cold Drinks",
+        "Warme Dranken": "Hot Drinks",
+        "Snacks": "Snacks",
+        "deserts": "Desserts",
+        "Deals": "Deals",
+        "Soepen": "Soups",
+        "Salades": "Salads",
+        "Sausjes": "Sauces",
+        "Winkelmandje": "Shopping Cart",
+        "Bestellen": "Order",
+        "Prijs": "Price",
+        "Toevoegen aan winkelmandje": "Add to Cart",
+        "Soep van de dag! (Allergieën? Meld het bij ons!)": "Soup of the day! (Allergies? Let us know!)",
+        // Add more translations as needed
+    },
+    nl: {
+        "Sandwiches": "Broodjes",
+        "Cold Drinks": "Koude Dranken",
+        "Hot Drinks": "Warme Dranken",
+        "Snacks": "Snacks",
+        "Desserts": "deserts",
+        "Deals": "Deals",
+        "Soups": "Soepen",
+        "Salads": "Salades",
+        "Sauces": "Sausjes",
+        "Shopping Cart": "Winkelmandje",
+        "Order": "Bestellen",
+        "Price": "Prijs",
+        "Add to Cart": "Toevoegen aan winkelmandje",
+        "Soup of the day! (Allergies? Let us know!)": "Soep van de dag! (Allergieën? Meld het bij ons!)",
+        // Add more translations as needed
+    }
+};
+
+function switchLanguage(lang) {
+    document.querySelectorAll("[data-translate]").forEach(element => {
+        const key = element.getAttribute("data-translate");
+        element.textContent = translations[lang][key] || key;
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("language-switcher").addEventListener("click", () => {
+        const currentLang = document.documentElement.lang;
+        const newLang = currentLang === "nl" ? "en" : "nl";
+        document.documentElement.lang = newLang;
+        switchLanguage(newLang);
+    });
+});
