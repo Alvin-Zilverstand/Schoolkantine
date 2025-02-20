@@ -238,12 +238,21 @@ body {
     right: 0; /* Align the cart to the right */
     top: 60px; /* Ensure it starts below the categories bar */
     flex-direction: column; /* Ensure the content is arranged in a column */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+    max-height: 80vh; /* Set a maximum height for the cart */
 }
 
 .cart ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
+
+.cart li {
+    padding: 10px 0; /* Space out the items */
+    border-bottom: 1px solid #ff8c00; /* Change this to the orange color */
+}
+
 
 .cart li {
     margin-bottom: 10px;
@@ -263,17 +272,9 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
-    border-bottom: 1px solid #ff9d3b;
+    border-bottom: 2px solid #ff8c00; /* Change this to the orange color */
 }
 
-.cart-item button {
-    background-color: #d32f2f;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
 
 .cart-item button:hover {
     background-color: #b71c1c;
