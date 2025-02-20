@@ -31,23 +31,23 @@ function showCategory(category) {
             { title: "Fanta lemon zero", imageSrc: "media/fanta-lemon-zero.jpg", price: 1.80 },
             { title: "Ice tea", imageSrc: "https://www.manutan.nl/img/S/GRP/ST/AIG12165970.jpg", price: 1.80},
             { title: "Fanta cassis", imageSrc: "media/fanta-cassis.jpg", price: 1.80 },
-            { title: "Milkshake", imageSrc: "https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/sunset-sprinkle-shakes.jpg", price: 2.50 }, ]
+            { title: "Milkshake", imageSrc: "https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/sunset-sprinkle-shakes.jpg", price: 3.00 }, ]
     } else if (category === 'Warme-Dranken') {
         items = [
-            { title: "Chocomel", imageSrc: "media/choco-gs.jpg", price: 1.00 },
-            { title: "Chocomel met slagroom", imageSrc: "media/chocomel.jpg", price: 1.25 },
-            { title: "Koffie", imageSrc: "media/koffie.jpg", price: 1.50 },
-            { title: "Thee", imageSrc: "media/thee.jpg", price: 1.50 },
+            { title: "Chocomel", imageSrc: "media/choco-gs.jpg", price: 2.30 },
+            { title: "Chocomel met slagroom", imageSrc: "media/chocomel.jpg", price: 3.00 },
+            { title: "Koffie", imageSrc: "media/koffie.jpg", price: 2.20 },
+            { title: "Thee", imageSrc: "media/thee.jpg", price: 2.00 },
         ];
     }
     else if (category === 'Snacks') {
         items = [
-            { title: "Frikandel", imageSrc: "media/frikandel.jpg", price: 2.00 },
+            { title: "Frikandel", imageSrc: "media/frikandel.jpg", price: 1.60 },
             { title: "Bitterballen", imageSrc: "media/bitterbal.jpg", price: 2.50 },
-            { title: "Mexicano", imageSrc: "media/mexicano.png", price: 2.00 },
-            { title: "Kipcorn", imageSrc: "media/kipcorn.png", price: 2.20 },
-            { title: "Friet", imageSrc: "media/friet.png", price: 3.20 },
-            { title: "Kipnuggets", imageSrc: "media/kipnuggets.png", price: 2.70 },
+            { title: "Mexicano", imageSrc: "media/mexicano.png", price: 1.60 },
+            { title: "Kipcorn", imageSrc: "media/kipcorn.png", price: 1.60 },
+            { title: "Friet", imageSrc: "media/friet.png", price: 4.00 },
+            { title: "Kipnuggets", imageSrc: "media/kipnuggets.png", price: 2.50 },
         ];
     } else if (category === 'deserts') {
         items = [
