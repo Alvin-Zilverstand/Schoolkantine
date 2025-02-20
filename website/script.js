@@ -212,8 +212,11 @@ function getDescription(title) {
     }   else if (title === "Sausjes") {
         return "Kies de saus naar je keuze!";
 
+    }   else if (title === "Yoghert") {
+        return "";
 
-
+    }   else if (title === "Snoep") {
+        return "";
 
         
     }
