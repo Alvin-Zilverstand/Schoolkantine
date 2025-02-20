@@ -89,7 +89,7 @@ function showCategory(category) {
         ];
     } else if (category === 'Snoep') {
         items = [
-            { title: "", imageSrc: "", price: 5.10 },
+            { title: "harribo starmix", imageSrc: "media/starmix.jpg", price: 5.10 },
         ];
     }
     // Voeg de items toe aan de weergave
