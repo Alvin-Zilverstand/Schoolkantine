@@ -83,6 +83,14 @@ function showCategory(category) {
         { title: "Sweet Chili", imageSrc: "https://www.dechinesemuuregmond.nl/wp-content/uploads/2022/04/19.-Zoetzure-saus.jpg", price: 0.75 },
         {title: "Curry saus", imageSrc: "https://bestellen.hotelhetanker.nl/wp-content/uploads/2021/03/currysaus-1.png", price: 0.75}
     	];
+    } else if (category === 'yoghert') {
+        items = [
+            { title: "", imageSrc: "", price: 5.10 },
+        ];
+    } else if (category === 'Snoep') {
+        items = [
+            { title: "", imageSrc: "", price: 5.10 },
+        ];
     }
     // Voeg de items toe aan de weergave
     items.forEach(item => {
