@@ -151,7 +151,7 @@ body {
     display: none; /* Initially hide the cart icon */
     position: fixed;
     top: 80px; /* Move the cart icon down */
-    right: 20px;
+    right: 60px; /* Adjust right position to make space for language switcher */
     background-color: #ff6600;
     color: white;
     padding: 10px 15px;
@@ -313,4 +313,22 @@ body {
 .logo.hidden {
     opacity: 0; /* Hide the logo */
     visibility: hidden; /* Ensure the logo is not clickable */
+}
+
+.language-switcher {
+    position: fixed;
+    bottom: 20px; /* Position at the bottom */
+    left: 20px; /* Position at the left */
+    background-color: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    z-index: 1100; /* Ensure it is above other elements */
+}
+
+.language-switcher:hover {
+    background-color: #e65c00;
 }
