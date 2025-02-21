@@ -258,8 +258,16 @@ function getDescription(title) {
     // Sauzen beschrijving
     }   if (title === "Ketchup") {
         return "";
-        
-    }    if (title === "Aardbij yoghurt") {
+    }   if (title === "Mayonaise") {
+        return "";
+    }   if (title === "Mosterd") {
+        return "";
+    }   if (title === "Sweet Chili") {
+        return "";
+    }   if (title === "Curry saus") {
+        return "";
+    }
+        if (title === "Aardbij yoghurt") {
         return "Yoghurt met aardbei";
 
     }    if (title === "Haribo starmix") {
