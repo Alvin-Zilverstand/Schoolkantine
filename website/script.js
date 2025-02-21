@@ -236,6 +236,11 @@ function getDescription(title) {
         return "Een bakje met 9 Bitterballen    .";
     } else if (title === "Koekjes") {
         return "Lekkere knapperige chocolade koekjes!";
+    } else if (title === "Kroket") {
+        return "Een lekkere krokante kroket!";
+    } else if (title === "Kaassoufle") {
+        return "Een lekkere krokante kaassoufle!";
+
 
 
     // Ijsjes beschrijving  
