@@ -53,7 +53,9 @@ function showCategory(category) {
             { title: "Mexicano", imageSrc: "media/mexicano.png", price: 1.60 },
             { title: "Kipcorn", imageSrc: "media/kipcorn.png", price: 1.60 },
             { title: "Friet", imageSrc: "media/friet.png", price: 4.00 },
-            { title: "Kipnuggets", imageSrc: "media/kipnuggets.png", price: 2.50 }
+            { title: "Kipnuggets", imageSrc: "media/kipnuggets.png", price: 2.50 },
+            { title: "Kroket", imageSrc: "media/kroket.png", price: 1.80 } ,
+            { title: "Kaassoufle", imageSrc: "media/kaassoufle.png", price: 1.80 },
         ];
     } else if (category === 'Desserts') {
         items = [
@@ -116,8 +118,8 @@ function showCategory(category) {
             { title: "Haribo Tropifrutti", imageSrc: "media/tropifrutti.png", price: 2.50 },
             { title: "Haribo Tangfastics", imageSrc: "media/tangfastics.png", price: 2.50 },
             { title: "Haribo Kersen", imageSrc: "media/Kersen.png", price: 2.50 },
-            { title: "Popcorn zoet", imageSrc: "https://th.bing.com/th/id/OIP.6We0JA1TcUt_QOqMcMZsPwAAAA?rs=1&pid=ImgDetMain", price: 2.50 },
-            { title: "Popcorn zout", imageSrc: "https://www.sligro.nl/image-service/_jcr_content.product.08713276292032.image/1/large.jpeg", price: 2.50 },
+            { title: "Popcorn zoet", imageSrc: "https://th.bing.com/th/id/OIP.6We0JA1TcUt_QOqMcMZsPwAAAA?rs=1&pid=ImgDetMain", price: 2.20 },
+            { title: "Popcorn zout", imageSrc: "https://www.sligro.nl/image-service/_jcr_content.product.08713276292032.image/1/large.jpeg", price: 2.20 },
            { title: "Haribo Rolletje", imageSrc: "media/rolletje.png", price: 1.00 },
         ];
     } else if (category === 'Overige') {
@@ -234,6 +236,11 @@ function getDescription(title) {
         return "Een bakje met 9 Bitterballen    .";
     } else if (title === "Koekjes") {
         return "Lekkere knapperige chocolade koekjes!";
+    } else if (title === "Kroket") {
+        return "Een lekkere krokante kroket!";
+    } else if (title === "Kaassoufle") {
+        return "Een lekkere krokante kaassoufle!";
+
 
 
     // Ijsjes beschrijving  
