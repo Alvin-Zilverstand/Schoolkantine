@@ -105,7 +105,8 @@ function showCategory(category) {
             { title: "Haribo Tangfastics", imageSrc: "media/tangfastics.png", price: 2.50 },
             { title: "Haribo Kersen", imageSrc: "media/Kersen.png", price: 2.50 },
             { title: "Popcorn zoet", imageSrc: "https://th.bing.com/th/id/OIP.6We0JA1TcUt_QOqMcMZsPwAAAA?rs=1&pid=ImgDetMain", price: 2.50 },
-            { title: "Popcorn zout", imageSrc: "https://www.sligro.nl/image-service/_jcr_content.product.08713276292032.image/1/large.jpeg", price: 2.50 }
+            { title: "Popcorn zout", imageSrc: "https://www.sligro.nl/image-service/_jcr_content.product.08713276292032.image/1/large.jpeg", price: 2.50 },
+           { title: "Haribo Rolletje", imageSrc: "media/rolletje.png", price: 1.00 },
         ];
     } else if (category === 'Overige') {
         items = [
@@ -272,6 +273,8 @@ function getDescription(title) {
         return "Een mixzakje met 75g zure snoepjes.";
     }    if (title === "Haribo Kersen") {
         return "Een zakje met 75g kersjes.";
+    }    if (title === "Haribo Rolletje") {
+        return "Een rolletje met snoepjes.";
         return "";
 }
 }
