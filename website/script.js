@@ -85,7 +85,7 @@ function showCategory(category) {
     	];
     } else if (category === 'Yoghert') {
         items = [
-            { title: "aardbij yoghurt", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
+            { title: "Aardbij yoghurt", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
         ];
     } else if (category === 'Snoep') {
         items = [
@@ -201,24 +201,23 @@ function getDescription(title) {
     
     
     // Soepen beschrijving
-    } else if (title === "Soepen") {
-        return "Soep van de dag! (Allergieën? Meld het bij ons!)";
+    } if (title === "TomatenSoep") {
+        return "bluh";
 
     // Salades beschrijving
-    } else if (title === "Salades") {
-        return "Een heerlijke salade met verse groenten en een dressing naar keuze.";
+    }  if (title === "Caesar Salade") {
+        return "bluh";
 
     // Sauzen beschrijving
-    }   else if (title === "Sausjes") {
-        return "Kies de saus naar je keuze!";
-
-    }   else if (title === "Yoghert") {
+    }   if (title === "Ketchup") {
         return "bluh";
 
-    }   else if (title === "Snoep") {
+    }    if (title === "Aardbij Yoghert") {
         return "bluh";
 
-        
+    }    if (title === "Snoep") {
+        return "bluh";
+
     }
         return "";
 }
