@@ -89,8 +89,10 @@ function showCategory(category) {
         ];
     } else if (category === 'Snoep') {
         items = [
-            { title: "Haribo starmix", imageSrc: "media/starmix.jpg", price: 5.10 },
-            { title: "Haribo Kikkers", imageSrc: "media/kikkertjes.png", price: 5.10 },
+            { title: "Haribo starmix", imageSrc: "media/Starmix.png", price: 2.50 },
+            { title: "Haribo Kikkers", imageSrc: "media/kikkertjes.png", price: 2.50 },
+            { title: "Haribo Bananen", imageSrc: "media/bananas.png", price: 2.50 },
+            { title: "Haribo Goudberen", imageSrc: "media/Goudberen.png", price: 2.50 },
         ];
     }
     // Voeg de items toe aan de weergave
@@ -368,7 +370,7 @@ const translations = {
         "With this deal, you get a choice of a sandwich and a choice of a cold drink!!": "Bij deze deal krijg je een keuze naar een broodje en een keuze naar een koude drank!!",
         "Soup of the day! (Allergies? Let us know!)": "Soep van de dag! (Allergieën? Meld het bij ons!)",
         "A delicious salad with fresh vegetables and a dressing of your choice.": "Een heerlijke salade met verse groenten en een dressing naar keuze.",
-        "Choose the sauce of your choice!": "Kies de saus naar je keuze!"
+        "Choose the sauce of your choice!": "Kies de saus naar je keuze!", 
     }
 };
 
