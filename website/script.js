@@ -13,6 +13,9 @@ function showCategory(category) {
             { title: "Broodje Gehakt met Joppiesaus", imageSrc: "media/GehaktJoppie.png", price: 3.80 },
             { title: "Frikandelbroodje", imageSrc: "media/Frikandelbroodje.png", price: 1.20 },
             { title: "Saucijzenbroodje", imageSrc: "media/Saucijz.png", price: 1.20 },
+            { title: "Croissant", imageSrc: "https://th.bing.com/th/id/OIP._NRJfKZ0twQKDaljLKfvLAHaEt?rs=1&pid=ImgDetMain", price: 1.20 },
+            { title: "Chocolade broodje", imageSrc: "https://www.bakkerijtommie.nl/wp-content/uploads/2020/02/chocoladebroodje-600x599.png", price: 1.20 },
+            { title: "Broodje kip", imageSrc: "https://th.bing.com/th/id/OIP.sVGmYdUWj25TkUaJR2FCUwHaHa?rs=1&pid=ImgDetMain", price: 1.20 },
             
         ];
     } else if (category === 'Koude-Dranken') {
@@ -162,6 +165,12 @@ function getDescription(title) {
             return "Een knapperig korstje met een warme, kruidige vleesvulling";
         }    else if (title === "Frikandelbroodje") {
             return "Een knapperige korstje met een warme frikandel en curry saus erin";
+        }    else if (title === "Croissant") {
+            return "bluh";
+        }    else if (title === "Chocolade broodje") {
+            return "bluh";
+        }    else if (title === "Broodje kip") {
+            return "bluh";
 
     // Koude dranken beschrijving
     } else if (title === "Spa Water") {
@@ -226,6 +235,10 @@ function getDescription(title) {
     }    if (title === "Haribo starmix") {
         return "bluh";
     }    if (title === "Haribo Kikkers") {
+        return "bluh";
+    }    if (title === "Haribo Goudberen") {
+        return "bluh";
+    }    if (title === "Haribo Bananen") {
         return "bluh";
 
     }
