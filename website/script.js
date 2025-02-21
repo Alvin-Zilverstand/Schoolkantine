@@ -93,6 +93,14 @@ function showCategory(category) {
     } else if (category === 'Yoghurt') {
         items = [
             { title: "Aardbij yoghert", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
+            { title: "Optimel klein 250ml", imageSrc: "https://m.media-amazon.com/images/I/81mIA7bHX2L.jpg", price: 1.50 },
+            { title: "Optimel groot", imageSrc: "https://jumbo.com/dam-images/fit-in/360x360/Products/04092024_1725446061266_1725446064707_8713300459318_1.png", price: 2.45 },
+            { title: "Melk", imageSrc: "https://static.ah.nl/dam/product/AHI_4354523130313438333436?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary", price: 2.00 },
+            { title: "Fristi", imageSrc: "https://www.fristi.nl/sites/rfc/files/styles/content_image_md/public/media/images/cf500c0a-589a-4677-9737-b5bc0ba6596d.png?itok=j-R-hcKp", price: 2.90 },
+            { title: "Chocomel", imageSrc: "https://m.media-amazon.com/images/I/617FCPZS5sS.jpg", price: 2.90 },
+            { title: "Breaker", imageSrc: "https://cdn.hoogvliet.com/Images/Product/XL/022589000.jpg", price: 2.75 },
+            { title: "Yoghurt beker", imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc67eaAUkb3-7eTk7WR7F16FwDDnluLv2InQ&s", price: 2.05 },
+            { title: "Kwark 150 gram", imageSrc: "https://jumbo.com/dam-images/fit-in/720x720/Products/31082023_1693453250716_1693453252578_577765_CUP_08712800000136_C1N1.png", price: 2.05 },
         ];
     } else if (category === 'Snoep') {
         items = [
