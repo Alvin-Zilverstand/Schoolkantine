@@ -15,7 +15,7 @@ function showCategory(category) {
             { title: "Saucijzenbroodje", imageSrc: "media/Saucijz.png", price: 1.20 },
             { title: "Croissant", imageSrc: "https://th.bing.com/th/id/OIP._NRJfKZ0twQKDaljLKfvLAHaEt?rs=1&pid=ImgDetMain", price: 1.20 },
             { title: "Chocolade broodje", imageSrc: "https://www.bakkerijtommie.nl/wp-content/uploads/2020/02/chocoladebroodje-600x599.png", price: 1.20 },
-            { title: "Broodje kip", imageSrc: "https://th.bing.com/th/id/OIP.sVGmYdUWj25TkUaJR2FCUwHaHa?rs=1&pid=ImgDetMain", price: 1.20 },
+            { title: "Broodje kip", imageSrc: "https://th.bing.com/th/id/OIP.sVGmYdUWj25TkUaJR2FCUwHaHa?rs=1&pid=ImgDetMain", price: 3.20 },
             { title: "Panini broodje", imageSrc: "https://th.bing.com/th/id/OIP.aTQpC7sGUdi1HntM7OP6nwAAAA?w=350&h=517&rs=1&pid=ImgDetMain", price: 1.20 },
         ];
     } else if (category === 'Koude-Dranken') {
@@ -34,8 +34,11 @@ function showCategory(category) {
             { title: "Fanta lemon zero", imageSrc: "media/fanta-lemon-zero.jpg", price: 1.80 },
             { title: "Ice tea", imageSrc: "https://www.manutan.nl/img/S/GRP/ST/AIG12165970.jpg", price: 1.80},
             { title: "Fanta cassis", imageSrc: "media/fanta-cassis.jpg", price: 1.80 },
-            { title: "Milkshake", imageSrc: "https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/sunset-sprinkle-shakes.jpg", price: 3.00 }, ]
-    } else if (category === 'Warme-Dranken') {
+            { title: "Milkshake", imageSrc: "https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/sunset-sprinkle-shakes.jpg", price: 3.00 }, 
+            { title: "Redbull", imageSrc: "media/redbull.png", price: 2.10 },
+            { title: "Lente Redbull", imageSrc: "media/spring.png", price: 2.10 },
+        ]
+        } else if (category === 'Warme-Dranken') {
         items = [
             { title: "Chocomel", imageSrc: "media/choco-gs.jpg", price: 2.30 },
             { title: "Chocomel met slagroom", imageSrc: "media/chocomel.jpg", price: 3.00 },
@@ -86,7 +89,8 @@ function showCategory(category) {
         { title: "Mayonaise", imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4FVmHO_hK3mw43z0fuHv1OFUr-hhsfGe1A&s", price: 0.75 },
         { title: "Mosterd", imageSrc: "https://cdn.voedingswaardetabel.nl/img/prod/big/mosterd.jpg", price: 0.75 },
         { title: "Sweet Chili", imageSrc: "https://www.dechinesemuuregmond.nl/wp-content/uploads/2022/04/19.-Zoetzure-saus.jpg", price: 0.75 },
-        {title: "Curry saus", imageSrc: "https://bestellen.hotelhetanker.nl/wp-content/uploads/2021/03/currysaus-1.png", price: 0.75}
+        {title: "Curry saus", imageSrc: "https://bestellen.hotelhetanker.nl/wp-content/uploads/2021/03/currysaus-1.png", price: 0.75},
+        {title: "Barbecue saus", imageSrc: "Media/barbecue.png", price: 0.75}
     	];
 
 
@@ -199,6 +203,10 @@ function getDescription(title) {
         return "Koude verfrissende water.";
     }    else if (title === "Milkshake") {
         return "Verschillende diverse milkshake (keuze bij de counter maken)";
+    }    else if (title === "Lente Redbull") {
+        return "De Red Bull Spring Edition Walstro & Pink Grapefruit";
+    }    else if (title === "Redbull") {
+        return "De orginele Redbull";
 
 
     // Warme dranken beschrijving
@@ -259,7 +267,13 @@ function getDescription(title) {
 
     // Salades beschrijving
     }  if (title === "Caesar Salade") {
-        return "een klassieke caesar salade zit sla romaine, ui,  kipfilet, citroen, mayonaise en olijfolie";
+        return "In een klassieke Ceesar salade zit sla romaine, ui,  kipfilet, citroen, mayonaise en olijfolie";
+    }  if (title === "Griekse Salade") {
+        return "In een Griekse salade zit komkommer, snoeptomatjes, klein beetje rode ui, olijven, feta kaas en croutons";
+    }  if (title === "Krokante Kip Salade") {
+        return "In de krokante Kip Salade zit kip, sla, klein beetje rode ui, snoeptomaatjes, olijfolie en komkommer";
+    }  if (title === "Aardappel Salade") {
+        return "In de aardappel salade zit aardappelen, prei, erwten, peper en zout";
 
     // Sauzen beschrijving
     }   if (title === "Ketchup") {
