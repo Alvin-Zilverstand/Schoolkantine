@@ -90,9 +90,9 @@ function showCategory(category) {
     	];
 
 
-    } else if (category === 'Yoghert') {
+    } else if (category === 'Yoghurt') {
         items = [
-            { title: "Aardbij yoghert", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
+            { title: "Aardbij yoghurt", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
         ];
     } else if (category === 'Snoep') {
         items = [
@@ -253,7 +253,7 @@ function getDescription(title) {
     }    if (title === "Appelflap") {
         return "bluhll";
         
-    }    if (title === "Aardbij yoghert") {
+    }    if (title === "Aardbij yoghurt") {
         return "bluhllllllllllllllllllllll";
 
     }    if (title === "Haribo starmix") {
