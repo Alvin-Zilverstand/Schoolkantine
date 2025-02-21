@@ -183,7 +183,7 @@ function showItemDetails(item) {
 function getDescription(title) {
 
     // Broodjes beschrijvingen
-}   if (title === "Broodje Gezond") {
+    if (title === "Broodje Gezond") {
         return "Op dit broodje zit kaas, veldsla, komkommer, tomaat, ei, ham en/of kip en bufkes saus.";
     }   else if (title === "Bagel") {
         return "Doughnut brood met spek, ei en kaas";
@@ -346,6 +346,7 @@ function getDescription(title) {
     return "Bekers die je kunt hervullen en daarna weg kan gooien";
 }    if (title === "Rietjes") {
     return "Plastice rietjes";
+}
 }
 // Functie om een item aan het winkelwagentje toe te voegen
 function addToCart(item) {
