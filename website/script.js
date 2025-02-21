@@ -248,7 +248,7 @@ function getDescription(title) {
     
     
     // Soepen beschrijving
-    } if (title === "TomatenSoep") {
+    } if (title === "Tomatensoep") {
         return "Tomatensoep met gehakt balletje";
 
     // Salades beschrijving
