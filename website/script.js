@@ -49,7 +49,7 @@ function showCategory(category) {
             { title: "Friet", imageSrc: "media/friet.png", price: 4.00 },
             { title: "Kipnuggets", imageSrc: "media/kipnuggets.png", price: 2.50 },
         ];
-    } else if (category === 'deserts') {
+    } else if (category === 'Desserts') {
         items = [
             { title: "Ijsjes", imageSrc: "media/Ijs.png", price: 2.30 },
             { title: "Sorbet", imageSrc: "media/sorbet.webp", price: 3.20 },
@@ -85,7 +85,7 @@ function showCategory(category) {
     	];
     } else if (category === 'Yoghert') {
         items = [
-            { title: "Aardbij yoghurt", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
+            { title: "Aardbij yoghert", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
         ];
     } else if (category === 'Snoep') {
         items = [
@@ -213,10 +213,12 @@ function getDescription(title) {
     }   if (title === "Ketchup") {
         return "bluh";
 
-    }    if (title === "Aardbij Yoghert") {
-        return "bluh";
+    }    if (title === "Aardbij yoghert") {
+        return "bluhllllllllllllllllllllll";
 
-    }    if (title === "Snoep") {
+    }    if (title === "Haribo starmix") {
+        return "bluh";
+    }    if (title === "Haribo Kikkers") {
         return "bluh";
 
     }
