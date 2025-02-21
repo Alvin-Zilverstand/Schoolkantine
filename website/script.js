@@ -249,21 +249,18 @@ function getDescription(title) {
     
     // Soepen beschrijving
     } if (title === "TomatenSoep") {
-        return "bluh";
+        return "Tomatensoep met gehakt balletje";
 
     // Salades beschrijving
     }  if (title === "Caesar Salade") {
-        return "bluh";
+        return "een klassieke caesar salade zit sla romaine, ui,  kipfilet, citroen, mayonaise en olijfolie";
 
     // Sauzen beschrijving
     }   if (title === "Ketchup") {
-        return "bluh";
-
-    }    if (title === "Appelflap") {
-        return "bluhll";
+        return "";
         
     }    if (title === "Aardbij yoghurt") {
-        return "bluhllllllllllllllllllllll";
+        return "Yoghurt met aardbei";
 
     }    if (title === "Haribo starmix") {
         return "Een mixzakje met 75g snoepjes. ";
@@ -283,7 +280,6 @@ function getDescription(title) {
         return "Een zakje met 75g kersjes.";
     }    if (title === "Haribo Rolletje") {
         return "Een rolletje met snoepjes.";
-        return "";
 }
 }
 // Functie om een item aan het winkelwagentje toe te voegen
