@@ -101,6 +101,12 @@ function showCategory(category) {
             { title: "Haribo Bananen", imageSrc: "media/bananas.png", price: 2.50 },
             { title: "Haribo Goudberen", imageSrc: "media/Goudberen.png", price: 2.50 },
         ];
+    } else if (category === 'Overige') {
+        items = [
+            { title: "Bestek", imageSrc: "https://www.kerst-feestwinkel.nl/img/large/zwart-plastic-verjaardag-bbq-bestek-24-delig/10038/913-1.jpg", price: 0.40},
+            { title: "Hervul baar bekers", imageSrc:"https://th.bing.com/th/id/OIP.7V3t9HqIG_ss_IfEn6vgIwHaFl?w=238&h=180&c=7&pcl=1b1a19&r=0&o=5&pid=1.7", price: 1.00},
+            { title: "Rietjes",  imageSrc: "https://th.bing.com/th/id/OIP.hiraJOON9-g_L44k0RRJ2QHaHa?w=186&h=190&c=7&pcl=1b1a19&r=0&o=5&pid=1.7", price: 0.15}, 
+        ];
     }
     // Voeg de items toe aan de weergave
     items.forEach(item => {
@@ -338,6 +344,7 @@ const translations = {
         "Toevoegen aan winkelmandje": "Add to cart",
         "Bestellen": "Order",
         "Totaal": "Total",
+        "Overige": "Other",
         "Op dit broodje zit kaas, veldsla, komkommer, tomaat, ei, ham en/of kip en bufkes saus.": "This sandwich contains cheese, lamb's lettuce, cucumber, tomato, egg, ham and/or chicken, and bufkes sauce.",
         "Doughnut brood met spek, ei en kaas": "Doughnut bread with bacon, egg, and cheese",
         "Een wit of bruin broodje met Gehakt, Ei, Sla en Joppiesaus": "A white or brown sandwich with minced meat, egg, lettuce, and Joppiesaus",
@@ -379,6 +386,7 @@ const translations = {
         "Add to cart": "Toevoegen aan winkelmandje",
         "Order": "Bestellen",
         "Total": "Totaal",
+        "Other": "Overige",
         "This sandwich contains cheese, lamb's lettuce, cucumber, tomato, egg, ham and/or chicken, and bufkes sauce.": "Op dit broodje zit kaas, veldsla, komkommer, tomaat, ei, ham en/of kip en bufkes saus.",
         "Doughnut bread with bacon, egg, and cheese": "Doughnut brood met spek, ei en kaas",
         "A white or brown sandwich with minced meat, egg, lettuce, and Joppiesaus": "Een wit of bruin broodje met Gehakt, Ei, Sla en Joppiesaus",
