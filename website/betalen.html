@@ -9,11 +9,20 @@
     <link rel="stylesheet" href="betaal.css">
 </head>
 
+<script>
+    window.onload = function() {
+        var number = Math.floor((Math.random() * 999) + 1);
+        document.getElementById("random-number").innerHTML = "Uw Bestellings nummer = #" + number;
+        }
+</script>
+
 <body>
     <h1>Bedankt voor uw bestelling!</h1>
     <p>Uw bestelling is succesvol geplaatst. U kunt dit tabblad nu sluiten.</p>
     <button onclick="window.close()">Sluit dit tabblad</button>
-    <h1>Uw Bestellings nummer=</h1>
+    <h1 id="random-number"></h1>
 </body>
 
+<script src="script.js"></script>
 </html>
+ 
