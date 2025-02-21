@@ -259,7 +259,13 @@ function getDescription(title) {
 
     // Salades beschrijving
     }  if (title === "Caesar Salade") {
-        return "een klassieke caesar salade zit sla romaine, ui,  kipfilet, citroen, mayonaise en olijfolie";
+        return "In een klassieke Ceesar salade zit sla romaine, ui,  kipfilet, citroen, mayonaise en olijfolie";
+    }  if (title === "Griekse Salade") {
+        return "In een Griekse salade zit komkommer, snoeptomatjes, klein beetje rode ui, olijven, feta kaas en croutons";
+    }  if (title === "Krokante Kip Salade") {
+        return "In de krokante Kip Salade zit kip, sla, klein beetje rode ui, snoeptomaatjes, olijfolie en komkommer";
+    }  if (title === "Aardappel Salade") {
+        return "In de aardappel salade zit aardappelen, prei, erwten, peper en zout";
 
     // Sauzen beschrijving
     }   if (title === "Ketchup") {
