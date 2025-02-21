@@ -50,8 +50,7 @@ function showCategory(category) {
             { title: "Mexicano", imageSrc: "media/mexicano.png", price: 1.60 },
             { title: "Kipcorn", imageSrc: "media/kipcorn.png", price: 1.60 },
             { title: "Friet", imageSrc: "media/friet.png", price: 4.00 },
-            { title: "Kipnuggets", imageSrc: "media/kipnuggets.png", price: 2.50 },
-            { title: "Koekjes", imageSrc: "https://rutgerbakt.nl/wp-content/uploads/2020/02/chocolat_chip_cookies_recept-scaled.jpg", price: 2.50 },
+            { title: "Kipnuggets", imageSrc: "media/kipnuggets.png", price: 2.50 }
         ];
     } else if (category === 'Desserts') {
         items = [
@@ -60,6 +59,7 @@ function showCategory(category) {
             { title: "Softijs", imageSrc: "media/softijs.jpg", price: 1.50 },
             { title: "Sundea ijs", imageSrc: "media/sundea.jpg", price: 2.30 },
             { title: "Appelflap", imageSrc: "https://www.royalsmilde.com/uploads/og_image/c172e39c-5f71-59c3-b904-52a773b60239/3168309207/Appelflap%20met%20rozijnen.jpg", price: 2.30 },
+            { title: "Koekjes", imageSrc: "https://rutgerbakt.nl/wp-content/uploads/2020/02/chocolat_chip_cookies_recept-scaled.jpg", price: 2.50 }
         ];
     } else if (category === 'Deals') {
         items = [
