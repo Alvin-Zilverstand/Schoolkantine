@@ -225,7 +225,7 @@ function getDescription(title) {
     } else if (title === "Bitterballen") {
         return "Een bakje met 9 Bitterballen    .";
     } else if (title === "Koekjes") {
-        return "bluh";
+        return "Lekkere knapperige chocolade koekjes!";
 
 
     // Ijsjes beschrijving  
@@ -234,7 +234,7 @@ function getDescription(title) {
     }    else if (title === "Sorbet") {
         return "Lekkeresorbet met saus naar keuze";
     } else if (title === "Softijs") {
-        return "bluh";
+        return "Een melk ijsje";
     }    else if (title === "Sundea ijs") {
         return "bluh";
     }    else if (title === "Appelflap") {
