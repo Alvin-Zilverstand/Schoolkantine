@@ -40,8 +40,8 @@ function showCategory(category) {
         ]
         } else if (category === 'Warme-Dranken') {
         items = [
-            { title: "Chocomel", imageSrc: "media/choco-gs.jpg", price: 2.30 },
-            { title: "Chocomel met slagroom", imageSrc: "media/chocomel.jpg", price: 3.00 },
+            { title: "Warme Chocomel", imageSrc: "media/choco-gs.jpg", price: 2.30 },
+            { title: "Warme Chocomel met slagroom", imageSrc: "media/chocomel.jpg", price: 3.00 },
             { title: "Koffie", imageSrc: "media/koffie.jpg", price: 2.20 },
             { title: "Thee", imageSrc: "media/thee.jpg", price: 2.00 },
         ];
@@ -289,9 +289,29 @@ function getDescription(title) {
     }   if (title === "Curry saus") {
         return "";
     }
+    // Yoghurt beschrijving 
         if (title === "Aardbij yoghurt") {
         return "Yoghurt met aardbei";
+    }   if (title === "Optimel klein 250ml") {
+        return "Een klein pakje drink yoghurt";
+    }    if (title === "Optimel groot") {
+    return "Een groot pakje drink yoghurt";
+    }    if (title === "Melk") {
+    return "Halfvolle melk in een klein pakje";
+    }    if (title === "Fristi") {
+    return "Melkdrank met vruchtensmaak";
+    }    if (title === "Koude chocomelk") {
+    return "Koude chocomelk in een flesje";
+    }    if (title === "Breaker") {
+    return "Verschillende diverse smaken bij de counter";
+    }    if (title === "Yoghurt beker") {
+    return "Een klein bakje met yoghurt en musli erbij";
+    }       if (title === "Kwark 150 gram") {
+    return "Een klein bakje kwark";
 
+    }
+    {    
+        // snoep beschrijing
     }    if (title === "Haribo starmix") {
         return "Een mixzakje met 75g snoepjes. ";
     }    if (title === "Haribo Kikkers") {
