@@ -250,6 +250,12 @@ function getDescription(title) {
     // Soepen beschrijving
     } if (title === "Tomatensoep") {
         return "Tomatensoep met gehakt balletje";
+    } if (title === "Kippensoep") {
+        return "Kippensoep met kip en groenten";
+    } if (title === "Erwtensoep") {
+        return "Gemalen erwten met stukjes worst erin";
+    } if (title === "Groentesoep (met gehaktballetjes)") {
+        return "Een soep met veel groente erin en gehaktballetjes";
 
     // Salades beschrijving
     }  if (title === "Caesar Salade") {
