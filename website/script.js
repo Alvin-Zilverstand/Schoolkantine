@@ -118,11 +118,11 @@ function showCategory(category) {
             { title: "Haribo Tropifrutti", imageSrc: "media/tropifrutti.png", price: 2.50 },
             { title: "Haribo Tangfastics", imageSrc: "media/tangfastics.png", price: 2.50 },
             { title: "Haribo Kersen", imageSrc: "media/Kersen.png", price: 2.50 },
-            { title: "Popcorn zoet", imageSrc: "https://th.bing.com/th/id/OIP.6We0JA1TcUt_QOqMcMZsPwAAAA?rs=1&pid=ImgDetMain", price: 2.20 },
-            { title: "Popcorn zout", imageSrc: "https://www.sligro.nl/image-service/_jcr_content.product.08713276292032.image/1/large.jpeg", price: 2.20 },
            { title: "Haribo Rolletje", imageSrc: "media/rolletje.png", price: 1.00 },
            { title: "Haribo Happy Cola", imageSrc: "media/happycola.png", price: 1.00 },
            { title: "Haribo Pinballs", imageSrc: "media/pinballs.png", price: 1.00 },
+           { title: "Popcorn zoet", imageSrc: "https://th.bing.com/th/id/OIP.6We0JA1TcUt_QOqMcMZsPwAAAA?rs=1&pid=ImgDetMain", price: 2.20 },
+            { title: "Popcorn zout", imageSrc: "https://www.sligro.nl/image-service/_jcr_content.product.08713276292032.image/1/large.jpeg", price: 2.20 },
         ];
     } else if (category === 'Overige') {
         items = [
