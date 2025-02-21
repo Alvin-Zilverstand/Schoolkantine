@@ -4,7 +4,7 @@ function showCategory(category) {
     productDisplay.innerHTML = ''; // Maak het display leeg voordat we nieuwe items toevoegen
 
     let items = [];
-
+}
     // Afhankelijk van de gekozen categorie, voeg je de juiste producten toe
     if (category === 'Broodjes') {
         items = [
@@ -94,7 +94,12 @@ function showCategory(category) {
             { title: "Haribo Bananen", imageSrc: "media/bananas.png", price: 2.50 },
             { title: "Haribo Goudberen", imageSrc: "media/Goudberen.png", price: 2.50 },
         ];
-    }
+    } else if (category === 'Overige') {
+        items = [
+            { title: "Bestek", imageSrc: "https://www.kerst-feestwinkel.nl/img/large/zwart-plastic-verjaardag-bbq-bestek-24-delig/10038/913-1.jpg", price: 0.40},
+            { title: "Hervul baar bekers", imageSrc:"https://th.bing.com/th/id/OIP.7V3t9HqIG_ss_IfEn6vgIwHaFl?w=238&h=180&c=7&pcl=1b1a19&r=0&o=5&pid=1.7", price: 1.00},
+            { title: "Rietjes",  imageSrc: "https://th.bing.com/th/id/OIP.hiraJOON9-g_L44k0RRJ2QHaHa?w=186&h=190&c=7&pcl=1b1a19&r=0&o=5&pid=1.7", price: 0.15}, 
+        ];
     // Voeg de items toe aan de weergave
     items.forEach(item => {
         const productBox = document.createElement('div');
