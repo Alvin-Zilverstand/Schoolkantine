@@ -15,7 +15,7 @@ function showCategory(category) {
             { title: "Saucijzenbroodje", imageSrc: "media/Saucijz.png", price: 1.20 },
             { title: "Croissant", imageSrc: "https://th.bing.com/th/id/OIP._NRJfKZ0twQKDaljLKfvLAHaEt?rs=1&pid=ImgDetMain", price: 1.20 },
             { title: "Chocolade broodje", imageSrc: "https://www.bakkerijtommie.nl/wp-content/uploads/2020/02/chocoladebroodje-600x599.png", price: 1.20 },
-            { title: "Broodje kip", imageSrc: "https://th.bing.com/th/id/OIP.sVGmYdUWj25TkUaJR2FCUwHaHa?rs=1&pid=ImgDetMain", price: 1.20 },
+            { title: "Broodje kip", imageSrc: "https://th.bing.com/th/id/OIP.sVGmYdUWj25TkUaJR2FCUwHaHa?rs=1&pid=ImgDetMain", price: 3.20 },
             { title: "Panini broodje", imageSrc: "https://th.bing.com/th/id/OIP.aTQpC7sGUdi1HntM7OP6nwAAAA?w=350&h=517&rs=1&pid=ImgDetMain", price: 1.20 },
         ];
     } else if (category === 'Koude-Dranken') {
@@ -35,8 +35,8 @@ function showCategory(category) {
             { title: "Ice tea", imageSrc: "https://www.manutan.nl/img/S/GRP/ST/AIG12165970.jpg", price: 1.80},
             { title: "Fanta cassis", imageSrc: "media/fanta-cassis.jpg", price: 1.80 },
             { title: "Milkshake", imageSrc: "https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/sunset-sprinkle-shakes.jpg", price: 3.00 }, 
-            { title: "Redbull", imageSrc: "media/redbull.png", price: 1.80 },
-            { title: "Lente Redbull", imageSrc: "media/spring.png", price: 1.80 },
+            { title: "Redbull", imageSrc: "media/redbull.png", price: 2.10 },
+            { title: "Lente Redbull", imageSrc: "media/spring.png", price: 2.10 },
         ]
         } else if (category === 'Warme-Dranken') {
         items = [
