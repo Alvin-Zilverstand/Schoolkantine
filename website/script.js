@@ -34,8 +34,11 @@ function showCategory(category) {
             { title: "Fanta lemon zero", imageSrc: "media/fanta-lemon-zero.jpg", price: 1.80 },
             { title: "Ice tea", imageSrc: "https://www.manutan.nl/img/S/GRP/ST/AIG12165970.jpg", price: 1.80},
             { title: "Fanta cassis", imageSrc: "media/fanta-cassis.jpg", price: 1.80 },
-            { title: "Milkshake", imageSrc: "https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/sunset-sprinkle-shakes.jpg", price: 3.00 }, ]
-    } else if (category === 'Warme-Dranken') {
+            { title: "Milkshake", imageSrc: "https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/sunset-sprinkle-shakes.jpg", price: 3.00 }, 
+            { title: "Redbull", imageSrc: "media/redbull.png", price: 1.80 },
+            { title: "Lente Redbull", imageSrc: "media/spring.png", price: 1.80 },
+        ]
+        } else if (category === 'Warme-Dranken') {
         items = [
             { title: "Chocomel", imageSrc: "media/choco-gs.jpg", price: 2.30 },
             { title: "Chocomel met slagroom", imageSrc: "media/chocomel.jpg", price: 3.00 },
@@ -86,7 +89,8 @@ function showCategory(category) {
         { title: "Mayonaise", imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4FVmHO_hK3mw43z0fuHv1OFUr-hhsfGe1A&s", price: 0.75 },
         { title: "Mosterd", imageSrc: "https://cdn.voedingswaardetabel.nl/img/prod/big/mosterd.jpg", price: 0.75 },
         { title: "Sweet Chili", imageSrc: "https://www.dechinesemuuregmond.nl/wp-content/uploads/2022/04/19.-Zoetzure-saus.jpg", price: 0.75 },
-        {title: "Curry saus", imageSrc: "https://bestellen.hotelhetanker.nl/wp-content/uploads/2021/03/currysaus-1.png", price: 0.75}
+        {title: "Curry saus", imageSrc: "https://bestellen.hotelhetanker.nl/wp-content/uploads/2021/03/currysaus-1.png", price: 0.75},
+        {title: "Barbecue saus", imageSrc: "Media/barbecue.png", price: 0.75}
     	];
 
 
@@ -199,6 +203,10 @@ function getDescription(title) {
         return "Koude verfrissende water.";
     }    else if (title === "Milkshake") {
         return "Verschillende diverse milkshake (keuze bij de counter maken)";
+    }    else if (title === "Lente Redbull") {
+        return "De Red Bull Spring Edition Walstro & Pink Grapefruit";
+    }    else if (title === "Redbull") {
+        return "De orginele Redbull";
 
 
     // Warme dranken beschrijving
