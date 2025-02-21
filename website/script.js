@@ -13,6 +13,9 @@ function showCategory(category) {
             { title: "Broodje Gehakt met Joppiesaus", imageSrc: "media/GehaktJoppie.png", price: 3.80 },
             { title: "Frikandelbroodje", imageSrc: "media/Frikandelbroodje.png", price: 1.20 },
             { title: "Saucijzenbroodje", imageSrc: "media/Saucijz.png", price: 1.20 },
+            { title: "Croissant", imageSrc: "https://th.bing.com/th/id/OIP._NRJfKZ0twQKDaljLKfvLAHaEt?rs=1&pid=ImgDetMain", price: 1.20 },
+            { title: "Chocolade broodje", imageSrc: "https://www.bakkerijtommie.nl/wp-content/uploads/2020/02/chocoladebroodje-600x599.png", price: 1.20 },
+            { title: "Broodje kip", imageSrc: "https://th.bing.com/th/id/OIP.sVGmYdUWj25TkUaJR2FCUwHaHa?rs=1&pid=ImgDetMain", price: 1.20 },
             
         ];
     } else if (category === 'Koude-Dranken') {
@@ -49,7 +52,7 @@ function showCategory(category) {
             { title: "Friet", imageSrc: "media/friet.png", price: 4.00 },
             { title: "Kipnuggets", imageSrc: "media/kipnuggets.png", price: 2.50 },
         ];
-    } else if (category === 'deserts') {
+    } else if (category === 'Desserts') {
         items = [
             { title: "Ijsjes", imageSrc: "media/Ijs.png", price: 2.30 },
             { title: "Sorbet", imageSrc: "media/sorbet.webp", price: 3.20 },
@@ -85,7 +88,7 @@ function showCategory(category) {
     	];
     } else if (category === 'Yoghert') {
         items = [
-            { title: "Aardbij yoghurt", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
+            { title: "Aardbij yoghert", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
         ];
     } else if (category === 'Snoep') {
         items = [
@@ -97,6 +100,12 @@ function showCategory(category) {
             { title: "Haribo Tropifrutti", imageSrc: "media/tropifrutti.png", price: 2.50 },
             { title: "Haribo Tangfastics", imageSrc: "media/tangfastics.png", price: 2.50 },
             { title: "Haribo Kersen", imageSrc: "media/Kersen.png", price: 2.50 },
+        ];
+    } else if (category === 'Overige') {
+        items = [
+            { title: "Bestek", imageSrc: "https://www.kerst-feestwinkel.nl/img/large/zwart-plastic-verjaardag-bbq-bestek-24-delig/10038/913-1.jpg", price: 0.40},
+            { title: "Hervul baar bekers", imageSrc:"https://th.bing.com/th/id/OIP.7V3t9HqIG_ss_IfEn6vgIwHaFl?w=238&h=180&c=7&pcl=1b1a19&r=0&o=5&pid=1.7", price: 1.00},
+            { title: "Rietjes",  imageSrc: "https://th.bing.com/th/id/OIP.hiraJOON9-g_L44k0RRJ2QHaHa?w=186&h=190&c=7&pcl=1b1a19&r=0&o=5&pid=1.7", price: 0.15}, 
         ];
     }
     // Voeg de items toe aan de weergave
@@ -161,6 +170,12 @@ function getDescription(title) {
             return "Een knapperig korstje met een warme, kruidige vleesvulling";
         }    else if (title === "Frikandelbroodje") {
             return "Een knapperige korstje met een warme frikandel en curry saus erin";
+        }    else if (title === "Croissant") {
+            return "bluh";
+        }    else if (title === "Chocolade broodje") {
+            return "bluh";
+        }    else if (title === "Broodje kip") {
+            return "bluh";
 
     // Koude dranken beschrijving
     } else if (title === "Spa Water") {
@@ -219,10 +234,16 @@ function getDescription(title) {
     }   if (title === "Ketchup") {
         return "bluh";
 
-    }    if (title === "Aardbij Yoghert") {
-        return "bluh";
+    }    if (title === "Aardbij yoghert") {
+        return "bluhllllllllllllllllllllll";
 
-    }    if (title === "Snoep") {
+    }    if (title === "Haribo starmix") {
+        return "bluh";
+    }    if (title === "Haribo Kikkers") {
+        return "bluh";
+    }    if (title === "Haribo Goudberen") {
+        return "bluh";
+    }    if (title === "Haribo Bananen") {
         return "bluh";
 
     }
@@ -310,6 +331,7 @@ const translations = {
         "Toevoegen aan winkelmandje": "Add to cart",
         "Bestellen": "Order",
         "Totaal": "Total",
+        "Overige": "Other",
         "Op dit broodje zit kaas, veldsla, komkommer, tomaat, ei, ham en/of kip en bufkes saus.": "This sandwich contains cheese, lamb's lettuce, cucumber, tomato, egg, ham and/or chicken, and bufkes sauce.",
         "Doughnut brood met spek, ei en kaas": "Doughnut bread with bacon, egg, and cheese",
         "Een wit of bruin broodje met Gehakt, Ei, Sla en Joppiesaus": "A white or brown sandwich with minced meat, egg, lettuce, and Joppiesaus",
@@ -351,6 +373,7 @@ const translations = {
         "Add to cart": "Toevoegen aan winkelmandje",
         "Order": "Bestellen",
         "Total": "Totaal",
+        "Other": "Overige",
         "This sandwich contains cheese, lamb's lettuce, cucumber, tomato, egg, ham and/or chicken, and bufkes sauce.": "Op dit broodje zit kaas, veldsla, komkommer, tomaat, ei, ham en/of kip en bufkes saus.",
         "Doughnut bread with bacon, egg, and cheese": "Doughnut brood met spek, ei en kaas",
         "A white or brown sandwich with minced meat, egg, lettuce, and Joppiesaus": "Een wit of bruin broodje met Gehakt, Ei, Sla en Joppiesaus",
