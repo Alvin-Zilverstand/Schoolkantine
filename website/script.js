@@ -98,7 +98,7 @@ function showCategory(category) {
 
     } else if (category === 'Yoghurt') {
         items = [
-            { title: "Aardbij yoghert", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
+            { title: "Aardbij yoghurt", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
             { title: "Optimel klein 250ml", imageSrc: "https://m.media-amazon.com/images/I/81mIA7bHX2L.jpg", price: 1.50 },
             { title: "Optimel groot", imageSrc: "https://jumbo.com/dam-images/fit-in/360x360/Products/04092024_1725446061266_1725446064707_8713300459318_1.png", price: 2.45 },
             { title: "Melk", imageSrc: "https://static.ah.nl/dam/product/AHI_4354523130313438333436?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary", price: 2.00 },
@@ -181,7 +181,7 @@ function showItemDetails(item) {
 function getDescription(title) {
 
     // Broodjes beschrijvingen
-    if (title === "Broodje Gezond") {
+}   if (title === "Broodje Gezond") {
         return "Op dit broodje zit kaas, veldsla, komkommer, tomaat, ei, ham en/of kip en bufkes saus.";
     }   else if (title === "Bagel") {
         return "Doughnut brood met spek, ei en kaas";
@@ -336,6 +336,14 @@ function getDescription(title) {
     }    if (title === "Haribo Rolletje") {
         return "Een rolletje met snoepjes.";
 }
+    {    
+    // overige beschrijing
+    }    if (title === "Bestek") {
+    return "Plastice vorken, messen en lepels ";
+}    if (title === "Hervul baar bekers") {
+    return "Bekers die je kunt hervullen en daarna weg kan gooien";
+}    if (title === "Rietjes") {
+    return "Plastice rietjes";
 }
 // Functie om een item aan het winkelwagentje toe te voegen
 function addToCart(item) {
