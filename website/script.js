@@ -236,9 +236,9 @@ function getDescription(title) {
     } else if (title === "Softijs") {
         return "Een melk ijsje";
     }    else if (title === "Sundea ijs") {
-        return "bluh";
+        return "Een softijs ijsje in een bakje met een sas naar keuze!";
     }    else if (title === "Appelflap") {
-        return "bluh";
+        return "Een lekker korstje met fijn gesneden appels, rozijnen en kaneel erin";
 
     // Deals beschrijing
     } else if (title === "Lunch Deal") {
