@@ -186,13 +186,13 @@ function getDescription(title) {
         }    else if (title === "Frikandelbroodje") {
             return "Een knapperige korstje met een warme frikandel en curry saus erin";
         }    else if (title === "Croissant") {
-            return "bluh";
+            return "Verschilende diverse croisantje beschikbaar bij de counter";
         }    else if (title === "Chocolade broodje") {
-            return "bluh";
+            return "Een krokrantig korstje met chocolade erin";
         }    else if (title === "Broodje kip") {
-            return "bluh";
+            return "Op het broodje kip zit komkommer, salade, kip en bufkes saus";
         }    else if (title === "Panini broodje") {
-                return "bluh";
+                return "Verschillende diverse panini's zijn te vinden op de counter!";
 
     // Koude dranken beschrijving
     } else if (title === "Spa Water") {
@@ -213,9 +213,9 @@ function getDescription(title) {
 
     // Snacks beschrijving
     } else if (title === "Frikandel") {
-        return "Een frikandel, dat wil je wel!";
+        return "Gemalen gehakt in een staafje";
     } else if (title === "Friet") {
-        return "Een klein bakje met friet.";
+        return "Een bakje friet";
     } else if (title === "Kipcorn") {
         return "Een lekkere krokante Kipcorn.";
     } else if (title === "Kipnuggets") {
