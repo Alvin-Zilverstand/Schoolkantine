@@ -134,7 +134,7 @@ body {
 }
 
 #add-to-cart {
-    background-color: #4CAF50;
+    background-color: #F56E28;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -144,7 +144,7 @@ body {
 }
 
 #add-to-cart:hover {
-    background-color: #45a049;
+    background-color: #F56E28;
 }
 
 /* Winkelwagen-icoon */

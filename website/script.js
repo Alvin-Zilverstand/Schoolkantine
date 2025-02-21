@@ -255,18 +255,24 @@ function getDescription(title) {
         return "bluhllllllllllllllllllllll";
 
     }    if (title === "Haribo starmix") {
-        return "bluh";
+        return "Een mixzakje met 75g snoepjes. ";
     }    if (title === "Haribo Kikkers") {
-        return "bluh";
+        return "Een zakje met 75g kikkertjes.";
     }    if (title === "Haribo Goudberen") {
-        return "bluh";
+        return "Een zakje met 75g beertjes";
     }    if (title === "Haribo Bananen") {
-        return "bluh";
-
-    }
+        return "Een zakje met 75g banaantjes.";
+    }    if (title === "Haribo Perzikken") {
+        return "Een zakje met 75g Perzikken.";
+    }    if (title === "Haribo Tropifrutti") {
+        return "Een mix zakje met 75g Snoepjes.";
+    }    if (title === "Haribo Tangfastics") {
+        return "Een mixzakje met 75g zure snoepjes.";
+    }    if (title === "Haribo Kersen") {
+        return "Een zakje met 75g kersjes.";
         return "";
 }
-
+}
 // Functie om een item aan het winkelwagentje toe te voegen
 function addToCart(item) {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
