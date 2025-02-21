@@ -152,7 +152,7 @@ body {
     display: none; /* Initially hide the cart icon */
     position: fixed;
     top: 80px; /* Move the cart icon down */
-    right: 60px; /* Adjust right position to make space for language switcher */
+    right: 10px; /* Adjust right position to make space for language switcher */
     background-color: #ff6600;
     color: white;
     padding: 10px 15px;
