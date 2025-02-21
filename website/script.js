@@ -190,13 +190,13 @@ function getDescription(title) {
         }    else if (title === "Frikandelbroodje") {
             return "Een knapperige korstje met een warme frikandel en curry saus erin";
         }    else if (title === "Croissant") {
-            return "bluh";
+            return "Verschilende diverse croisantje beschikbaar bij de counter";
         }    else if (title === "Chocolade broodje") {
-            return "bluh";
+            return "Een krokrantig korstje met chocolade erin";
         }    else if (title === "Broodje kip") {
-            return "bluh";
+            return "Op het broodje kip zit komkommer, salade, kip en bufkes saus";
         }    else if (title === "Panini broodje") {
-                return "bluh";
+                return "Verschillende diverse panini's zijn te vinden op de counter!";
 
     // Koude dranken beschrijving
     } else if (title === "Spa Water") {
@@ -221,9 +221,9 @@ function getDescription(title) {
 
     // Snacks beschrijving
     } else if (title === "Frikandel") {
-        return "Een frikandel, dat wil je wel!";
+        return "Gemalen gehakt in een staafje";
     } else if (title === "Friet") {
-        return "Een klein bakje met friet.";
+        return "Een bakje friet";
     } else if (title === "Kipcorn") {
         return "Een lekkere krokante Kipcorn.";
     } else if (title === "Kipnuggets") {
@@ -233,7 +233,7 @@ function getDescription(title) {
     } else if (title === "Bitterballen") {
         return "Een bakje met 9 Bitterballen    .";
     } else if (title === "Koekjes") {
-        return "bluh";
+        return "Lekkere knapperige chocolade koekjes!";
 
 
     // Ijsjes beschrijving  
@@ -242,11 +242,11 @@ function getDescription(title) {
     }    else if (title === "Sorbet") {
         return "Lekkeresorbet met saus naar keuze";
     } else if (title === "Softijs") {
-        return "bluh";
+        return "Een melk ijsje";
     }    else if (title === "Sundea ijs") {
-        return "bluh";
+        return "Een softijs ijsje in een bakje met een sas naar keuze!";
     }    else if (title === "Appelflap") {
-        return "bluh";
+        return "Een lekker korstje met fijn gesneden appels, rozijnen en kaneel erin";
 
     // Deals beschrijing
     } else if (title === "Lunch Deal") {
@@ -256,22 +256,39 @@ function getDescription(title) {
     
     
     // Soepen beschrijving
-    } if (title === "TomatenSoep") {
-        return "bluh";
+    } if (title === "Tomatensoep") {
+        return "Tomatensoep met gehakt balletje";
+    } if (title === "Kippensoep") {
+        return "Kippensoep met kip en groenten";
+    } if (title === "Erwtensoep") {
+        return "Gemalen erwten met stukjes worst erin";
+    } if (title === "Groentesoep (met gehaktballetjes)") {
+        return "Een soep met veel groente erin en gehaktballetjes";
 
     // Salades beschrijving
     }  if (title === "Caesar Salade") {
-        return "bluh";
+        return "In een klassieke Ceesar salade zit sla romaine, ui,  kipfilet, citroen, mayonaise en olijfolie";
+    }  if (title === "Griekse Salade") {
+        return "In een Griekse salade zit komkommer, snoeptomatjes, klein beetje rode ui, olijven, feta kaas en croutons";
+    }  if (title === "Krokante Kip Salade") {
+        return "In de krokante Kip Salade zit kip, sla, klein beetje rode ui, snoeptomaatjes, olijfolie en komkommer";
+    }  if (title === "Aardappel Salade") {
+        return "In de aardappel salade zit aardappelen, prei, erwten, peper en zout";
 
     // Sauzen beschrijving
     }   if (title === "Ketchup") {
-        return "bluh";
-
-    }    if (title === "Appelflap") {
-        return "bluhll";
-        
-    }    if (title === "Aardbij yoghurt") {
-        return "bluhllllllllllllllllllllll";
+        return "";
+    }   if (title === "Mayonaise") {
+        return "";
+    }   if (title === "Mosterd") {
+        return "";
+    }   if (title === "Sweet Chili") {
+        return "";
+    }   if (title === "Curry saus") {
+        return "";
+    }
+        if (title === "Aardbij yoghurt") {
+        return "Yoghurt met aardbei";
 
     }    if (title === "Haribo starmix") {
         return "Een mixzakje met 75g snoepjes. ";
@@ -291,7 +308,6 @@ function getDescription(title) {
         return "Een zakje met 75g kersjes.";
     }    if (title === "Haribo Rolletje") {
         return "Een rolletje met snoepjes.";
-        return "";
 }
 }
 // Functie om een item aan het winkelwagentje toe te voegen
