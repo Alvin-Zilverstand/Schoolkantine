@@ -89,7 +89,8 @@ function showCategory(category) {
         ];
     } else if (category === 'Snoep') {
         items = [
-            { title: "harribo starmix", imageSrc: "media/starmix.jpg", price: 5.10 },
+            { title: "Haribo starmix", imageSrc: "media/starmix.jpg", price: 5.10 },
+            { title: "Haribo Kikkers", imageSrc: "media/kikkertjes.png", price: 5.10 },
         ];
     }
     // Voeg de items toe aan de weergave
@@ -297,6 +298,7 @@ const translations = {
         "Soepen": "Soups",
         "Salades": "Salads",
         "Sausjes": "Sauces",
+        "Snoep": "Candy",
         "Winkelmandje": "Shopping Cart",
         "Prijs": "Price",
         "Toevoegen aan winkelmandje": "Add to cart",
@@ -325,7 +327,7 @@ const translations = {
         "Bij deze deal krijg je een keuze naar een broodje en een keuze naar een koude drank!!": "With this deal, you get a choice of a sandwich and a choice of a cold drink!!",
         "Soep van de dag! (Allergieën? Meld het bij ons!)": "Soup of the day! (Allergies? Let us know!)",
         "Een heerlijke salade met verse groenten en een dressing naar keuze.": "A delicious salad with fresh vegetables and a dressing of your choice.",
-        "Kies de saus naar je keuze!": "Choose the sauce of your choice!"
+        "Kies de saus naar je keuze!": "Choose the sauce of your choice!", 
     },
     nl: {
         "Sandwiches": "Broodjes",
@@ -337,6 +339,7 @@ const translations = {
         "Soups": "Soepen",
         "Salads": "Salades",
         "Sauces": "Sausjes",
+        "Candy": "Snoep",
         "Shopping Cart": "Winkelmandje",
         "Price": "Prijs",
         "Add to cart": "Toevoegen aan winkelmandje",
