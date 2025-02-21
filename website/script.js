@@ -16,7 +16,7 @@ function showCategory(category) {
             { title: "Croissant", imageSrc: "https://th.bing.com/th/id/OIP._NRJfKZ0twQKDaljLKfvLAHaEt?rs=1&pid=ImgDetMain", price: 1.20 },
             { title: "Chocolade broodje", imageSrc: "https://www.bakkerijtommie.nl/wp-content/uploads/2020/02/chocoladebroodje-600x599.png", price: 1.20 },
             { title: "Broodje kip", imageSrc: "https://th.bing.com/th/id/OIP.sVGmYdUWj25TkUaJR2FCUwHaHa?rs=1&pid=ImgDetMain", price: 1.20 },
-            
+            { title: "Panini broodje", imageSrc: "https://th.bing.com/th/id/OIP.aTQpC7sGUdi1HntM7OP6nwAAAA?w=350&h=517&rs=1&pid=ImgDetMain", price: 1.20 },
         ];
     } else if (category === 'Koude-Dranken') {
         items = [
@@ -51,6 +51,7 @@ function showCategory(category) {
             { title: "Kipcorn", imageSrc: "media/kipcorn.png", price: 1.60 },
             { title: "Friet", imageSrc: "media/friet.png", price: 4.00 },
             { title: "Kipnuggets", imageSrc: "media/kipnuggets.png", price: 2.50 },
+            { title: "Koekjes", imageSrc: "https://rutgerbakt.nl/wp-content/uploads/2020/02/chocolat_chip_cookies_recept-scaled.jpg", price: 2.50 },
         ];
     } else if (category === 'Desserts') {
         items = [
@@ -58,6 +59,7 @@ function showCategory(category) {
             { title: "Sorbet", imageSrc: "media/sorbet.webp", price: 3.20 },
             { title: "Softijs", imageSrc: "media/softijs.jpg", price: 1.50 },
             { title: "Sundea ijs", imageSrc: "media/sundea.jpg", price: 2.30 },
+            { title: "Appelflap", imageSrc: "https://www.royalsmilde.com/uploads/og_image/c172e39c-5f71-59c3-b904-52a773b60239/3168309207/Appelflap%20met%20rozijnen.jpg", price: 2.30 },
         ];
     } else if (category === 'Deals') {
         items = [
@@ -86,6 +88,8 @@ function showCategory(category) {
         { title: "Sweet Chili", imageSrc: "https://www.dechinesemuuregmond.nl/wp-content/uploads/2022/04/19.-Zoetzure-saus.jpg", price: 0.75 },
         {title: "Curry saus", imageSrc: "https://bestellen.hotelhetanker.nl/wp-content/uploads/2021/03/currysaus-1.png", price: 0.75}
     	];
+
+
     } else if (category === 'Yoghert') {
         items = [
             { title: "Aardbij yoghert", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
@@ -166,6 +170,8 @@ function getDescription(title) {
             return "bluh";
         }    else if (title === "Broodje kip") {
             return "bluh";
+        }    else if (title === "Panini broodje") {
+                return "bluh";
 
     // Koude dranken beschrijving
     } else if (title === "Spa Water") {
@@ -197,6 +203,8 @@ function getDescription(title) {
         return "Een pittige mexicano.";
     } else if (title === "Bitterballen") {
         return "Een bakje met 9 Bitterballen    .";
+    } else if (title === "Koekjes") {
+        return "bluh";
 
 
     // Ijsjes beschrijving  
@@ -204,6 +212,12 @@ function getDescription(title) {
         return "Een lekker ijsje met vele smaken, zoals aardbei, vanille, chocolade, mint, bosbes en nog veel meer (alleen in de zomer!).";
     }    else if (title === "Sorbet") {
         return "Lekkeresorbet met saus naar keuze";
+    } else if (title === "Softijs") {
+        return "bluh";
+    }    else if (title === "Sundea ijs") {
+        return "bluh";
+    }    else if (title === "Appelflap") {
+        return "bluh";
 
     // Deals beschrijing
     } else if (title === "Lunch Deal") {
@@ -224,6 +238,9 @@ function getDescription(title) {
     }   if (title === "Ketchup") {
         return "bluh";
 
+    }    if (title === "Appelflap") {
+        return "bluhll";
+        
     }    if (title === "Aardbij yoghert") {
         return "bluhllllllllllllllllllllll";
 
