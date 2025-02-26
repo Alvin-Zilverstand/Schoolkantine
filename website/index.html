@@ -13,7 +13,7 @@
 
 <body>
 
-    <!-- Logo or photo -->
+    <!-- Logo -->
     <img src="media/logo.png" alt="Logo" class="logo">
 
     <!-- Top bar menu -->
@@ -32,12 +32,12 @@
         <div class="menu-item" onclick="showCategory('Overige')" data-translate="Overige">Overige</div>
     </div>
 
-    <!-- Productweergave -->
+    <!-- Product display area -->
     <div id="product-display" class="product-display">
-        <!-- Producten worden hier dynamisch toegevoegd -->
+        <!-- Products will be inserted dynamically -->
     </div>
 
-    <!-- Modaal venster voor grotere afbeelding en beschrijving -->
+    <!-- Modal for item details -->
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
@@ -49,11 +49,11 @@
         </div>
     </div>
 
-    <!-- Winkelmandje sectie -->
+    <!-- Cart section -->
     <div id="cart" class="cart">
         <h2 data-translate="Winkelmandje">Winkelmandje</h2>
         <ul id="cart-items">
-            <!-- Winkelmandje items worden hier dynamisch toegevoegd -->
+            <!-- Cart items will be added here -->
         </ul>
         <p><span data-translate="Totaal">Totaal</span>: €<span id="total-price">0.00</span></p>
 
@@ -62,7 +62,7 @@
         </a>
     </div>
 
-    <!-- Winkelwagen icoon -->
+    <!-- Cart icon -->
     <div class="cart-icon">
         <i class="fas fa-shopping-cart"></i>
         <span id="cart-count" class="cart-count">0</span> <!-- Aantal producten -->

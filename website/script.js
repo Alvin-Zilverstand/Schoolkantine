@@ -1,170 +1,53 @@
-// Functie om de productcategorie te tonen
+// Function to show products for a selected category
 function showCategory(category) {
+    console.log(`Fetching items for category: ${category}`); // Debugging: log category
     const productDisplay = document.getElementById('product-display');
-    productDisplay.innerHTML = ''; // Maak het display leeg voordat we nieuwe items toevoegen
+    productDisplay.innerHTML = ''; // Clear display before adding new items
 
-    let items = [];
+    fetch(`get_items.php?category=${category}`)
+        .then(response => {
+            if (!response.ok) { 
+                console.error('Network response was not ok', response.statusText);
+                throw new Error('Network response was not ok'); 
+            }
+            return response.json();
+        })
+        .then(items => {
+            if (items.error) {
+                console.error('Error fetching items:', items.error);
+                return;
+            }
+            if (items.length === 0) {
+                console.warn(`No items found for category: ${category}`); // Debugging: log no items found
+            }
+            console.log('Fetched items:', items); // Debugging: log fetched items
+            items.forEach(item => {
+                const productBox = document.createElement('div');
+                productBox.classList.add('product-box');
+                productBox.onclick = () => showItemDetails(item);
+                productBox.innerHTML = `
+                    <img src="${item.imageSrc}" alt="${item.title}">
+                    <h3>${item.title}</h3>
+                    <p>€${item.price.toFixed(2)}</p>
+                `;
+                productDisplay.appendChild(productBox);
+            });
+            document.querySelector('.menu-bar').classList.add('top'); // Bring menu to top
+            document.getElementById('cart').classList.add('visible');
+            document.querySelector('.cart-icon').classList.add('visible');
 
-    // Afhankelijk van de gekozen categorie, voeg je de juiste producten toe
-    if (category === 'Broodjes') {
-        items = [
-            { title: "Broodje Gezond", imageSrc: "media/broodje-gezond.jpg", price: 3.80 },
-            { title: "Bagel", imageSrc: "media/bagel.jpeg", price: 4.20 },
-            { title: "Broodje Gehakt met Joppiesaus", imageSrc: "media/GehaktJoppie.png", price: 3.80 },
-            { title: "Frikandelbroodje", imageSrc: "media/Frikandelbroodje.png", price: 1.20 },
-            { title: "Saucijzenbroodje", imageSrc: "media/Saucijz.png", price: 1.20 },
-            { title: "Croissant", imageSrc: "https://th.bing.com/th/id/OIP._NRJfKZ0twQKDaljLKfvLAHaEt?rs=1&pid=ImgDetMain", price: 1.20 },
-            { title: "Chocolade broodje", imageSrc: "https://www.bakkerijtommie.nl/wp-content/uploads/2020/02/chocoladebroodje-600x599.png", price: 1.20 },
-            { title: "Broodje kip", imageSrc: "https://th.bing.com/th/id/OIP.sVGmYdUWj25TkUaJR2FCUwHaHa?rs=1&pid=ImgDetMain", price: 3.20 },
-            { title: "Panini broodje", imageSrc: "https://th.bing.com/th/id/OIP.aTQpC7sGUdi1HntM7OP6nwAAAA?w=350&h=517&rs=1&pid=ImgDetMain", price: 1.20 },
-        ];
-    } else if (category === 'Koude-Dranken') {
-        items = [
-            { title: "Spa Water", imageSrc: "media/spa.webp", price: 2.00 },
-            { title: "Spa Rood", imageSrc: "media/spa-rood.jpg", price: 2.00 },
-            { title: "Cola zero", imageSrc: "media/cola-zero.jpg", price: 1.80 },
-            { title: "Cola vanille", imageSrc: "media/cola-vanilla.jpg", price: 1.80 },
-            { title: "Cola cherry", imageSrc: "media/cola-cherry.jpg", price: 1.80 },
-            { title: "Cola", imageSrc: "media/cola.jpg", price: 1.80 },
-            { title: "Sprite", imageSrc: "media/sprite.jpg", price: 1.80 },
-            { title: "Dr pepper", imageSrc: "media/drpepper.png", price: 1.80 },
-            { title: "Fanta orange original", imageSrc: "media/fanta.jpg", price: 1.80 },
-            { title: "Fanta orange zero", imageSrc: "media/fanta-zero.jpg", price: 1.80 },
-            { title: "Fanta exotic zero", imageSrc: "media/fanta-exotic-zero.jpg", price: 1.80 },
-            { title: "Fanta lemon zero", imageSrc: "media/fanta-lemon-zero.jpg", price: 1.80 },
-            { title: "Ice tea", imageSrc: "https://www.manutan.nl/img/S/GRP/ST/AIG12165970.jpg", price: 1.80},
-            { title: "Fanta cassis", imageSrc: "media/fanta-cassis.jpg", price: 1.80 },
-            { title: "Milkshake", imageSrc: "https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_2/sunset-sprinkle-shakes.jpg", price: 3.00 }, 
-            { title: "Redbull", imageSrc: "media/redbull.png", price: 2.10 },
-            { title: "Lente Redbull", imageSrc: "media/spring.png", price: 2.10 },
-        ]
-        } else if (category === 'Warme-Dranken') {
-        items = [
-            { title: "Warme Chocomel", imageSrc: "media/choco-gs.jpg", price: 2.30 },
-            { title: "Warme Chocomel met slagroom", imageSrc: "media/chocomel.jpg", price: 3.00 },
-            { title: "Koffie", imageSrc: "media/koffie.jpg", price: 2.20 },
-            { title: "Thee", imageSrc: "media/thee.jpg", price: 2.00 },
-        ];
-    }
-    else if (category === 'Snacks') {
-        items = [
-            { title: "Frikandel", imageSrc: "media/frikandel.jpg", price: 1.60 },
-            { title: "Bitterballen", imageSrc: "media/bitterbal.jpg", price: 2.50 },
-            { title: "Mexicano", imageSrc: "media/mexicano.png", price: 1.60 },
-            { title: "Kipcorn", imageSrc: "media/kipcorn.png", price: 1.60 },
-            { title: "Friet", imageSrc: "media/friet.png", price: 4.00 },
-            { title: "Kipnuggets", imageSrc: "media/kipnuggets.png", price: 2.50 },
-            { title: "Kroket", imageSrc: "media/kroket.png", price: 1.80 } ,
-            { title: "Kaassoufle", imageSrc: "media/kaassoufle.png", price: 1.80 },
-        ];
-    } else if (category === 'Desserts') {
-        items = [
-            { title: "Ijsjes", imageSrc: "media/Ijs.png", price: 2.30 },
-            { title: "Sorbet", imageSrc: "media/sorbet.webp", price: 3.20 },
-            { title: "Softijs", imageSrc: "media/softijs.jpg", price: 1.50 },
-            { title: "Sundea ijs", imageSrc: "media/sundea.jpg", price: 2.30 },
-            { title: "Appelflap", imageSrc: "https://www.royalsmilde.com/uploads/og_image/c172e39c-5f71-59c3-b904-52a773b60239/3168309207/Appelflap%20met%20rozijnen.jpg", price: 2.30 },
-            { title: "Koekjes", imageSrc: "https://rutgerbakt.nl/wp-content/uploads/2020/02/chocolat_chip_cookies_recept-scaled.jpg", price: 2.50 }
-        ];
-    } else if (category === 'Deals') {
-        items = [
-            { title: "Lunch Deal", imageSrc: "media/deals.jpg", price: 7.00 },
-            { title: "Gezonde Deal", imageSrc: "media/deals.jpg", price: 7.00 },
-        ];
-    } else if (category === 'Soepen') {
-        items = [
-            { title: "Tomatensoep", imageSrc: "media/soep.jpg", price: 3.80 },
-            { title: "Kippensoep", imageSrc: "media/kippensoep.jpg", price: 3.80 },
-            { title: "Erwtensoep", imageSrc: "media/erwtensoep.webp", price: 3.80 },
-            { title: "Groentesoep (met gehaktballetjes)", imageSrc: "media/groentesoep.jpg", price: 4.80 },
-        ];
-    } else if (category === 'Salades') {
-        items = [
-            { title: "Caesar Salade", imageSrc: "media/salade.jpg", price: 5.10 },
-            { title: "Griekse Salade", imageSrc: "media/griekse.jpg", price: 5.10 },
-            { title: "Krokante Kip Salade", imageSrc: "media/krokante-kip.jpg", price: 6.00 },
-            { title: "Aardappel Salade", imageSrc: "media/aardappel.jpg", price: 5.10 },
-        ];
-    } else if (category === 'Sausjes') {
-    items = [
-        { title: "Ketchup", imageSrc: "https://www.ahealthylife.nl/wp-content/uploads/2021/06/Ketchup_voedingswaarde.jpg", price: 0.75 },
-        { title: "Mayonaise", imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4FVmHO_hK3mw43z0fuHv1OFUr-hhsfGe1A&s", price: 0.75 },
-        { title: "Mosterd", imageSrc: "https://cdn.voedingswaardetabel.nl/img/prod/big/mosterd.jpg", price: 0.75 },
-        { title: "Sweet Chili", imageSrc: "https://www.dechinesemuuregmond.nl/wp-content/uploads/2022/04/19.-Zoetzure-saus.jpg", price: 0.75 },
-        {title: "Curry saus", imageSrc: "https://bestellen.hotelhetanker.nl/wp-content/uploads/2021/03/currysaus-1.png", price: 0.75},
-        {title: "Barbecue saus", imageSrc: "Media/barbecue.png", price: 0.75}
-    	];
-
-
-    } else if (category === 'Yoghurt') {
-        items = [
-            { title: "Aardbij yoghurt", imageSrc: "media/aardbij-yoghurt.png", price: 5.10 },
-            { title: "Optimel klein 250ml", imageSrc: "https://m.media-amazon.com/images/I/81mIA7bHX2L.jpg", price: 1.50 },
-            { title: "Optimel groot", imageSrc: "https://jumbo.com/dam-images/fit-in/360x360/Products/04092024_1725446061266_1725446064707_8713300459318_1.png", price: 2.45 },
-            { title: "Melk", imageSrc: "https://static.ah.nl/dam/product/AHI_4354523130313438333436?revLabel=1&rendition=400x400_JPG_Q85&fileType=binary", price: 2.00 },
-            { title: "Fristi", imageSrc: "https://www.fristi.nl/sites/rfc/files/styles/content_image_md/public/media/images/cf500c0a-589a-4677-9737-b5bc0ba6596d.png?itok=j-R-hcKp", price: 2.90 },
-            { title: "Chocomel", imageSrc: "https://m.media-amazon.com/images/I/617FCPZS5sS.jpg", price: 2.90 },
-            { title: "Breaker", imageSrc: "https://cdn.hoogvliet.com/Images/Product/XL/022589000.jpg", price: 2.75 },
-            { title: "Yoghurt beker", imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc67eaAUkb3-7eTk7WR7F16FwDDnluLv2InQ&s", price: 2.05 },
-            { title: "Kwark 150 gram", imageSrc: "https://jumbo.com/dam-images/fit-in/720x720/Products/31082023_1693453250716_1693453252578_577765_CUP_08712800000136_C1N1.png", price: 2.05 },
-        ];
-    } else if (category === 'Snoep') {
-        items = [
-            { title: "Haribo starmix", imageSrc: "media/Starmix.png", price: 2.50 },
-            { title: "Haribo Kikkers", imageSrc: "media/kikkertjes.png", price: 2.50 },
-            { title: "Haribo Bananen", imageSrc: "media/bananas.png", price: 2.50 },
-            { title: "Haribo Goudberen", imageSrc: "media/Goudberen.png", price: 2.50 },
-            { title: "Haribo Perzikken", imageSrc: "media/Perzikken.png", price: 2.50 },
-            { title: "Haribo Tropifrutti", imageSrc: "media/tropifrutti.png", price: 2.50 },
-            { title: "Haribo Tangfastics", imageSrc: "media/tangfastics.png", price: 2.50 },
-            { title: "Haribo Kersen", imageSrc: "media/Kersen.png", price: 2.50 },
-           { title: "Haribo Rolletje", imageSrc: "media/rolletje.png", price: 1.00 },
-           { title: "Haribo Happy Cola", imageSrc: "media/happycola.png", price: 1.00 },
-           { title: "Haribo Pinballs", imageSrc: "media/pinballs.png", price: 1.00 },
-           { title: "Popcorn zoet", imageSrc: "https://th.bing.com/th/id/OIP.6We0JA1TcUt_QOqMcMZsPwAAAA?rs=1&pid=ImgDetMain", price: 2.20 },
-            { title: "Popcorn zout", imageSrc: "https://www.sligro.nl/image-service/_jcr_content.product.08713276292032.image/1/large.jpeg", price: 2.20 },
-        ];
-    } else if (category === 'Overige') {
-        items = [
-            { title: "Bestek", imageSrc: "https://www.kerst-feestwinkel.nl/img/large/zwart-plastic-verjaardag-bbq-bestek-24-delig/10038/913-1.jpg", price: 0.40},
-            { title: "Hervul baar bekers", imageSrc:"https://th.bing.com/th/id/OIP.7V3t9HqIG_ss_IfEn6vgIwHaFl?w=238&h=180&c=7&pcl=1b1a19&r=0&o=5&pid=1.7", price: 1.00},
-            { title: "Rietjes",  imageSrc: "https://th.bing.com/th/id/OIP.hiraJOON9-g_L44k0RRJ2QHaHa?w=186&h=190&c=7&pcl=1b1a19&r=0&o=5&pid=1.7", price: 0.15}, 
-        ];
-    }
-    // Voeg de items toe aan de weergave
-    items.forEach(item => {
-        const productBox = document.createElement('div');
-        productBox.classList.add('product-box');
-        productBox.onclick = () => showItemDetails(item);
-
-        productBox.innerHTML = `
-            <img src="${item.imageSrc}" alt="${item.title}">
-            <h3>${item.title}</h3>
-            <p>€${item.price.toFixed(2)}</p>
-        `;
-
-        productDisplay.appendChild(productBox);
-    });
-
-    // Transition the menu bar to the top
-    document.querySelector('.menu-bar').classList.add('top');
-
-    // Show the shopping cart and cart icon
-    document.getElementById('cart').classList.add('visible');
-    document.querySelector('.cart-icon').classList.add('visible');
-
-    // Remove the logo from the DOM
-    const logo = document.querySelector('.logo');
-    if (logo) {
-        logo.remove();
-    }
+            // Remove logo if present
+            const logo = document.querySelector('.logo');
+            if (logo) { logo.remove(); }
+        })
+        .catch(error => console.error('Error fetching items:', error));
 }
 
 // Functie om de details van een item weer te geven in het modaal
 function showItemDetails(item) {
     const title = item.title;
     const imageSrc = item.imageSrc;
-    const description = getDescription(item.title); // Haal de beschrijving dynamisch op
+    const description = item.description; // Use description from item data
     const price = item.price;
 
     // Update de inhoud van het modaal venster
@@ -286,15 +169,15 @@ function getDescription(title) {
 
     // Sauzen beschrijving
     }   if (title === "Ketchup") {
-        return "";
+        return "Ketchup";
     }   if (title === "Mayonaise") {
-        return "";
+        return "Mayonaise";
     }   if (title === "Mosterd") {
-        return "";
+        return "Mosterd";
     }   if (title === "Sweet Chili") {
-        return "";
+        return "Sweet Chili";
     }   if (title === "Curry saus") {
-        return "";
+        return "Curry saus";
     }
     // Yoghurt beschrijving 
         if (title === "Aardbij yoghurt") {
@@ -410,6 +293,42 @@ window.onclick = function(event) {
 
 // Initial call to updateCart to ensure the button is hidden on page load
 updateCart();
+
+// Functie om een bestelling te plaatsen
+function placeOrder() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    if (cart.length === 0) {
+        alert('Uw winkelmandje is leeg.');
+        return;
+    }
+
+    const totalPrice = cart.reduce((total, item) => total + item.price, 0).toFixed(2);
+
+    fetch('place_order.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            items: cart,
+            total_price: totalPrice
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            localStorage.removeItem('cart'); // Clear the cart
+            updateCart(); // Update the cart display
+            window.open(`betalen.html?order_number=${encodeURIComponent(data.order_number)}`, '_blank'); // Open the payment page in a new tab with order number
+        } else {
+            alert('Er is een fout opgetreden bij het plaatsen van uw bestelling. Probeer het opnieuw.');
+        }
+    })
+    .catch(error => console.error('Error placing order:', error));
+}
+
+// Bind the placeOrder function to the order button
+document.getElementById('order-button').addEventListener('click', placeOrder);
 
 // Vertalingen voor beide talen (nl en en)
 const translations = {
