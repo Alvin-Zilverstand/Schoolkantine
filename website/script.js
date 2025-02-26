@@ -220,10 +220,15 @@ function getDescription(title) {
         return "Een zakje met 75g kersjes.";
     }    if (title === "Haribo Rolletje") {
         return "Een rolletje met snoepjes.";
+    }    if (title === "Haribo Pinballs") {
+        return "Een zakje met 75g balletjes.";
+    }    if (title === "Haribo Happy Cola") {
+        return "Een zakje met 75g cola snoepjes.";
 }
-    {    
+}
+{
     // overige beschrijing
-    }    if (title === "Bestek") {
+   if (title === "Bestek") {
     return "Plastice vorken, messen en lepels ";
 }    if (title === "Hervul baar bekers") {
     return "Bekers die je kunt hervullen en daarna weg kan gooien";
