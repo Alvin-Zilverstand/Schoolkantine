@@ -33,6 +33,7 @@ body {
     transform: translate(0, 0);
     justify-content: space-around; /* Spread the menu items */
     flex-wrap: nowrap; /* Ensure all items are in a single row */
+    overflow-x: auto; /* Enable horizontal scrolling */
 }
 
 .menu-bar.dark {
@@ -211,19 +212,19 @@ body {
 /* Responsive design */
 @media (max-width: 768px) {
     .menu-bar {
-        flex-wrap: wrap; /* Allow wrapping of menu items */
+        flex-wrap: nowrap; /* Ensure all items are in a single row */
         width: 100%; /* Use full width for menu bar */
         top: 0; /* Fix the menu bar to the top */
         left: 0;
         transform: translate(0, 0);
-        justify-content: space-around; /* Spread the menu items */
-        flex-wrap: wrap; /* Ensure all items are in a single row */
+        justify-content: flex-start; /* Align items to the start */
+        overflow-x: auto; /* Enable horizontal scrolling */
         padding: 10px; /* Add padding for better spacing */
     }
 
     .menu-item {
-        flex: 1 1 48%; /* Make each menu item take half width */
-        margin: 5px 1%; /* Add margin between items */
+        flex: none; /* Remove flex-grow to fit all items in a single row */
+        margin: 5px; /* Add margin between items */
         font-size: 1em; /* Adjust font size for better readability */
     }
 
@@ -255,6 +256,13 @@ body {
     .language-switcher {
         bottom: 20px; /* Position at the bottom */
         left: 20px; /* Position at the left */
+    }
+
+    .logo {
+        width: 80%; /* Adjust width for smaller screens */
+        max-width: 300px; /* Set a maximum width */
+        padding: 20px; /* Adjust padding */
+        margin: 10px auto; /* Adjust margin */
     }
 }
 
