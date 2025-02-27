@@ -43,3 +43,10 @@ h1 {
 .order li {
     margin: 5px 0;
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .order {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
